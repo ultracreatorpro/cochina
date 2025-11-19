@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo profesional de recetas de cocina. Descubre las mejores recetas organizadas por categorías.">
+    <meta name="keywords" content="recetas, cocina, comida, gastronomía, platos, postres, entradas">
+    <meta name="author" content="TuNombre">
+    <title>GourmetChef - Catálogo Profesional de Recetas</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Cabecera */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .site-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .search-container {
+            flex-grow: 1;
+            max-width: 500px;
+            margin: 0 20px;
+        }
+        
+        .search-form {
+            display: flex;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+        }
+        
+        .search-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin-left: 20px;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #e74c3c;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero-subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+        
+        /* Categorías */
+        .categories {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #2c3e50;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: #e74c3c;
+            margin: 10px auto;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .category-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .category-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .category-info {
+            padding: 20px;
+        }
+        
+        .category-name {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .category-description {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .category-link {
+            display: inline-block;
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .category-link:hover {
+            color: #c0392b;
+        }
+        
+        /* Recetas destacadas */
+        .featured-recipes {
+            margin-bottom: 50px;
+        }
+        
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .recipe-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .recipe-info {
+            padding: 20px;
+        }
+        
+        .recipe-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .recipe-description {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .recipe-link {
+            display: inline-block;
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .recipe-link:hover {
+            color: #c0392b;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background-color: #e74c3c;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container {
+                margin-bottom: 15px;
+            }
+            
+            .search-container {
+                width: 100%;
+                max-width: 100%;
+                margin: 15px 0;
+            }
+            
+            .nav-menu {
+                margin-top: 15px;
+            }
+            
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .hero-subtitle {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo">GC</div>
+                <h1 class="site-name">GourmetChef</h1>
+            </div>
+            
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" class="search-input" placeholder="Buscar recetas...">
+                    <button type="submit" class="search-button">Buscar</button>
+                </form>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Recetas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Categorías</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">Descubre el Arte de la Cocina</h2>
+            <p class="hero-subtitle">Recetas profesionales para todos los niveles</p>
+            <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">Únete a nuestro canal de WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Categorías de Recetas</h2>
+            <div class="categories-grid">
+                <!-- Categoría 1 -->
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Entradas" class="category-image">
+                    <div class="category-info">
+                        <h3 class="category-name">Entradas</h3>
+                        <p class="category-description">Aperitivos y platos para comenzar cualquier comida.</p>
+                        <a href="#" class="category-link">Ver recetas</a>
+                    </div>
+                </div>
+                
+                <!-- Categoría 2 -->
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Platos Principales" class="category-image">
+                    <div class="category-info">
+                        <h3 class="category-name">Platos Principales</h3>
+                        <p class="category-description">Recetas principales para comidas completas.</p>
+                        <a href="#" class="category-link">Ver recetas</a>
+                    </div>
+                </div>
+                
+                <!-- Categoría 3 -->
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Postres" class="category-image">
+                    <div class="category-info">
+                        <h3 class="category-name">Postres</h3>
+                        <p class="category-description">Dulces delicias para terminar con broche de oro.</p>
+                        <a href="#" class="category-link">Ver recetas</a>
+                    </div>
+                </div>
+                
+                <!-- Categoría 4 -->
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Vegetariano" class="category-image">
+                    <div class="category-info">
+                        <h3 class="category-name">Vegetariano</h3>
+                        <p class="category-description">Platos sin carne llenos de sabor y nutrientes.</p>
+                        <a href="#" class="category-link">Ver recetas</a>
+                    </div>
+                </div>
+                
+                <!-- Categoría 5 -->
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Internacional" class="category-image">
+                    <div class="category-info">
+                        <h3 class="category-name">Internacional</h3>
+                        <p class="category-description">Sabores de todo el mundo en tu cocina.</p>
+                        <a href="#" class="category-link">Ver recetas</a>
+                    </div>
+                </div>
+                
+                <!-- Categoría 6 -->
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Rápido y Fácil" class="category-image">
+                    <div class="category-info">
+                        <h3 class="category-name">Rápido y Fácil</h3>
+                        <p class="category-description">Recetas para cuando tienes poco tiempo.</p>
+                        <a href="#" class="category-link">Ver recetas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recetas Destacadas -->
+    <section class="featured-recipes">
+        <div class="container">
+            <h2 class="section-title">Recetas Destacadas</h2>
+            <div class="recipes-grid">
+                <!-- Receta 1 -->
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Risotto de Champiñones" class="recipe-image">
+                    <div class="recipe-info">
+                        <h3 class="recipe-title">Risotto de Champiñones</h3>
+                        <div class="recipe-meta">
+                            <span>Tiempo: 40 min</span>
+                            <span>Dificultad: Media</span>
+                        </div>
+                        <p class="recipe-description">Un cremoso risotto italiano con champiñones frescos y queso parmesano.</p>
+                        <a href="#" class="recipe-link">Ver receta completa</a>
+                    </div>
+                </div>
+                
+                <!-- Receta 2 -->
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Tarta de Chocolate" class="recipe-image">
+                    <div class="recipe-info">
+                        <h3 class="recipe-title">Tarta de Chocolate</h3>
+                        <div class="recipe-meta">
+                            <span>Tiempo: 60 min</span>
+                            <span>Dificultad: Fácil</span>
+                        </div>
+                        <p class="recipe-description">Una deliciosa tarta de chocolate intenso con base de galleta.</p>
+                        <a href="#" class="recipe-link">Ver receta completa</a>
+                    </div>
+                </div>
+                
+                <!-- Receta 3 -->
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Ensalada César" class="recipe-image">
+                    <div class="recipe-info">
+                        <h3 class="recipe-title">Ensalada César</h3>
+                        <div class="recipe-meta">
+                            <span>Tiempo: 20 min</span>
+                            <span>Dificultad: Fácil</span>
+                        </div>
+                        <p class="recipe-description">La clásica ensalada César con aderezo casero y crutones crujientes.</p>
+                        <a href="#" class="recipe-link">Ver receta completa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GourmetChef</h3>
+                    <p>Tu fuente confiable de recetas profesionales y consejos culinarios.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Recetas</a></li>
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categorías Populares</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Platos Principales</a></li>
+                        <li><a href="#">Postres</a></li>
+                        <li><a href="#">Vegetariano</a></li>
+                        <li><a href="#">Internacional</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@gourmetchef.com">info@gourmetchef.com</a></li>
+                        <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+                        <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2023 GourmetChef. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
