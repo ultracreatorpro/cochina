@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo profesional de recetas de cocina. Descubre las mejores recetas organizadas por categorías.">
-    <meta name="keywords" content="recetas, cocina, comida, gastronomía, platos, postres, entradas">
-    <meta name="author" content="TuNombre">
-    <title>GourmetChef - Catálogo Profesional de Recetas</title>
+    <!-- Meta tags SEO optimizados -->
+    <meta name="description" content="GourmetChef - Tu catálogo profesional de recetas de cocina. Descubre recetas organizadas por categorías: entradas, platos principales, postres, opciones vegetarianas y más.">
+    <meta name="keywords" content="recetas, cocina, comida, gastronomía, platos, postres, entradas, chef, gourmet, cocinar, ingredientes, preparación">
+    <meta name="author" content="GourmetChef">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="GourmetChef - Catálogo Profesional de Recetas">
+    <meta property="og:description" content="Descubre el arte de la cocina con nuestras recetas profesionales para todos los niveles">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.gourmetchef.com">
+    <meta property="og:image" content="https://www.gourmetchef.com/images/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GourmetChef - Catálogo Profesional de Recetas">
+    <meta name="twitter:description" content="Descubre el arte de la cocina con nuestras recetas profesionales para todos los niveles">
+    
+    <title>GourmetChef - Catálogo Profesional de Recetas | Cocina Creativa</title>
+    
+    <!-- Favicon (logo en el navegador) -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
     <style>
         /* Estilos generales */
         * {
@@ -117,9 +135,9 @@
             color: #e74c3c;
         }
         
-        /* Hero Section */
+        /* Hero Section - Nuevo color más atractivo */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.8), rgba(155, 89, 182, 0.8)), url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -391,8 +409,8 @@
             </div>
             
             <div class="search-container">
-                <form class="search-form">
-                    <input type="text" class="search-input" placeholder="Buscar recetas...">
+                <form class="search-form" id="searchForm">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Buscar recetas...">
                     <button type="submit" class="search-button">Buscar</button>
                 </form>
             </div>
@@ -577,5 +595,44 @@
             </div>
         </div>
     </footer>
+
+    <!-- Script para la funcionalidad de búsqueda -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchForm = document.getElementById('searchForm');
+            const searchInput = document.getElementById('searchInput');
+            
+            // Manejar el envío del formulario de búsqueda
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const searchTerm = searchInput.value.trim();
+                
+                if (searchTerm) {
+                    // Aquí puedes implementar la lógica de búsqueda
+                    alert(`Buscando: "${searchTerm}" - Esta funcionalidad se implementaría con un backend`);
+                    
+                    // Redirigir a una página de resultados de búsqueda
+                    // window.location.href = `/buscar?q=${encodeURIComponent(searchTerm)}`;
+                } else {
+                    alert('Por favor, ingresa un término de búsqueda');
+                    searchInput.focus();
+                }
+            });
+            
+            // Sugerencias de búsqueda (opcional)
+            searchInput.addEventListener('input', function() {
+                // Aquí podrías implementar sugerencias de búsqueda en tiempo real
+                // Por ejemplo, con una API o una lista predefinida
+            });
+            
+            // Búsqueda con la tecla Enter (ya funciona con el submit, pero por si acaso)
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchForm.dispatchEvent(new Event('submit'));
+                }
+            });
+        });
+    </script>
 </body>
 </html>
