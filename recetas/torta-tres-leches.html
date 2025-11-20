@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torta Tres Leches - Recetas de Postres Fáciles</title>
+    <meta name="description" content="Receta de Torta Tres Leches, un postre latinoamericano esponjoso y húmedo. Aprende a preparar este delicioso postre paso a paso.">
+    <meta name="keywords" content="torta tres leches, postre, leche condensada, leche evaporada, crema, repostería, dulce">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Torta Tres Leches - GourmetChef">
+    <meta property="og:description" content="Receta de Torta Tres Leches, un postre latinoamericano esponjoso y húmedo">
+    <meta property="og:image" content="https://tudominio.com/images/torta-tres-leches.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/torta-tres-leches.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Torta Tres Leches - Recetas de Postres Fáciles">
+    <meta name="twitter:description" content="Receta de Torta Tres Leches, un postre latinoamericano esponjoso y húmedo">
+    <meta name="twitter:image" content="https://tudominio.com/images/torta-tres-leches.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Torta Tres Leches</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 90 minutos</span>
+                <span>🍽️ 8 personas</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Torta Tres Leches" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para una torta más esponjosa, asegúrate de batir bien las claras de huevo a punto de nieve y doblarlas con cuidado en la masa.</p>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para el bizcocho:</h3>
+                <ul class="ingredients-list">
+                    <li>6 huevos (separar yemas y claras)</li>
+                    <li>1 taza de harina de trigo</li>
+                    <li>1 taza de azúcar</li>
+                    <li>1 cucharadita de polvo de hornear</li>
+                    <li>1/4 taza de leche</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para la mezcla de tres leches:</h3>
+                <ul class="ingredients-list">
+                    <li>1 lata (14 oz) de leche condensada</li>
+                    <li>1 lata (12 oz) de leche evaporada</li>
+                    <li>1 taza de crema de leche (nata)</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el merengue:</h3>
+                <ul class="ingredients-list">
+                    <li>4 claras de huevo</li>
+                    <li>1 taza de azúcar</li>
+                    <li>1/4 cucharadita de cremor tártaro</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Precalienta el horno a 180°C (350°F). Engrasa y enharina un molde rectangular de 20x30 cm.</li>
+                    <li>Para el bizcocho: Bate las yemas con el azúcar hasta que estén pálidas y cremosas. Añade la leche y la vainilla.</li>
+                    <li>Cierne la harina con el polvo de hornear y agrega a la mezcla de yemas, integrando suavemente.</li>
+                    <li>En un recipiente aparte, bate las claras a punto de nieve hasta que formen picos suaves.</li>
+                    <li>Incorpora las claras batidas a la mezcla de yemas con movimientos envolventes, cuidando de no perder el aire.</li>
+                    <li>Vierte la masa en el molde preparado y hornea por 25-30 minutos o hasta que al insertar un palillo salga limpio.</li>
+                    <li>Mientras se hornea el bizcocho, prepara la mezcla de tres leches: combina la leche condensada, evaporada, crema de leche y vainilla. Mezcla bien.</li>
+                    <li>Cuando el bizcocho esté listo, déjalo enfriar 10 minutos. Luego, con un tenedor, haz pequeños agujeros por toda la superficie.</li>
+                    <li>Vierte lentamente la mezcla de tres leches sobre el bizcocho, asegurándote de que se absorba uniformemente.</li>
+                    <li>Refrigera la torta por al menos 4 horas, preferiblemente toda la noche, para que absorba bien las leches.</li>
+                    <li>Para el merengue: En un bol limpio y seco, bate las claras con el cremor tártaro hasta que formen picos suaves.</li>
+                    <li>Agrega el azúcar gradualmente, batiendo continuamente hasta que el merengue esté brillante y forme picos firmes. Añade la vainilla.</li>
+                    <li>Extiende el merengue sobre la torta fría y decora al gusto. Puedes dorar ligeramente el merengue con un soplete de cocina si lo deseas.</li>
+                    <li>Refrigera hasta el momento de servir. ¡Disfruta de esta deliciosa Torta Tres Leches!</li>
+                </ol>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
