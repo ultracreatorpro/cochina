@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruschettas Italianas - GourmetChef</title>
+    <meta name="description" content="Receta de Bruschettas italianas clásicas con tomate y albahaca. Aprende a preparar este aperitivo mediterráneo paso a paso.">
+    <meta name="keywords" content="bruschettas, italiano, aperitivo, tomate, albahaca, pan, mediterráneo">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Bruschettas Italianas - GourmetChef">
+    <meta property="og:description" content="Receta de Bruschettas italianas clásicas con tomate y albahaca">
+    <meta property="og:image" content="https://tudominio.com/images/bruschettas.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/bruschettas.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bruschettas Italianas - GourmetChef">
+    <meta name="twitter:description" content="Receta de Bruschettas italianas clásicas con tomate y albahaca">
+    <meta name="twitter:image" content="https://tudominio.com/images/bruschettas.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Bruschettas Italianas</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 25 minutos</span>
+                <span>🍽️ 4 personas</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bruschettas Italianas" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un sabor auténtico, frota el pan tostado con un diente de ajo crudo justo después de sacarlo del horno. Esto le dará ese sabor característico de las bruschettas tradicionales.</p>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>1 baguette o pan rústico italiano</li>
+                    <li>4 tomates maduros medianos</li>
+                    <li>2 dientes de ajo</li>
+                    <li>1 manojo de albahaca fresca</li>
+                    <li>200g de mozzarella fresca (opcional)</li>
+                    <li>4 cucharadas de aceite de oliva virgen extra</li>
+                    <li>1 cucharada de vinagre balsámico</li>
+                    <li>Sal marina al gusto</li>
+                    <li>Pimienta negra molida</li>
+                    <li>Oregano seco (opcional)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Corta el pan en rebanadas de aproximadamente 2 cm de grosor, en diagonal para obtener porciones más grandes.</li>
+                    <li>Tuesta las rebanadas de pan en una parrilla, sartén o horno a 200°C durante 3-5 minutos por cada lado, hasta que estén doradas y crujientes.</li>
+                    <li>Mientras se tuesta el pan, pica finamente los tomates y colócalos en un colador para eliminar el exceso de líquido y semillas.</li>
+                    <li>En un bol, mezcla los tomates picados con la albahaca fresca cortada en tiras, sal, pimienta, 2 cucharadas de aceite de oliva y el vinagre balsámico.</li>
+                    <li>Pela los dientes de ajo y córtalos por la mitad. Frota el ajo sobre la superficie de las rebanadas de pan tostado mientras aún estén calientes.</li>
+                    <li>Rocía las bruschettas con el resto del aceite de oliva virgen extra.</li>
+                    <li>Si usas mozzarella, coloca una rodaja fina sobre cada bruschetta antes de añadir la mezcla de tomate.</li>
+                    <li>Distribuye generosamente la mezcla de tomate y albahaca sobre las rebanadas de pan.</li>
+                    <li>Decora con hojas de albahaca fresca y un hilo de aceite de oliva por encima.</li>
+                    <li>Espolvorea con orégano seco si lo deseas y sirve inmediatamente para disfrutar de su textura crujiente.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Bruschetta con Aguacate:</strong> Añade aguacate en cubos a la mezcla de tomate.</p>
+            <p><strong>Bruschetta Caprese:</strong> Incluye mozzarella di bufala y una reducción de balsámico.</p>
+            <p><strong>Bruschetta con Pesto:</strong> Unta una capa de pesto genovés antes de añadir el tomate.</p>
+            <p><strong>Bruschetta con Jamón Serrano:</strong> Coloca una loncha de jamón serrano sobre el tomate.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
