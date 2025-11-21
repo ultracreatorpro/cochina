@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hummus Casero - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Hummus casero cremoso y auténtico. Aprende a preparar esta deliciosa crema de garbanzos de Oriente Medio paso a paso.">
+    <meta name="keywords" content="hummus, garbanzos, crema, tahini, oriente medio, aperitivo, vegano">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Hummus Casero - GourmetChef">
+    <meta property="og:description" content="Receta de Hummus casero cremoso y auténtico">
+    <meta property="og:image" content="https://tudominio.com/images/hummus.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/hummus.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hummus Casero - GourmetChef">
+    <meta name="twitter:description" content="Receta de Hummus casero cremoso y auténtico">
+    <meta name="twitter:image" content="https://tudominio.com/images/hummus.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .serving-suggestions {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Hummus Casero</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 15 minutos</span>
+                <span>🍽️ 6 personas</span>
+                <span>🌱 Vegano</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1596574202430-6c69dcff45ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Hummus Casero" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un hummus extra cremoso, pela los garbanzos después de cocerlos. La piel se desprende fácilmente frotándolos entre tus manos y hace una gran diferencia en la textura final.</p>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>400g de garbanzos cocidos (1 lata escurrida)</li>
+                    <li>3 cucharadas de tahini (pasta de sésamo)</li>
+                    <li>2 dientes de ajo</li>
+                    <li>Jugo de 1 limón grande</li>
+                    <li>3 cucharadas de aceite de oliva virgen extra</li>
+                    <li>4-5 cucharadas de agua fría</li>
+                    <li>1/2 cucharadita de comino molido</li>
+                    <li>Sal al gusto</li>
+                    <li>Pimentón dulce para decorar</li>
+                    <li>Perejil fresco picado</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para servir:</h3>
+                <ul class="ingredients-list">
+                    <li>Pan pita tostado</li>
+                    <li>Verduras frescas (zanahoria, pepino, apio)</li>
+                    <li>Aceitunas</li>
+                    <li>Granos de granada (opcional)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Si usas garbanzos en lata, escúrrelos y enjuágalos bien bajo el grifo. Reserva un par de cucharadas para decorar.</li>
+                    <li>En un procesador de alimentos o batidora potente, añade los garbanzos, tahini, dientes de ajo pelados, jugo de limón, comino y una pizca de sal.</li>
+                    <li>Tritura todos los ingredientes durante 1-2 minutos hasta obtener una pasta gruesa. Raspa los lados del bol si es necesario.</li>
+                    <li>Con el procesador en marcha, añade el aceite de oliva lentamente en hilo fino para que se emulsione.</li>
+                    <li>Agrega el agua fría, una cucharada a la vez, hasta alcanzar la consistencia deseada. Más agua para un hummus más ligero, menos para uno más espeso.</li>
+                    <li>Continúa procesando durante 3-4 minutos más hasta que el hummus esté suave y cremoso. La clave está en procesar el tiempo suficiente.</li>
+                    <li>Prueba y ajusta la sazón, añadiendo más sal, limón o ajo según tu preferencia.</li>
+                    <li>Transfiere el hummus a un bol de servir y alisa la superficie con el dorso de una cuchara.</li>
+                    <li>Decora con un chorrito de aceite de oliva, una pizca generosa de pimentón dulce, los garbanzos reservados y perejil fresco picado.</li>
+                    <li>Sirve inmediatamente o refrigera hasta el momento de usar. El hummus sabe aún mejor después de unas horas en la nevera.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="serving-suggestions">
+            <h3>🍽️ Ideas para Servir</h3>
+            <p><strong>Como dip:</strong> Acompaña con pan pita tostado, crudités de verduras o chips de pita</p>
+            <p><strong>En sándwiches:</strong> Úsalo como untable en lugar de mayonesa o mostaza</p>
+            <p><strong>En bowls:</strong> Como base para bowls de verduras con quinoa y aguacate</p>
+            <p><strong>Con carnes:</strong> Perfecto con brochetas de pollo o cordero a la parrilla</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones de Hummus</h3>
+            <p><strong>Hummus de Remolacha:</strong> Añade 1 remolacha cocida pequeña para un color rosa vibrante</p>
+            <p><strong>Hummus de Aguacate:</strong> Incorpora 1 aguacate maduro y un poco de cilantro fresco</p>
+            <p><strong>Hummus de Pimiento Asado:</strong> Añade 1 pimiento rojo asado y pelado</p>
+            <p><strong>Hummus Picante:</strong> Incorpora 1 cucharadita de pasta de harissa o 1 chile fresco</p>
+            <p><strong>Hummus de Aceitunas:</strong> Añade 3-4 cucharadas de aceitunas negras sin hueso</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
