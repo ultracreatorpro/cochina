@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocadito de Cerdo Asado - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Bocadito de Cerdo Asado jugoso y aromático. Aprende a preparar esta deliciosa carne marinada con especias paso a paso.">
+    <meta name="keywords" content="bocadito cerdo, cerdo asado, lomo de cerdo, marinada, especias, plato principal, asado">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Bocadito de Cerdo Asado - GourmetChef">
+    <meta property="og:description" content="Receta de Bocadito de Cerdo Asado jugoso y aromático">
+    <meta property="og:image" content="https://tudominio.com/images/cerdo-asado.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/bocadito-cerdo-asado.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bocadito de Cerdo Asado - GourmetChef">
+    <meta name="twitter:description" content="Receta de Bocadito de Cerdo Asado jugoso y aromático">
+    <meta name="twitter:image" content="https://tudominio.com/images/cerdo-asado.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Bocadito de Cerdo Asado</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 1 hora + marinado</span>
+                <span>🍽️ 4-6 personas</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1555939591-0d0cb26191c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bocadito de Cerdo Asado" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un bocadito de cerdo más jugoso, deja reposar la carne 10 minutos después del horneado antes de cortarla. Esto permite que los jugos se redistribuyan por toda la pieza.</p>
+        </div>
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para el bocadito de cerdo:</h3>
+                <ul class="ingredients-list">
+                    <li>1 kg de lomo de cerdo o solomillo</li>
+                    <li>2 cucharadas de aceite de oliva</li>
+                    <li>Sal marina gruesa al gusto</li>
+                    <li>Pimienta negra molida al gusto</li>
+                    <li>1 cucharadita de ajo en polvo</li>
+                    <li>1 cucharadita de cebolla en polvo</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para la marinada:</h3>
+                <ul class="ingredients-list">
+                    <li>4 dientes de ajo picados</li>
+                    <li>Jugo de 2 naranjas</li>
+                    <li>Jugo de 2 limones</li>
+                    <li>3 cucharadas de salsa de soja</li>
+                    <li>2 cucharadas de miel o azúcar moreno</li>
+                    <li>1 cucharadita de comino molido</li>
+                    <li>1 cucharadita de orégano seco</li>
+                    <li>1/2 cucharadita de jengibre fresco rallado</li>
+                    <li>1/4 cucharadita de canela molida</li>
+                    <li>2 ramitas de romero fresco</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para la salsa:</h3>
+                <ul class="ingredients-list">
+                    <li>Jugos del asado</li>
+                    <li>1 cucharada de mantequilla</li>
+                    <li>1 cucharada de harina</li>
+                    <li>200ml de caldo de pollo o verduras</li>
+                    <li>2 cucharadas de vino blanco (opcional)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara la marinada mezclando todos los ingredientes en un bol grande: ajo, jugos de naranja y limón, salsa de soja, miel, especias y romero.</li>
+                    <li>Secar el bocadito de cerdo con papel de cocina y hacer pequeños cortes superficiales por toda la superficie para que penetre mejor la marinada.</li>
+                    <li>Colocar la carne en una bolsa para marinar o en un recipiente hermético. Verter la marinada sobre el cerdo, asegurando que quede bien cubierto.</li>
+                    <li>Refrigerar por al menos 4 horas, preferiblemente toda la noche, volteando ocasionalmente.</li>
+                    <li>Precalentar el horno a 200°C. Retirar el cerdo de la marinada (reservar la marinada) y secar ligeramente con papel de cocina.</li>
+                    <li>Mezclar el aceite de oliva con sal, pimienta, ajo y cebolla en polvo. Frotar esta mezcla por toda la superficie del cerdo.</li>
+                    <li>Colocar el cerdo en una bandeja para horno con rejilla. Asar durante 15 minutos a 200°C para sellar.</li>
+                    <li>Reducir la temperatura a 180°C y continuar asando durante 35-45 minutos, o hasta que la temperatura interna alcance 65-70°C.</li>
+                    <li>Mientras se asa, llevar la marinada reservada a ebullición en una cacerola pequeña y cocinar 5 minutos para eliminar bacterias.</li>
+                    <li>Retirar el cerdo del horno y dejar reposar 10 minutos antes de cortar en rodajas.</li>
+                    <li>Para la salsa: colocar la bandeja de horno sobre la estufa a fuego medio. Añadir mantequilla y harina, mezclar bien.</li>
+                    <li>Incorporar el caldo, vino blanco y la marinada cocida. Remover hasta que espese ligeramente.</li>
+                    <li>Colar la salsa y servir caliente junto con el cerdo asado.</li>
+                </ol>
+            </div>
+        </div>
+       
+        <div class="marinade-info">
+            <h3>⏰ Tiempos de Marinado</h3>
+            <p><strong>Mínimo:</strong> 2 horas (sabor suave)</p>
+            <p><strong>Recomendado:</strong> 8-12 horas (sabor óptimo)</p>
+            <p><strong>Máximo:</strong> 24 horas (no exceder para evitar que el ácido cocine la carne)</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>🌡️ Guía de Temperaturas</h3>
+            <p><strong>Poco hecho:</strong> 60-63°C (jugoso y ligeramente rosado)</p>
+            <p><strong>Al punto:</strong> 65-70°C (perfecto para cerdo, jugoso y seguro)</p>
+            <p><strong>Bien hecho:</strong> 71°C+ (completamente cocido, menos jugoso)</p>
+            <p>Usa siempre un termómetro de carne para mejores resultados</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Cerdo a la Barbacoa:</strong> Sustituye la marinada por salsa barbacoa y asa a menor temperatura</p>
+            <p><strong>Estilo Caribeño:</strong> Añade 1 chile picado y 2 cucharadas de ron a la marinada</p>
+            <p><strong>Con Hierbas Provenzales:</strong> Usa albahaca, tomillo y mejorana en lugar de las especias originales</p>
+            <p><strong>Cerdo Teriyaki:</strong> Marinada con salsa teriyaki, jengibre y ajo</p>
+            <p><strong>Con Mostaza y Miel:</strong> Mezcla 3 cucharadas de mostaza Dijon con miel para la cobertura</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
