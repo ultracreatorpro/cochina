@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensalada César - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta auténtica de Ensalada César con aderezo casero. Aprende a preparar esta clásica ensalada con pollo y crutones paso a paso.">
+    <meta name="keywords" content="ensalada césar, pollo, crutones, aderezo césar, lechuga, parmesano, plato principal">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Ensalada César - GourmetChef">
+    <meta property="og:description" content="Receta auténtica de Ensalada César con aderezo casero">
+    <meta property="og:image" content="https://tudominio.com/images/ensalada-cesar.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/ensalada-cesar.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ensalada César - GourmetChef">
+    <meta name="twitter:description" content="Receta auténtica de Ensalada César con aderezo casero">
+    <meta name="twitter:image" content="https://tudominio.com/images/ensalada-cesar.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+        list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .dressing-guide {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .presentation-tips {
+            background: #f3e5f5;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #9c27b0;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Ensalada César Clásica</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 30 minutos</span>
+                <span>🍽️ 4 personas</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Ensalada César" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para crutones extra crujientes y sabrosos, mezcla el pan con aceite de oliva, ajo en polvo y una pizca de sal, luego hornéalos a 180°C durante 10-12 minutos en lugar de freírlos.</p>
+        </div>
+
+        <div class="recipe-content">
+        <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para la ensalada:</h3>
+                <ul class="ingredients-list">
+                    <li>2 lechugas romanas grandes</li>
+                    <li>2 pechugas de pollo (opcional)</li>
+                    <li>100g de queso parmesano en láminas</li>
+                    <li>4 rebanadas de pan rústico</li>
+                    <li>2 cucharadas de aceite de oliva</li>
+                    <li>1 diente de ajo</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el aderezo César:</h3>
+                <ul class="ingredients-list">
+                    <li>2 filetes de anchoa en aceite</li>
+                    <li>1 diente de ajo grande</li>
+                    <li>1 yema de huevo grande (opcional)</li>
+                    <li>2 cucharadas de jugo de limón fresco</li>
+                    <li>1 cucharadita de mostaza Dijon</li>
+                    <li>1 cucharadita de salsa Worcestershire</li>
+                    <li>80ml de aceite de oliva suave</li>
+                    <li>50g de queso parmesano rallado</li>
+                    <li>Pimienta negra recién molida</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara los crutones: corta el pan en cubos de 2cm. En un bol, mezcla con aceite de oliva, ajo picado, sal y pimienta.</li>
+                    <li>Extiende los cubos de pan en una bandeja de horno y hornea a 180°C durante 10-12 minutos hasta que estén dorados y crujientes. Reserva.</li>
+                    <li>Si usas pollo: sazona las pechugas con sal y pimienta. Cocínalas a la plancha 6-8 minutos por cada lado hasta que estén bien cocidas. Deja reposar 5 minutos y corta en tiras.</li>
+                    <li>Lava y seca muy bien las hojas de lechuga romana. Córtalas en trozos de bocado y colócalas en un bol grande.</li>
+                    <li>Para el aderezo: en un mortero, machaca las anchoas con el diente de ajo hasta formar una pasta.</li>
+                    <li>Transfiere la pasta a un bol mediano y añade la yema de huevo (si usas), jugo de limón, mostaza y salsa Worcestershire. Mezcla bien.</li>
+                    <li>Agrega el aceite de oliva en un hilo fino mientras bates enérgicamente con un batidor de alambre para emulsionar.</li>
+                    <li>Incorpora el queso parmesano rallado y pimienta negra al gusto. Prueba y ajusta la sazón si es necesario.</li>
+                    <li>Justo antes de servir, vierte la mitad del aderezo sobre la lechuga y mezcla suavemente con las manos para cubrir todas las hojas.</li>
+                    <li>Añade más aderezo si es necesario, pero ten cuidado de no sobrecargar la ensalada.</li>
+                    <li>Incorpora los crutones y mezcla ligeramente. Decora con las tiras de pollo (si usas) y láminas de parmesano.</li>
+                    <li>Sirve inmediatamente para que los crutones mantengan su textura crujiente.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="dressing-guide">
+            <h3>🥗 Secretos del Aderezo Perfecto</h3>
+            <p><strong>Consistencia cremosa:</strong> Bate el aceite muy lentamente para una emulsión perfecta</p>
+            <p><strong>Sin huevo:</strong> Omite la yema y añade 1 cucharada de mayonesa para espesar</p>
+            <p><strong>Menos sal:</strong> Las anchoas ya son saladas, prueba antes de añadir más sal</p>
+            <p><strong>Más cítrico:</strong> Añade ralladura de limón para intensificar el sabor</p>
+            <p><strong>Vegetariano:</strong> Sustituye anchoas por 1 cucharada de alcaparras picadas</p>
+        </div>
+        <div class="presentation-tips">
+            <h3>🍽️ Presentación Profesional</h3>
+            <p><strong>En plato individual:</strong> Usa un aro de emplatar para dar forma redonda</p>
+            <p><strong>Capas:</strong> Coloca el pollo en la base y la lechuga encima</p>
+            <p><strong>Crutones separados:</strong> Sirve los crutones aparte para que cada comensal los añada</p>
+            <p><strong>Parmesano en láminas:</strong> Usa un pelador de verduras para láminas finas y elegantes</p>
+            <p><strong>Aderezo a un lado:</strong> Sirve el aderezo extra en una salsera</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones de Ensalada César</h3>
+            <p><strong>César de Camarones:</strong> Sustituye el pollo por camarones a la plancha</p>
+            <p><strong>Vegetariana:</strong> Añade aguacate y tomates cherry, omite las anchoas</p>
+            <p><strong>Con Salmón:</strong> Salmón a la plancha o ahumado en lugar de pollo</p>
+            <p><strong>Wrap César:</strong> Envuelve la ensalada en una tortilla de harina</p>
+            <p><strong>Kale César:</strong> Usa kale masajeado con el aderezo para ablandarlo</p>
+            <p><strong>De Lentejas:</strong> Añade lentejas cocidas para proteína vegetal</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
