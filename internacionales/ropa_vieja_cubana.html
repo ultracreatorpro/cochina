@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa Vieja Cubana - GourmetChef</title>
+    <meta name="description" content="Receta auténtica de Ropa Vieja Cubana, un guiso de carne desmenuzada con sabores caribeños. Aprende a preparar este plato tradicional paso a paso.">
+    <meta name="keywords"content="ropa vieja, cubana, carne desmechada, plato cubano, comida caribeña, receta tradicional, guiso">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Ropa Vieja Cubana - GourmetChef">
+    <meta property="og:description" content="Receta auténtica de Ropa Vieja Cubana, un guiso de carne desmenuzada con sabores caribeños">
+    <meta property="og:image" content="https://tudominio.com/images/ropa-vieja.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/ropa-vieja.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ropa Vieja Cubana - GourmetChef">
+    <meta name="twitter:description" content="Receta auténtica de Ropa Vieja Cubana, un guiso de carne desmenuzada con sabores caribeños">
+    <meta name="twitter:image" content="https://tudominio.com/images/ropa-vieja.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .accompaniments {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Ropa Vieja Cubana</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 3 horas</span>
+                <span>🍽️ 6 personas</span>
+                <span>⭐ Media dificultad</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Ropa Vieja Cubana" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para una Ropa Vieja más sabrosa, cocina la carne el día anterior y déjala enfriar en su propio caldo. Al día siguiente, la carne se desmenuzará más fácilmente y los sabores estarán más integrados.</p>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para cocer la carne:</h3>
+                <ul class="ingredients-list">
+                    <li>1 kg de falda de res o pecho de res</li>
+                    <li>1 cebolla grande cortada en cuartos</li>
+                    <li>4 dientes de ajo</li>
+                    <li>1 hoja de laurel</li>
+                    <li>1 cucharadita de comino entero</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>Agua suficiente para cubrir la carne</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el sofrito:</h3>
+                <ul class="ingredients-list">
+                    <li>3 cucharadas de aceite de oliva</li>
+                    <li>2 cebollas grandes en tiras finas</li>
+                    <li>1 pimiento rojo en tiras</li>
+                    <li>1 pimiento verde en tiras</li>
+                    <li>4 dientes de ajo picados</li>
+                    <li>400g de tomate triturado</li>
+                    <li>1 cucharadita de comino molido</li>
+                    <li>1 cucharadita de orégano seco</li>
+                    <li>125ml de vino blanco seco</li>
+                    <li>100g de aceitunas verdes rellenas</li>
+                    <li>2 cucharadas de alcaparras (opcional)</li>
+                    <li>1 cucharada de vinagre de vino blanco</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>Cilantro fresco picado para decorar</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>En una olla grande, coloca la carne con la cebolla en cuartos, ajos enteros, laurel, comino entero, sal y pimienta. Cubre con agua y lleva a ebullición.</li>
+                    <li>Reduce el fuego, tapa y cocina a fuego lento durante 2-2.5 horas hasta que la carne esté muy tierna y se deshaga fácilmente con un tenedor.</li>
+                    <li>Retira la carne del caldo y déjala enfriar lo suficiente para manipular. Reserva 2 tazas del caldo de cocción.</li>
+                    <li>Desmenuza la carne con las manos o con dos tenedores, eliminando el exceso de grasa y tejido conectivo. Debe quedar en hebras largas y finas.</li>
+                    <li>En una sartén grande o cazuela, calienta el aceite de oliva a fuego medio. Sofríe las cebollas y pimientos en tiras durante 8-10 minutos hasta que estén blandos.</li>
+                    <li>Añade el ajo picado y cocina 1 minuto más hasta que esté fragante.</li>
+                    <li>Incorpora el tomate triturado, comino molido y orégano. Cocina 5 minutos removiendo ocasionalmente.</li>
+                    <li>Vierte el vino blanco y deja que se reduzca durante 2-3 minutos.</li>
+                    <li>Agrega la carne desmenuzada, las aceitunas, alcaparras (si usas) y el caldo reservado. Mezcla bien.</li>
+                    <li>Tapa y cocina a fuego lento durante 20-25 minutos para que los sabores se integren. Si queda muy líquido, destapa los últimos 10 minutos.</li>
+                    <li>Rectifica la sazón con sal, pimienta y el vinagre de vino. El vinagre realzará los sabores.</li>
+                    <li>Espolvorea con cilantro fresco picado justo antes de servir.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="accompaniments">
+            <h3>🍚 Acompañamientos Tradicionales</h3>
+            <p><strong>Arroz Blanco:</strong> El clásico acompañamiento cubano, preferiblemente grano largo</p>
+            <p><strong>Plátanos Maduros:</strong> Fritos o al horno, dulces y caramelizados</p>
+            <p><strong>Moros y Cristianos:</strong> Arroz con frijoles negros, típico de Cuba</p>
+            <p><strong>Yuca con Mojo:</strong> Yuca hervida con salsa de ajo, naranja agria y cilantro</p>
+            <p><strong>Ensalada de Aguacate:</strong> Rodajas de aguacate con cebolla morada y limón</p>
+        </div>
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Ropa Vieja Dominicana:</strong> Añade salsa de tomate y un toque de azúcar</p>
+            <p><strong>Versión con Pollo:</strong> Sustituye la res por pollo desmenuzado (reduce tiempo de cocción)</p>
+                    <p><strong>Ropa Vieja Picante:</strong> Incorpora chiles jalapeños o una cucharadita de pasta de ají</p>
+            <p><strong>Con Verduras Extra:</strong> Añade zanahorias en tiras y guisantes los últimos 10 minutos</p>
+            <p><strong>En Tacos:</strong> Sirve en tortillas de maíz con crema agria y queso fresco</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
