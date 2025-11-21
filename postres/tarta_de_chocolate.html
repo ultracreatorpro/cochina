@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarta de Chocolate - GourmetChef</title>
+    <meta name="description" content="Receta de Tarta de Chocolate intenso y cremosa. Aprende a preparar este clásico postre de chocolate paso a paso.">
+    <meta name="keywords" content="tarta chocolate, postre, chocolate, repostería, dulce, tarta, postre chocolate">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Tarta de Chocolate - GourmetChef">
+    <meta property="og:description" content="Receta de Tarta de Chocolate intenso y cremosa">
+    <meta property="og:image" content="https://tudominio.com/images/tarta-chocolate.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/tarta-chocolate.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tarta de Chocolate - GourmetChef">
+    <meta name="twitter:description" content="Receta de Tarta de Chocolate intenso y cremosa">
+    <meta name="twitter:image" content="https://tudominio.com/images/tarta-chocolate.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+        counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .chocolate-guide {
+            background: #f3e5f5;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #9c27b0;
+            margin-bottom: 30px;
+        }
+        
+        .decoration-ideas {
+            background: #e8eaf6;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #3f51b5;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Tarta de Chocolate Intenso</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 1 hora + enfriado</span>
+                <span>🍽️ 8-10 personas</span>
+                <span>⭐ Media dificultad</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tarta de Chocolate" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un glaseado de chocolate perfectamente brillante, añade 1 cucharada de sirope de maíz o miel al chocolate derretido. Esto evita que se formen cristales de azúcar y mantiene un acabado profesional.</p>
+        </div>
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para la base:</h3>
+                <ul class="ingredients-list">
+                    <li>200g de galletas digestive o tipo María</li>
+                    <li>100g de mantequilla derretida</li>
+                    <li>1 cucharada de cacao en polvo sin azúcar</li>
+                    <li>1 pizca de sal</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el relleno de chocolate:</h3>
+                <ul class="ingredients-list">
+                    <li>400g de chocolate negro (70% cacao)</li>
+                    <li>300ml de nata para montar (35% materia grasa)</li>
+                    <li>150g de mantequilla sin sal</li>
+                    <li>4 huevos grandes</li>
+                    <li>150g de azúcar glass</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                    <li>1 pizca de sal</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el glaseado:</h3>
+                <ul class="ingredients-list">
+                    <li>200g de chocolate negro</li>
+                    <li>200ml de nata para montar</li>
+                    <li>2 cucharadas de mantequilla</li>
+                    <li>1 cucharada de sirope de maíz (opcional)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Precalienta el horno a 180°C. Forra un molde desmontable de 23cm con papel de horno.</li>
+                    <li>Para la base: tritura las galletas hasta obtener un polvo fino. Mezcla con el cacao, sal y mantequilla derretida.</li>
+                    <li>Presiona esta mezcla en el fondo del molde, formando una base uniforme. Refrigera 15 minutos mientras preparas el relleno.</li>
+                    <li>En un cazo, calienta la nata hasta que empiece a hervir. Retira del fuego y añade el chocolate troceado. Remueve hasta que esté completamente derretido.</li>
+                    <li>Incorpora la mantequilla en trozos y remueve hasta obtener una mezcla homogénea y brillante. Añade la vainilla y reserva.</li>
+                    <li>En un bol aparte, bate los huevos con el azúcar glass hasta que estén espumosos y hayan duplicado su volumen.</li>
+                    <li>Incorpora cuidadosamente la mezcla de chocolate a los huevos batidos, usando movimientos envolventes para no perder el aire.</li>
+                    <li>Vierte el relleno sobre la base refrigerada y alisa la superficie.</li>
+                    <li>Hornea durante 25-30 minutos. La tarta debe estar firme en los bordes pero aún temblorosa en el centro.</li>
+                    <li>Deja enfriar completamente a temperatura ambiente, luego refrigera durante al menos 4 horas (preferiblemente toda la noche).</li>
+                    <li>Para el glaseado: calienta la nata y viértela sobre el chocolate troceado. Espera 2 minutos y remueve hasta que esté suave.</li>
+                    <li>Añade la mantequilla y el sirope de maíz, mezclando bien. Vierte sobre la tarta fría y extiende uniformemente.</li>
+                    <li>Refrigera 1 hora más antes de desmoldar y servir. Decora al gusto.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="chocolate-guide">
+            <h3>🍫 Guía de Chocolates</h3>
+            <p><strong>Chocolate Negro 70%:</strong> Intenso y menos dulce, perfecto para adultos</p>
+            <p><strong>Chocolate Negro 50-60%:</strong> Equilibrado entre dulce e intenso</p>
+            <p><strong>Chocolate con Leche:</strong> Más suave y dulce, ideal para niños</p>
+            <p><strong>Chocolate Blanco:</strong> Muy dulce y cremoso, combina bien con frutos rojos</p>
+            <p><strong>Mezcla de chocolates:</strong> Usa 70% para el relleno y 50% para el glaseado</p>
+        </div>
+
+        <div class="decoration-ideas">
+            <h3>🎨 Ideas para Decorar</h3>
+            <p><strong>Clásica:</strong> Virutas de chocolate y cacao en polvo espolvoreado</p>
+            <p><strong>Frutas:</strong> Frambuesas frescas, fresas o arándanos rojos</p>
+            <p><strong>Oro:</strong> Láminas de oro comestible para una ocasión especial</p>
+            <p><strong>Texturas:</strong> Crujiente de praliné o nueces caramelizadas</p>
+            <p><strong>Floral:</strong> Pétalos de rosa comestibles y hojas de menta</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones de Tarta de Chocolate</h3>
+            <p><strong>Tarta Sacher:</strong> Añade una capa de mermelada de albaricoque bajo el glaseado</p>
+            <p><strong>Chocolate y Naranja:</strong> Incorpora ralladura de naranja al relleno y decora con gajos confitados</p>
+            <p><strong>Mousse de Chocolate:</strong> Sustituye los huevos por claras montadas a punto de nieve</p>
+            <p><strong>Sin Horno:</strong> Usa gelatina para cuajar y refrigera sin hornear</p>
+            <p><strong>Triple Chocolate:</strong> Combina chocolate negro, con leche y blanco en capas</p>
+            <p><strong>Con Toque de Especias:</strong> Añade canela, cardamomo o una pizca de chile en polvo</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
