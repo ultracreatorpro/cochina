@@ -453,23 +453,35 @@
             }
             /* Agrega esto en tu sección de estilos CSS */
 
-.adsterra-ad {
-    grid-column: 1 / -1; /* Esto hace que el anuncio ocupe todo el ancho */
-    text-align: center;
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border: 1px solid #e9ecef;
-           }
-
-/* Para dispositivos móviles */
-@media (max-width: 768px) {
-    .adsterra-ad {
-        margin: 15px 0;
-        padding: 10px;
-           }
+        /* Anuncios Adsterra */
+        .adsterra-ad {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            min-height: 250px; /* Altura mínima para que sea visible */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+        
+        /* Para dispositivos móviles */
+        @media (max-width: 768px) {
+            .adsterra-ad {
+                margin: 15px 0;
+                padding: 10px;
+                min-height: 200px;
+            }
+        }
+        
+        /* Recetas destacadas */
+        .featured-recipes {
+            margin-bottom: 50px;
+        }
+    }
     </style>
 </head>
 <body>
@@ -811,4 +823,5 @@
     
 </body>
 </html>
+
 
