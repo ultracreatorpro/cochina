@@ -450,36 +450,36 @@
             .hero-subtitle {
                 font-size: 18px;
             }
-            /* Agrega esto en tu sección de estilos CSS */
 
-        /* Anuncios Adsterra */
-        .adsterra-ad {
-            grid-column: 1 / -1;
-            text-align: center;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            border: 1px solid #e9ecef;
-            min-height: 250px; /* Altura mínima para que sea visible */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        /* Para dispositivos móviles */
-        @media (max-width: 768px) {
-            .adsterra-ad {
-                margin: 15px 0;
-                padding: 10px;
-                min-height: 200px;
-            }
-        }
-        
-        /* Recetas destacadas */
-        .featured-recipes {
-            margin-bottom: 50px;
-        }
+       /* Anuncios Adsterra - CORREGIDO */
+           .adsterra-ad {
+    grid-column: 1 / -1; /* Ocupa todo el ancho del grid */
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .adsterra-ad {
+        margin: 15px 0;
+        padding: 15px;
+        min-height: 200px;
+    }
+    
+    /* Asegurar que en móvil también ocupe todo el ancho */
+    .adsterra-ad {
+        grid-column: 1 / -1;
+    }
+}
     </style>
 </head>
 <body>
@@ -821,6 +821,7 @@
     
 </body>
 </html>
+
 
 
 
