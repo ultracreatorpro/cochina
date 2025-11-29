@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroz Moro - Recetas de GourmetChef</title>
+    <meta name="description" content="Receta auténtica de Arroz Moro, el delicioso plato dominicano de arroz con habichuelas negras y coco. Aprende a preparar este sabroso acompañamiento paso a paso.">
+    <meta name="keywords" content="arroz moro, arroz con habichuelas, arroz con coco, receta dominicana, moro de habichuelas, cocina caribeña">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Arroz Moro - GourmetChef">
+    <meta property="og:description" content="Receta auténtica de Arroz Moro, el delicioso plato dominicano de arroz con habichuelas negras y coco">
+    <meta property="og:image" content="https://tudominio.com/images/arroz-moro.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/arroz-moro.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arroz Moro - Recetas de GourmetChef">
+    <meta name="twitter:description" content="Receta auténtica de Arroz Moro, el delicioso plato dominicano de arroz con habichuelas negras y coco">
+    <meta name="twitter:image" content="https://tudominio.com/images/arroz-moro.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Arroz Moro</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 70 minutos</span>
+                <span>🍽️ 6-8 personas</span>
+                <span>⭐ Medio</span>
+            </div>
+            <img src="https://i.ibb.co/fzQCzMxM/photo-4994613285680253804-y.jpg" alt="Arroz Moro" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un arroz moro perfecto, utiliza leche de coco natural y habichuelas negras de calidad. El sofrito bien hecho es la base del sabor, así que tómate tu tiempo para dorar bien los ingredientes.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para el arroz moro:</h3>
+                <ul class="ingredients-list">
+                    <li>2 tazas de arroz de grano largo</li>
+                    <li>1 taza de habichuelas negras cocidas</li>
+                    <li>1 lata (400 ml) de leche de coco</li>
+                    <li>1 cebolla grande, picada</li>
+                    <li>1 pimiento rojo, picado</li>
+                    <li>1 pimiento verde, picado</li>
+                    <li>4 dientes de ajo, machacados</li>
+                    <li>2 cucharadas de aceite de oliva</li>
+                    <li>1 cucharadita de orégano seco</li>
+                    <li>1 cucharadita de comino molido</li>
+                    <li>2 hojas de laurel</li>
+                    <li>4 tazas de caldo de pollo o vegetal</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>1 cucharadita de cilantro fresco picado</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el sofrito especial:</h3>
+                <ul class="ingredients-list">
+                    <li>2 cucharadas de pasta de tomate</li>
+                    <li>1 cucharadita de achiote en polvo</li>
+                    <li>1 cebolla pequeña, picada finamente</li>
+                    <li>2 ajíes dulces picados (opcional)</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para decorar:</h3>
+                <ul class="ingredients-list">
+                    <li>Cilantro fresco picado</li>
+                    <li>Rodajas de aguacate</li>
+                    <li>Limón o lima</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Comienza lavando el arroz bajo agua fría hasta que el agua salga clara. Esto elimina el exceso de almidón y evita que el arroz quede pegajoso.</li>
+                    <li>En una olla grande, calienta el aceite de oliva a fuego medio. Agrega la cebolla, pimiento rojo y pimiento verde. Sofríe durante 5-7 minutos hasta que las verduras estén tiernas.</li>
+                    <li>Añade el ajo machacado y cocina por 1 minuto más hasta que esté fragante. Luego incorpora la pasta de tomate y el achiote, mezclando bien.</li>
+                    <li>Agrega el arroz lavado y escurrido a la olla. Revuelve constantemente durante 3-4 minutos para que los granos se impregnen con el sofrito y tomen un color uniforme.</li>
+                    <li>Vierte la leche de coco y el caldo en la olla. Añade las habichuelas negras cocidas, orégano, comino, hojas de laurel, sal y pimienta. Mezcla todo bien.</li>
+                    <li>Lleva la mezcla a ebullición, luego reduce el fuego a bajo, tapa la olla y cocina durante 20-25 minutos. No destapes la olla durante este tiempo.</li>
+                    <li>Después de 20 minutos, revisa si el arroz está cocido. Si aún hay líquido y el arroz no está listo, continúa cocinando por 5-10 minutos más.</li>
+                    <li>Una vez que el arroz esté cocido y haya absorbido todo el líquido, retira la olla del fuego. Deja reposar tapado durante 10 minutos.</li>
+                    <li>Destapa la olla y con un tenedor, esponja suavemente el arroz para separar los granos. Incorpora el cilantro fresco picado.</li>
+                    <li>Sirve el arroz moro caliente, decorado con más cilantro fresco, rodajas de aguacate y un toque de limón o lima. ¡Disfruta este delicioso plato caribeño!</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🌴 Variación Tipica</h3>
+                    <p>Para un auténtico sabor dominicano, puedes agregar un poco de coco rallado tostado al final de la cocción. También es común servir el arroz moro con carne guisada o pollo asado.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="arroz.html" class="back-button">← Volver a Recetas de Arroz</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
