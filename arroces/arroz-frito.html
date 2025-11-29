@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroz Frito - Recetas de GourmetChef</title>
+    <meta name="description" content="Receta auténtica de Arroz Frito al estilo chino, fácil de preparar en casa. Aprende a hacer este plato rápido y delicioso con ingredientes frescos y sabrosos.">
+    <meta name="keywords" content="arroz frito, comida china, receta rápida, wok, cocina asiática, plato principal">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Arroz Frito - GourmetChef">
+    <meta property="og:description" content="Receta auténtica de Arroz Frito al estilo chino, fácil de preparar en casa">
+    <meta property="og:image" content="https://tudominio.com/images/arroz-frito.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/arroz-frito.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arroz Frito - Recetas de GourmetChef">
+    <meta name="twitter:description" content="Receta auténtica de Arroz Frito al estilo chino, fácil de preparar en casa">
+    <meta name="twitter:image" content="https://tudominio.com/images/arroz-frito.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Arroz Frito</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 25 minutos</span>
+                <span>🍽️ 4 personas</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="" alt="Arroz Frito con verduras y pollo" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un auténtico arroz frito, usa siempre arroz del día anterior que haya sido refrigerado. El arroz frío tiene menos humedad y se fríe mejor, resultando en granos sueltos y textura perfecta.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Base del arroz frito:</h3>
+                <ul class="ingredients-list">
+                    <li>3 tazas de arroz blanco cocido (preferiblemente del día anterior)</li>
+                    <li>2 huevos grandes</li>
+                    <li>3 cucharadas de aceite de sésamo o vegetal</li>
+                    <li>3 dientes de ajo, picados finamente</li>
+                    <li>1 cebolla blanca, picada en cubos pequeños</li>
+                    <li>2 cebollines (cebolla verde), picados</li>
+                    <li>1 zanahoria mediana, picada en cubos pequeños</li>
+                    <li>1/2 taza de arvejas (guisantes) congeladas</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Proteína (elegir una):</h3>
+                <ul class="ingredients-list">
+                    <li>200g de pechuga de pollo, en cubos pequeños</li>
+                    <li>200g de camarones pelados</li>
+                    <li>200g de carne de cerdo, en tiras finas</li>
+                    <li>150g de tofu firme, en cubos</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Salsa y condimentos:</h3>
+                <ul class="ingredients-list">
+                    <li>3 cucharadas de salsa de soja</li>
+                    <li>1 cucharada de salsa de ostras</li>
+                    <li>1 cucharadita de aceite de sésamo</li>
+                    <li>1/2 cucharadita de jengibre fresco rallado</li>
+                    <li>1/4 cucharadita de pimienta blanca</li>
+                    <li>Sal al gusto</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para decorar:</h3>
+                <ul class="ingredients-list">
+                    <li>Cebollín fresco picado</li>
+                    <li>Semillas de sésamo tostadas</li>
+                    <li>Rodajas de limón o lima</li>
+                    <li>Sriracha o salsa picante (opcional)</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara todos los ingredientes picando la cebolla, ajo, zanahoria y cebollines. Si usas arroz recién cocido, extiéndelo en una bandeja y déjalo enfriar completamente en el refrigerador por al menos 1 hora.</li>
+                    <li>En un bol pequeño, mezcla la salsa de soja, salsa de ostras, aceite de sésamo, jengibre rallado y pimienta blanca. Reserva esta mezcla de salsa.</li>
+                    <li>Calienta un wok o sartén grande a fuego alto. Agrega 1 cucharada de aceite y cuando esté caliente, añade los huevos ligeramente batidos. Revuelve rápidamente para hacer huevos revueltos en trozos pequeños. Retira del wok y reserva.</li>
+                    <li>En el mismo wok, agrega otra cucharada de aceite. Si estás usando proteína (pollo, camarones, cerdo o tofu), saltéala durante 2-3 minutos hasta que esté cocida. Retira y reserva con los huevos.</li>
+                    <li>Agrega la cucharada restante de aceite al wok. Sofríe el ajo por 30 segundos hasta que esté fragante, luego añade la cebolla y zanahoria. Saltea por 2-3 minutos hasta que las verduras empiecen a ablandarse.</li>
+                    <li>Incorpora las arvejas congeladas y la parte blanca de los cebollines. Saltea por 1 minuto más.</li>
+                    <li>Añade el arroz frío al wok. Rompe cualquier grumo con una espátula y saltea durante 2-3 minutos, mezclando bien con las verduras.</li>
+                    <li>Vierte la mezcla de salsa preparada sobre el arroz. Mezcla rápidamente para distribuir uniformemente por todo el arroz.</li>
+                    <li>Regresa la proteína cocida y los huevos revueltos al wok. Mezcla todo suavemente durante 1-2 minutos hasta que esté bien combinado y caliente.</li>
+                    <li>Prueba y ajusta la sazón si es necesario. Puedes añadir más salsa de soja o sal según tu preferencia.</li>
+                    <li>Apaga el fuego e incorpora la parte verde de los cebollines picados. Mezcla una última vez.</li>
+                    <li>Sirve inmediatamente el arroz frito caliente, decorado con semillas de sésamo tostadas y cebollín fresco adicional. Acompaña con rodajas de limón o lima y salsa picante si lo deseas.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0;">🔥 Técnica del Wok Perfecto</h3>
+                    <p><strong>Fuego alto:</strong> Cocina siempre a temperatura máxima para lograr ese sabor auténtico a wok.<br>
+                    <strong>Preparación previa:</strong> Ten todos los ingredientes picados y medidos antes de empezar a cocinar.<br>
+                    <strong>Movimiento constante:</strong> Mantén los ingredientes en movimiento para una cocción uniforme y evitar que se quemen.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🌏 Variaciones Internacionales</h3>
+                    <p><strong>Arroz Frito Tailandés:</strong> Añade pasta de curry rojo, albahaca tailandesa y chiles.<br>
+                    <strong>Arroz Frito Vietnamita:</strong> Incorpora lemongrass, cilantro fresco y salsa de pescado.<br>
+                    <strong>Arroz Frito Hawaiiano:</strong> Agrega piña en cubos, jamón y anacardos tostados.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #fff3e0; border-left: 4px solid #ff9800;">
+                    <h3 style="color: #ef6c00;">🍚 Usa lo que Tengas</h3>
+                    <p>El arroz frito es perfecto para aprovechar sobras. Puedes añadir:<br>
+                    • Maíz dulce • Pimiento rojo o verde • Brotes de soja<br>
+                    • Champiñones • Espinacas • Brócoli • Cualquier verdura que tengas en el refrigerador</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="arroz.html" class="back-button">← Volver a Recetas de Arroz</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
