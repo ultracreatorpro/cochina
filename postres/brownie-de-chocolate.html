@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownie de Chocolate - Recetas de Postres GourmetChef</title>
+    <meta name="description" content="Receta de Brownie de Chocolate casero, húmedo y con textura perfecta. Aprende a preparar este clásico postre de chocolate paso a paso.">
+    <meta name="keywords" content="brownie de chocolate, postre de chocolate, brownie casero, postre fácil, chocolate, receta brownie">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Brownie de Chocolate - GourmetChef">
+    <meta property="og:description" content="Receta de Brownie de Chocolate casero, húmedo y con textura perfecta">
+    <meta property="og:image" content="https://tudominio.com/images/brownie-chocolate.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/brownie-chocolate.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brownie de Chocolate - Recetas de Postres GourmetChef">
+    <meta name="twitter:description" content="Receta de Brownie de Chocolate casero, húmedo y con textura perfecta">
+    <meta name="twitter:image" content="https://tudominio.com/images/brownie-chocolate.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Brownie de Chocolate</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 45 minutos</span>
+                <span>🍽️ 12 porciones</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://i.ibb.co/pjxp9J0F/Gemini-Generated-Image-64luz064luz064lu.png" alt="Brownie de Chocolate húmedo" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un brownie perfectamente húmedo por dentro y con una capa crujiente por fuera, no hornees en exceso. Retira del horno cuando al insertar un palillo salga con algunas migas húmedas, no limpio.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para el brownie:</h3>
+                <ul class="ingredients-list">
+                    <li>200g de chocolate negro (70% cacao)</li>
+                    <li>150g de mantequilla sin sal</li>
+                    <li>200g de azúcar blanco</li>
+                    <li>100g de azúcar moreno</li>
+                    <li>3 huevos grandes a temperatura ambiente</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                    <li>100g de harina de trigo</li>
+                    <li>30g de cacao en polvo sin azúcar</li>
+                    <li>1/4 cucharadita de sal</li>
+                    <li>1/2 cucharadita de levadura en polvo</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Mix-ins opcionales:</h3>
+                <ul class="ingredients-list">
+                    <li>100g de nueces picadas</li>
+                    <li>100g de chips de chocolate</li>
+                    <li>50g de avellanas tostadas</li>
+                    <li>100g de nueces pecanas</li>
+                    <li>Maldon sea salt para espolvorear</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el molde:</h3>
+                <ul class="ingredients-list">
+                    <li>Mantequilla para engrasar</li>
+                    <li>Harina para enharinar</li>
+                    <li>Papel de hornear</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para servir:</h3>
+                <ul class="ingredients-list">
+                    <li>Helado de vainilla</li>
+                    <li>Salsa de chocolate caliente</li>
+                    <li>Frutos rojos frescos</li>
+                    <li>Crema batida</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Precalienta el horno a 180°C (350°F). Prepara un molde cuadrado de 20x20cm engrasándolo con mantequilla y forrando el fondo con papel de hornear.</li>
+                    <li>En un bol resistente al calor, combina el chocolate picado y la mantequilla. Derrite a baño María o en el microondas en intervalos de 30 segundos, revolviendo entre cada intervalo hasta que esté suave y brillante.</li>
+                    <li>En un bol aparte, bate los huevos con el azúcar blanco, azúcar moreno y esencia de vainilla. Bate durante 3-4 minutos hasta que la mezcla esté pálida y esponjosa, y forme un "ribbon" cuando levantes el batidor.</li>
+                    <li>Vierte lentamente el chocolate derretido en la mezcla de huevos, batiendo constantemente a velocidad baja hasta que esté completamente incorporado.</li>
+                    <li>Cierne la harina, cacao en polvo, sal y levadura sobre la mezcla de chocolate. Usa una espátula para incorporar los ingredientes secos con movimientos envolventes, solo hasta que desaparezcan los grumos. No mezcles en exceso.</li>
+                    <li>Si estás usando mix-ins como nueces o chips de chocolate, incorpóralos en este punto, reservando algunos para decorar la superficie.</li>
+                    <li>Vierte la masa en el molde preparado y alisa la superficie con una espátula. Si lo deseas, espolvorea los mix-ins reservados y un poco de sal en escamas sobre la superficie.</li>
+                    <li>Hornea durante 25-30 minutos. Para comprobar la cocción, inserta un palillo en el centro - debe salir con algunas migas húmedas adheridas, pero no con masa líquida.</li>
+                    <li>Retira el brownie del horno y coloca el molde sobre una rejilla para que se enfríe completamente. Es crucial no cortar el brownie caliente, ya que continuará cocinándose mientras se enfría.</li>
+                    <li>Deja enfriar por lo menos 2 horas antes de desmoldar y cortar. Para cortes perfectos, usa un cuchillo largo y afilado, limpiándolo entre cada corte.</li>
+                    <li>Sirve los brownies a temperatura ambiente. Para una experiencia gourmet, calienta ligeramente y sirve con una bola de helado de vainilla y salsa de chocolate caliente.</li>
+                    <li>Almacena los brownies en un recipiente hermético a temperatura ambiente hasta por 5 días, o congela por hasta 3 meses.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #4e342e; border-left: 4px solid #3e2723;">
+                    <h3 style="color: #d7ccc8;">🍫 Tipos de Chocolate</h3>
+                    <p><strong>Chocolate 70%:</strong> Textura densa y sabor intenso, ideal para brownies.<br>
+                    <strong>Chocolate semidulce:</strong> Más dulce, buena opción para principiantes.<br>
+                    <strong>Chocolate con leche:</strong> Resultado más suave y menos intenso.<br>
+                    <strong>Cacao en polvo:</strong> Usa siempre cacao sin azúcar para controlar la dulzura.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">✨ Variaciones Creativas</h3>
+                    <p><strong>Brownie de Menta:</strong> Añade extracto de menta y chips de chocolate blanco.<br>
+                    <strong>Brownie de Naranja:</strong> Incorpora ralladura de naranja y Grand Marnier.<br>
+                    <strong>Brownie de Café:</strong> Agrega café espresso concentrado.<br>
+                    <strong>Brownie Salado:</strong> Más sal y nueces tostadas con sal.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #fff3e0; border-left: 4px solid #ff9800;">
+                    <h3 style="color: #ef6c00;">⚠️ Errores Comunes</h3>
+                    <p><strong>Brownie seco:</strong> Horneado en exceso o demasiada harina.<br>
+                    <strong>Textura gomosa:</strong> Mezclado en exceso después de añadir harina.<br>
+                    <strong>No se eleva:</strong> Polvo de hornear viejo o mal medido.<br>
+                    <strong>Grumos de harina:</strong> No cernir los ingredientes secos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
