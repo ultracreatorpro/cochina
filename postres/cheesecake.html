@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesecake - Recetas de Postres GourmetChef</title>
+    <meta name="description" content="Receta de Cheesecake cremoso y suave con base de galleta. Aprende a preparar este clásico postre americano paso a paso sin complicaciones.">
+    <meta name="keywords" content="cheesecake, postre de queso, tarta de queso, postre americano, receta cheesecake, postre cremoso">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Cheesecake - GourmetChef">
+    <meta property="og:description" content="Receta de Cheesecake cremoso y suave con base de galleta">
+    <meta property="og:image" content="https://tudominio.com/images/cheesecake.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/cheesecake.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cheesecake - Recetas de Postres GourmetChef">
+    <meta name="twitter:description" content="Receta de Cheesecake cremoso y suave con base de galleta">
+    <meta name="twitter:image" content="https://tudominio.com/images/cheesecake.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Cheesecake</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 8 horas (incluye enfriado)</span>
+                <span>🍽️ 10-12 porciones</span>
+                <span>⭐ Medio</span>
+            </div>
+            <img src="https://i.ibb.co/Y4k4DkKj/unnamed-2.jpg" alt="Cheesecake cremoso con base de galleta" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para evitar que el cheesecake se agriete, enfría gradualmente el horno apagándolo y dejando la puerta entreabierta durante 1 hora. Los ingredientes deben estar a temperatura ambiente antes de comenzar.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para la base:</h3>
+                <ul class="ingredients-list">
+                    <li>200g de galletas digestive o María</li>
+                    <li>100g de mantequilla sin sal, derretida</li>
+                    <li>2 cucharadas de azúcar</li>
+                    <li>1/4 cucharadita de sal</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el relleno:</h3>
+                <ul class="ingredients-list">
+                    <li>900g de queso crema (a temperatura ambiente)</li>
+                    <li>200g de azúcar blanco</li>
+                    <li>3 cucharadas de harina de trigo</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                    <li>Ralladura de 1 limón</li>
+                    <li>4 huevos grandes (a temperatura ambiente)</li>
+                    <li>200ml de crema de leche (nata) para batir</li>
+                    <li>1 pizca de sal</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para la crema agria (opcional):</h3>
+                <ul class="ingredients-list">
+                    <li>200ml de crema agria</li>
+                    <li>2 cucharadas de azúcar glass</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para decorar:</h3>
+                <ul class="ingredients-list">
+                    <li>Frutos rojos frescos (fresas, frambuesas, arándanos)</li>
+                    <li>Salsa de frutos rojos</li>
+                    <li>Menta fresca</li>
+                    <li>Azúcar glass para espolvorear</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Precalienta el horno a 160°C (325°F). Forra un molde desmontable de 23cm con papel de hornear en el fondo y engrasa ligeramente los lados.</li>
+                    <li>Para la base: Tritura las galletas hasta obtener un polvo fino. Mezcla con el azúcar y la sal, luego incorpora la mantequilla derretida hasta que la mezcla tenga textura de arena húmeda.</li>
+                    <li>Presiona firmemente la mezcla de galletas en el fondo del molde, formando una base uniforme. Hornea durante 10 minutos, luego retira y deja enfriar mientras preparas el relleno.</li>
+                    <li>Reduce la temperatura del horno a 150°C (300°F). Coloca una bandeja con agua en el fondo del horno para crear vapor (esto ayuda a prevenir grietas).</li>
+                    <li>En un bol grande, bate el queso crema a velocidad media hasta que esté suave y cremoso (aproximadamente 2 minutos). Raspa los lados del bol frecuentemente.</li>
+                    <li>Agrega el azúcar gradualmente, batiendo bien después de cada adición. Luego añade la harina, vainilla, ralladura de limón y sal. Mezcla hasta combinar.</li>
+                    <li>Incorpora los huevos uno por uno, batiendo solo hasta que se mezclen. No batas en exceso para evitar incorporar demasiado aire.</li>
+                    <li>Por último, vierte la crema de leche y mezcla suavemente hasta obtener una preparación homogénea y cremosa.</li>
+                    <li>Vierte el relleno sobre la base de galleta enfriada. Golpea suavemente el molde sobre la encimera para liberar burbujas de aire.</li>
+                    <li>Hornea durante 1 hora y 15 minutos, o hasta que los bordes estén firmes pero el centro todavía tenga un ligero movimiento al agitar el molde.</li>
+                    <li>Apaga el horno y deja el cheesecake dentro con la puerta entreabierta durante 1 hora. Esto permite un enfriamiento gradual que previene grietas.</li>
+                    <li>Retira del horno y deja enfriar completamente a temperatura ambiente (aproximadamente 2 horas). Luego refrigera por al menos 6 horas, preferiblemente toda la noche.</li>
+                    <li>Si usas la crema agria: Mezcla todos los ingredientes y extiende sobre el cheesecake frío antes de servir.</li>
+                    <li>Para desmoldar: Pasa un cuchillo caliente alrededor del borde. Decora con frutos rojos frescos y menta. Sirve frío.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #fff8e1; border-left: 4px solid #ffc107;">
+                    <h3 style="color: #e74c3c;">🧀 Tipos de Queso Crema</h3>
+                    <p style="color: #333;"><strong>Philadelphia:</strong> Textura suave y cremosa, resultado consistente.<br>
+                    <strong>Queso crema genérico:</strong> Más económico, puede variar en textura.<br>
+                    <strong>Queso crema light:</strong> Menos grasa pero puede afectar la textura.<br>
+                    <strong>Importante:</strong> Siempre usar a temperatura ambiente.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🍓 Variaciones Populares</h3>
+                    <p style="color: #333;"><strong>Cheesecake de Fresa:</strong> Puré de fresas en el relleno.<br>
+                    <strong>Cheesecake de Limón:</strong> Doble cantidad de ralladura y jugo de limón.<br>
+                    <strong>Cheesecake de Chocolate:</strong> Añade chocolate derretido y cacao.<br>
+                    <strong>Cheesecake de Dulce de Leche:</strong> Capas de dulce de leche en el relleno.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0;">⚠️ Solución de Problemas</h3>
+                    <p style="color: #333;"><strong>Se agrieta:</strong> Enfriamiento muy rápido o exceso de aire.<br>
+                    <strong>Textura granulada:</strong> Queso crema frío o batido insuficiente.<br>
+                    <strong>Muy denso:</strong> Demasiado batido después de añadir huevos.<br>
+                    <strong>Base empapada:</strong> No enfriar la base antes de añadir relleno.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #fce4ec; border-left: 4px solid #ec407a;">
+                    <h3 style="color: #c2185b;">❄️ Sin Horno (Opción Fría)</h3>
+                    <p style="color: #333;"><strong>Base igual:</strong> Preparar base normalmente.<br>
+                    <strong>Relleno:</strong> 500g queso crema + 200ml crema batida + 100g azúcar glass + gelatina.<br>
+                    <strong>Preparación:</strong> Mezclar todo y refrigerar 4+ horas.<br>
+                    <strong>Perfecto para verano!</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
