@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berenjenas Rellenas - Recetas de GourmetChef</title>
+    <meta name="description" content="Receta de Berenjenas Rellenas al horno, un plato vegetariano delicioso y saludable. Aprende a preparar estas berenjenas rellenas de carne, verduras y queso gratinado.">
+    <meta name="keywords" content="berenjenas rellenas, receta vegetariana, berenjena al horno, plato principal, comida saludable, receta mediterránea">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Berenjenas Rellenas - GourmetChef">
+    <meta property="og:description" content="Receta de Berenjenas Rellenas al horno, un plato vegetariano delicioso y saludable">
+    <meta property="og:image" content="https://tudominio.com/images/berenjenas-rellenas.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/berenjenas-rellenas.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Berenjenas Rellenas - Recetas de GourmetChef">
+    <meta name="twitter:description" content="Receta de Berenjenas Rellenas al horno, un plato vegetariano delicioso y saludable">
+    <meta name="twitter:image" content="https://tudominio.com/images/berenjenas-rellenas.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Berenjenas Rellenas</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 1 hora 15 minutos</span>
+                <span>🍽️ 4 personas</span>
+                <span>⭐ Medio</span>
+            </div>
+            <img src="https://i.ibb.co/5WcMXNB5/unnamed-16.jpg" alt="Berenjenas Rellenas gratinadas al horno" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para eliminar el amargor natural de las berenjenas y lograr una textura más tierna, espolvorea sal sobre las mitades después de cortarlas y deja reposar 30 minutos. Enjuaga y seca bien antes de hornear.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para las berenjenas:</h3>
+                <ul class="ingredients-list">
+                    <li>2 berenjenas grandes y firmes</li>
+                    <li>3 cucharadas de aceite de oliva</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>1 cucharadita de orégano seco</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el relleno de carne:</h3>
+                <ul class="ingredients-list">
+                    <li>300g de carne picada mixta (cerdo y ternera)</li>
+                    <li>1 cebolla grande, picada finamente</li>
+                    <li>2 dientes de ajo, picados</li>
+                    <li>1 pimiento rojo, picado</li>
+                    <li>1 zanahoria, rallada</li>
+                    <li>200g de tomate triturado</li>
+                    <li>1 cucharadita de pimentón dulce</li>
+                    <li>1/2 cucharadita de comino molido</li>
+                    <li>50ml de vino blanco (opcional)</li>
+                    <li>2 cucharadas de aceite de oliva</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para la cobertura de queso:</h3>
+                <ul class="ingredients-list">
+                    <li>150g de queso mozzarella rallado</li>
+                    <li>50g de queso parmesano rallado</li>
+                    <li>50g de queso cheddar rallado (opcional)</li>
+                    <li>1 cucharada de pan rallado</li>
+                    <li>1 cucharada de perejil fresco picado</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para servir:</h3>
+                <ul class="ingredients-list">
+                    <li>Ensalada verde fresca</li>
+                    <li>Pan crujiente</li>
+                    <li>Salsa de tomate casera</li>
+                    <li>Vino tinto joven</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Variaciones vegetarianas:</h3>
+                <ul class="ingredients-list">
+                    <li>200g de champiñones picados en lugar de carne</li>
+                    <li>1 taza de quinoa cocida</li>
+                    <li>200g de espinacas cocidas y escurridas</li>
+                    <li>100g de nueces picadas</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Precalienta el horno a 200°C (400°F). Lava las berenjenas y sécalas bien. Corta cada berenjena por la mitad a lo largo, dejando el tallo intacto si es posible.</li>
+                    <li>Con un cuchillo, haz cortes en diagonal en la pulpa de cada mitad, teniendo cuidado de no perforar la piel. Esto ayudará a que se cocine uniformemente.</li>
+                    <li>Coloca las mitades de berenjena en una bandeja para horno con el lado cortado hacia arriba. Rocía generosamente con aceite de oliva, espolvorea con sal, pimienta y orégano.</li>
+                    <li>Hornea durante 25-30 minutos, hasta que la pulpa esté tierna y la piel comience a arrugarse. Retira del horno y deja enfriar lo suficiente para manipular.</li>
+                    <li>Mientras se hornean las berenjenas, prepara el relleno: En una sartén grande, calienta 2 cucharadas de aceite de oliva a fuego medio. Añade la cebolla picada y sofríe durante 5 minutos hasta que esté transparente.</li>
+                    <li>Agrega el ajo y el pimiento rojo picado. Sofríe durante 3-4 minutos más hasta que las verduras estén tiernas. Incorpora la zanahoria rallada y cocina 2 minutos.</li>
+                    <li>Añade la carne picada y cocina a fuego medio-alto, desmenuzándola con una cuchara de madera, hasta que pierda el color rojo (aproximadamente 5-7 minutos).</li>
+                    <li>Si usas vino blanco, viértelo ahora y deja que se evapore durante 1-2 minutos. Agrega el tomate triturado, pimentón dulce, comino, sal y pimienta. Mezcla bien.</li>
+                    <li>Reduce el fuego a medio-bajo y cocina el relleno durante 15-20 minutos, revolviendo ocasionalmente, hasta que la carne esté bien cocida y los sabores integrados. Si el relleno queda muy seco, añade un poco de agua o caldo.</li>
+                    <li>Una vez las berenjenas estén lo suficientemente frías para manipular, con una cuchara, retira cuidadosamente la mayor parte de la pulpa, dejando un borde de aproximadamente 1cm para que las berenjenas mantengan su forma.</li>
+                    <li>Pica la pulpa de berenjena extraída y añádela al relleno de carne. Mezcla bien y cocina 5 minutos más para integrar los sabores. Prueba y ajusta la sazón si es necesario.</li>
+                    <li>Reduce la temperatura del horno a 180°C (350°F). Rellena las cáscaras de berenjena con la mezcla de carne, presionando ligeramente para que quede bien compacta.</li>
+                    <li>En un bol pequeño, mezcla los quesos rallados con el pan rallado y el perejil picado. Espolvorea generosamente sobre cada berenjena rellena.</li>
+                    <li>Hornea las berenjenas rellenas durante 20-25 minutos, hasta que el queso esté derretido, dorado y burbujeante.</li>
+                    <li>Para un gratinado extra, puedes encender el grill del horno durante los últimos 2-3 minutos, vigilando cuidadosamente para que no se quemen.</li>
+                    <li>Retira del horno y deja reposar 5 minutos antes de servir. Esto permite que los jugos se redistribuyan y sea más fácil de manipular.</li>
+                    <li>Sirve las berenjenas rellenas calientes, acompañadas de ensalada verde fresca y pan crujiente. Rocía con un hilo de aceite de oliva virgen extra al momento de servir.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #fff8e1; border-left: 4px solid #ffc107;">
+                    <h3 style="color: #e74c3c;">🍆 El Secreto de las Berenjenas Perfectas</h3>
+                    <p style="color: #333;"><strong>Salar y reposar:</strong> Elimina amargor y reduce absorción de aceite.<br>
+                    <strong>Hornear primero:</strong> Ablanda la pulpa para fácil extracción.<br>
+                    <strong>Dejar borde:</strong> 1cm para mantener estructura.<br>
+                    <strong>Pulpa extra:</strong> Añadir al relleno para más sabor.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🌍 Variaciones Internacionales</h3>
+                    <p style="color: #333;"><strong>Griega (Moussaka):</strong> Con bechamel y carne de cordero.<br>
+                    <strong>Italiana (Melanzane ripiene):</strong> Ricotta, mozzarella y albahaca.<br>
+                    <strong>Turca (Karnıyarık):</strong> Carne picada con cebolla y perejil.<br>
+                    <strong>Libanesa (Sheikh al-Mahshi):</strong> Carne de cordero y piñones.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0;">⚠️ Problemas y Soluciones</h3>
+                    <p style="color: #333;"><strong>Berenjenas amargas:</strong> No salar suficiente tiempo.<br>
+                    <strong>Piel muy dura:</strong> Hornear más tiempo o pelar parcialmente.<br>
+                    <strong>Relleno seco:</strong> Añadir más tomate o caldo al cocinar.<br>
+                    <strong>Queso no gratinado:</strong> Hornear más tiempo o usar grill.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #f3e5f5; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #7b1fa2;">🥦 Versiones Vegetarianas</h3>
+                    <p style="color: #333;"><strong>De quinoa y verduras:</strong> Quinoa con pimiento y maíz.<br>
+                    <strong>De champiñones:</strong> Variedad de setas salteadas.<br>
+                    <strong>De espinacas y queso:</strong> Espinacas, ricotta y nuez moscada.<br>
+                    <strong>De lentejas:</strong> Lentejas cocidas con especias.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #ffebee; border-left: 4px solid #f44336;">
+                    <h3 style="color: #c62828;">🧀 Mezclas de Queso Ideales</h3>
+                    <p style="color: #333;"><strong>Clásica:</strong> Mozzarella + parmesano para gratinar.<br>
+                    <strong>Cremosa:</strong> Ricotta + queso de cabra.<br>
+                    <strong>Intensa:</strong> Gorgonzola + queso azul.<br>
+                    <strong>Mediterránea:</strong> Feta + queso halloumi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
