@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curry de Garbanzos - Recetas de GourmetChef</title>
+    <meta name="description" content="Receta de Curry de Garbanzos, un plato vegetariano indio lleno de sabor y especias. Aprende a preparar este curry cremoso con garbanzos, leche de coco y especias aromáticas.">
+    <meta name="keywords" content="curry de garbanzos, receta vegetariana, comida india, garbanzos, curry vegetariano, plato vegano, especias indias">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Curry de Garbanzos - GourmetChef">
+    <meta property="og:description" content="Receta de Curry de Garbanzos, un plato vegetariano indio lleno de sabor y especias">
+    <meta property="og:image" content="https://tudominio.com/images/curry-garbanzos.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/curry-garbanzos.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Curry de Garbanzos - Recetas de GourmetChef">
+    <meta name="twitter:description" content="Receta de Curry de Garbanzos, un plato vegetariano indio lleno de sabor y especias">
+    <meta name="twitter:image" content="https://tudominio.com/images/curry-garbanzos.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Curry de Garbanzos</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 45 minutos</span>
+                <span>🍽️ 4-6 personas</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://i.ibb.co/Wv23HNDX/unnamed-14.jpg" alt="Curry de Garbanzos cremoso con arroz" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un curry más auténtico, tuesta las especias en seco antes de añadirlas al aceite caliente. Esto libera sus aceites esenciales y multiplica su sabor y aroma. Siempre prepara el garam masala fresco si es posible.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para el curry:</h3>
+                <ul class="ingredients-list">
+                    <li>2 latas (400g cada una) de garbanzos cocidos</li>
+                    <li>1 cebolla grande, picada finamente</li>
+                    <li>3 dientes de ajo, picados</li>
+                    <li>2cm de jengibre fresco, rallado</li>
+                    <li>1 pimiento rojo, en cubos pequeños</li>
+                    <li>400ml de leche de coco</li>
+                    <li>400g de tomate triturado</li>
+                    <li>2 cucharadas de aceite de coco o vegetal</li>
+                    <li>200ml de caldo de verduras</li>
+                    <li>Sal al gusto</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Especias para el curry:</h3>
+                <ul class="ingredients-list">
+                    <li>2 cucharaditas de comino molido</li>
+                    <li>2 cucharaditas de cúrcuma molida</li>
+                    <li>1 cucharadita de cilantro molido</li>
+                    <li>1 cucharadita de garam masala</li>
+                    <li>1/2 cucharadita de canela molida</li>
+                    <li>1/2 cucharadita de cardamomo molido</li>
+                    <li>1/4 cucharadita de cayena (o al gusto)</li>
+                    <li>2 hojas de laurel</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para añadir al final:</h3>
+                <ul class="ingredients-list">
+                    <li>Jugo de 1 limón</li>
+                    <li>1 manojo de cilantro fresco picado</li>
+                    <li>100g de espinacas frescas (opcional)</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para servir:</h3>
+                <ul class="ingredients-list">
+                    <li>Arroz basmati o jazmín</li>
+                    <li>Naan o pan chapati</li>
+                    <li>Yogur natural o raita</li>
+                    <li>Rodajas de limón</li>
+                    <li>Cilantro fresco extra</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Ingredientes opcionales:</h3>
+                <ul class="ingredients-list">
+                    <li>200g de patatas, en cubos</li>
+                    <li>1 boniato mediano, en cubos</li>
+                    <li>200g de coliflor, en floretes</li>
+                    <li>1 calabacín, en cubos</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara todos los ingredientes: pica la cebolla, ajo, jengibre y pimiento. Lava y escurre bien los garbanzos cocidos. Si usas verduras adicionales como patatas o coliflor, córtalas en trozos uniformes.</li>
+                    <li>En una sartén seca a fuego medio, tuesta ligeramente las especias secas (comino, cúrcuma, cilantro, canela, cardamomo) durante 1-2 minutos, revolviendo constantemente hasta que estén fragantes. Ten cuidado de no quemarlas. Retira y reserva.</li>
+                    <li>En una olla grande o cacerola, calienta el aceite a fuego medio. Añade la cebolla picada y sofríe durante 5-7 minutos hasta que esté transparente y tierna.</li>
+                    <li>Agrega el ajo, jengibre y pimiento rojo. Sofríe durante 3-4 minutos más hasta que estén fragantes y el pimiento comience a ablandarse.</li>
+                    <li>Incorpora las especias tostadas y las hojas de laurel a la mezcla de cebolla. Sofríe durante 1 minuto más, revolviendo constantemente para que las especias se impregnen en el aceite.</li>
+                    <li>Añade el tomate triturado y cocina durante 5 minutos, revolviendo ocasionalmente, hasta que el tomate se haya cocido y la mezcla haya espesado ligeramente.</li>
+                    <li>Si usas verduras adicionales que requieran más tiempo de cocción (como patatas o boniato), añádelas ahora junto con el caldo de verduras. Cocina a fuego medio durante 10-15 minutos, hasta que las verduras estén tiernas.</li>
+                    <li>Agrega los garbanzos escurridos y revuelve para que se cubran con la mezcla de especias. Vierte la leche de coco y mezcla bien. Si la mezqueda está muy espesa, añade más caldo o agua.</li>
+                    <li>Lleva a ebullición, luego reduce el fuego a bajo. Tapa y cocina a fuego lento durante 15-20 minutos, revolviendo ocasionalmente, para que los sabores se integren y los garbanzos absorban el sabor del curry.</li>
+                    <li>Mientras se cocina el curry, prepara el arroz basmati siguiendo las instrucciones del paquete. Tradicionalmente se lava el arroz varias veces hasta que el agua salga clara, luego se cocina con el doble de agua que de arroz.</li>
+                    <li>Pasado el tiempo de cocción, retira las hojas de laurel. Prueba y ajusta la sazón con sal si es necesario.</li>
+                    <li>Apaga el fuego y añade el jugo de limón y el cilantro fresco picado. Si usas espinacas, incorpóralas ahora y deja que se ablanden con el calor residual del curry.</li>
+                    <li>Espolvorea con un poco más de garam masala y cilantro fresco justo antes de servir para realzar los aromas.</li>
+                    <li>Sirve el curry de garbanzos caliente sobre arroz basmati. Acompaña con naan o chapati, yogur natural y rodajas de limón. Decora con cilantro fresco adicional.</li>
+                    <li>Para una presentación más elegante, sirve en cuencos individuales con el arroz por un lado y el curry por el otro, decorando con hojas de cilantro y un hilo de aceite de oliva.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #fff8e1; border-left: 4px solid #ffc107;">
+                    <h3 style="color: #e74c3c;">🌿 El Arte de las Especias Indias</h3>
+                    <p style="color: #333;"><strong>Tostar especias:</strong> Libera aceites esenciales y multiplica sabores.<br>
+                    <strong>Garam masala:</strong> Mezcla tradicional india de especias.<br>
+                    <strong>Equilibrio:</strong> Calor (cayena), dulzor (canela), tierra (cúrcuma).<br>
+                    <strong>Frescura final:</strong> Cilantro y limón al terminar.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🇮🇳 Variaciones Regionales</h3>
+                    <p style="color: #333;"><strong>Chana Masala:</strong> Versión norteña más picante y seca.<br>
+                    <strong>Curry de Kerala:</strong> Más leche de coco y hojas de curry.<br>
+                    <strong>Punjabi:</strong> Más cremoso con mantequilla (ghee).<br>
+                    <strong>Goa:</strong> Influencia portuguesa, más picante.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0;">⚠️ Problemas y Soluciones</h3>
+                    <p style="color: #333;"><strong>Curry muy líquido:</strong> Cocinar sin tapa para evaporar.<br>
+                    <strong>Curry muy espeso:</strong> Añadir más caldo o leche de coco.<br>
+                    <strong>Especias amargas:</strong> Quemadas al tostar, empezar de nuevo.<br>
+                    <strong>Sin sabor:</strong> Tostar bien especias y cocinar a fuego lento.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #f3e5f5; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #7b1fa2;">🔥 Niveles de Picante</h3>
+                    <p style="color: #333;"><strong>Suave:</strong> Omitir cayena, añadir yogur al servir.<br>
+                    <strong>Medio:</strong> 1/4 cucharadita de cayena.<br>
+                    <strong>Picante:</strong> 1/2-1 cucharadita de cayena.<br>
+                    <strong>Extra picante:</strong> Añadir chiles frescos picados.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #ffebee; border-left: 4px solid #f44336;">
+                    <h3 style="color: #c62828;">🥘 Acompañamientos Tradicionales</h3>
+                    <p style="color: #333;"><strong>Arroz basmati:</strong> Aromático y de grano largo.<br>
+                    <strong>Naan:</strong> Pan plano cocido en tandoor.<br>
+                    <strong>Raita:</strong> Yogur con pepino y menta.<br>
+                    <strong>Papadums:</strong> Crujientes galletas de lentejas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
