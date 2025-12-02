@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasaña Vegetariana - Recetas de GourmetChef</title>
+    <meta name="description" content="Receta de Lasaña Vegetariana, un plato saludable y delicioso con capas de verduras, salsa bechamel y queso. Aprende a preparar esta lasaña sin carne pero llena de sabor.">
+    <meta name="keywords" content="lasaña vegetariana, lasaña sin carne, receta vegetariana, plato principal, comida saludable, verduras al horno">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Lasaña Vegetariana - GourmetChef">
+    <meta property="og:description" content="Receta de Lasaña Vegetariana, un plato saludable y delicioso con capas de verduras, salsa bechamel y queso">
+    <meta property="og:image" content="https://tudominio.com/images/lasana-vegetariana.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/lasana-vegetariana.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lasaña Vegetariana - Recetas de GourmetChef">
+    <meta name="twitter:description" content="Receta de Lasaña Vegetariana, un plato saludable y delicioso con capas de verduras, salsa bechamel y queso">
+    <meta name="twitter:image" content="https://tudominio.com/images/lasana-vegetariana.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Lasaña Vegetariana</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 1 hora 30 minutos</span>
+                <span>🍽️ 6-8 personas</span>
+                <span>⭐ Medio</span>
+            </div>
+            <img src="https://i.ibb.co/GQKTDp8p/unnamed-13.jpg" alt="Lasaña Vegetariana con capas de verduras y queso" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para evitar que las láminas de lasaña queden duras, no las cocines antes de armar. Usa láminas que no requieran precocción (no-cook) o déjalas tal cual; la humedad de las salsas y verduras será suficiente para cocerlas en el horno.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para la salsa de verduras:</h3>
+                <ul class="ingredients-list">
+                    <li>2 berenjenas medianas, en cubos</li>
+                    <li>2 calabacines, en cubos</li>
+                    <li>1 pimiento rojo, en cubos</li>
+                    <li>1 pimiento verde, en cubos</li>
+                    <li>1 cebolla grande, picada</li>
+                    <li>3 dientes de ajo, picados</li>
+                    <li>400g de tomate triturado</li>
+                    <li>2 zanahorias, ralladas</li>
+                    <li>200g de champiñones, laminados</li>
+                    <li>3 cucharadas de aceite de oliva</li>
+                    <li>1 cucharadita de orégano seco</li>
+                    <li>1 cucharadita de albahaca seca</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para la bechamel:</h3>
+                <ul class="ingredients-list">
+                    <li>80g de mantequilla</li>
+                    <li>80g de harina de trigo</li>
+                    <li>1 litro de leche entera</li>
+                    <li>1 pizca de nuez moscada rallada</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para armar la lasaña:</h3>
+                <ul class="ingredients-list">
+                    <li>12 láminas de lasaña (preferiblemente no-cook)</li>
+                    <li>250g de queso mozzarella rallado</li>
+                    <li>100g de queso parmesano rallado</li>
+                    <li>100g de espinacas frescas (opcional)</li>
+                    <li>200g de ricotta o requesón (opcional)</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para decorar:</h3>
+                <ul class="ingredients-list">
+                    <li>Hojas de albahaca fresca</li>
+                    <li>Queso parmesano rallado extra</li>
+                    <li>Aceite de oliva virgen extra</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara las verduras: Corta las berenjenas y calabacines en cubos de 2cm. Colócalos en un colador, espolvorea con sal y deja reposar 30 minutos para que suelten su amargor y agua. Enjuaga y seca bien.</li>
+                    <li>En una sartén grande o cacerola, calienta 2 cucharadas de aceite de oliva a fuego medio. Añade la cebolla picada y sofríe durante 5 minutos hasta que esté transparente.</li>
+                    <li>Agrega los ajos picados y cocina 1 minuto más. Incorpora las zanahorias ralladas y los pimientos en cubos. Sofríe durante 5-7 minutos hasta que las verduras empiecen a ablandarse.</li>
+                    <li>Añade las berenjenas y calabacines escurridos. Cocina durante 8-10 minutos, removiendo ocasionalmente. Luego agrega los champiñones laminados y cocina 5 minutos más.</li>
+                    <li>Vierte el tomate triturado, orégano y albahaca. Sazona con sal y pimienta. Reduce el fuego a bajo, tapa y cocina durante 20-25 minutos, hasta que todas las verduras estén tiernas y la salsa haya espesado. Reserva.</li>
+                    <li>Mientras se cocinan las verduras, prepara la bechamel: En una cacerola, derrite la mantequilla a fuego medio. Añade la harina y cocina durante 2 minutos, revolviendo constantemente.</li>
+                    <li>Poco a poco, añade la leche caliente mientras bates con unas varillas para evitar grumos. Continúa cocinando a fuego medio-bajo, revolviendo constantemente, hasta que la salsa espese (8-10 minutos).</li>
+                    <li>Sazona la bechamel con nuez moscada, sal y pimienta. Si queda muy espesa, añade un poco más de leche. Debe tener consistencia cremosa pero no líquida. Reserva.</li>
+                    <li>Precalienta el horno a 180°C (350°F). Prepara una fuente para horno rectangular (aproximadamente 20x30cm).</li>
+                    <li>Para armar la lasaña: Extiende una capa fina de bechamel en el fondo de la fuente. Coloca una capa de láminas de lasaña (generalmente 3-4 láminas, dependiendo del tamaño).</li>
+                    <li>Extiende una capa generosa de la mezcla de verduras sobre las láminas. Si usas espinacas, distribúyelas ahora. Si usas ricotta, coloca cucharadas sobre las verduras.</li>
+                    <li>Cubre con una capa de bechamel y espolvorea con una mezcla de quesos rallados. Repite las capas: láminas, verduras, bechamel, queso, hasta terminar los ingredientes, terminando con una capa de bechamel.</li>
+                    <li>Para la capa final: cubre generosamente con bechamel y espolvorea abundantemente con queso mozzarella y parmesano. Esto creará una capa dorada y crujiente al hornear.</li>
+                    <li>Cubre la fuente con papel de aluminio (evita que toque el queso) y hornea durante 30 minutos. Luego retira el papel de aluminio y hornea 15-20 minutos más, hasta que la superficie esté dorada y burbujeante.</li>
+                    <li>Retira del horno y deja reposar la lasaña durante al menos 15-20 minutos antes de cortar. Esto permite que se asiente y sea más fácil de servir.</li>
+                    <li>Sirve caliente, decorando con hojas de albahaca fresca y un chorrito de aceite de oliva virgen extra. Acompaña con ensalada verde y pan crujiente.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #fff8e1; border-left: 4px solid #ffc107;">
+                    <h3 style="color: #e74c3c;">🥦 Verduras de Temporada</h3>
+                    <p style="color: #333;"><strong>Primavera:</strong> Espárragos, guisantes, alcachofas.<br>
+                    <strong>Verano:</strong> Calabacín, berenjena, pimientos, tomate.<br>
+                    <strong>Otoño:</strong> Calabaza, setas, coliflor, brócoli.<br>
+                    <strong>Invierno:</strong> Espinacas, acelgas, coles, puerro.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🌱 Variaciones Vegetarianas</h3>
+                    <p style="color: #333;"><strong>Lasaña de espinacas:</strong> Espinacas y ricotta como relleno principal.<br>
+                    <strong>Lasaña de setas:</strong> Variedad de setas y champiñones.<br>
+                    <strong>Lasaña de calabaza:</strong> Puré de calabaza y nueces.<br>
+                    <strong>Lasaña vegana:</strong> Bechamel de leche vegetal y quesos veganos.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0;">⚠️ Problemas y Soluciones</h3>
+                    <p style="color: #333;"><strong>Láminas duras:</strong> Poco líquido o tiempo de horneado insuficiente.<br>
+                    <strong>Lasaña líquida:</strong> Verduras con demasiada agua.<br>
+                    <strong>Queso quemado:</strong> Hornear demasiado tiempo sin cubrir.<br>
+                    <strong>Se desarma al cortar:</strong> No dejar reposar suficiente.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #f3e5f5; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #7b1fa2;">🔥 Métodos de Preparación</h3>
+                    <p style="color: #333;"><strong>Preparar con antelación:</strong> Armar y refrigerar hasta hornear.<br>
+                    <strong>Congelar:</strong> Antes de hornear, hasta 3 meses.<br>
+                    <strong>Individuales:</strong> En cazuelitas individuales.<br>
+                    <strong>Sin gluten:</strong> Láminas de lasaña sin gluten.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #ffebee; border-left: 4px solid #f44336;">
+                    <h3 style="color: #c62828;">🧀 Quesos Recomendados</h3>
+                    <p style="color: #333;"><strong>Mozzarella:</strong> Funde bien y forma capa elástica.<br>
+                    <strong>Parmesano:</strong> Aporta sabor intenso y textura.<br>
+                    <strong>Ricotta:</strong> Cremosa y suave para capas internas.<br>
+                    <strong>Gouda o cheddar:</strong> Para variar sabores.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
