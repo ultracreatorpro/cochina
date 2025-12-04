@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasaña a la Boloñesa - Recetas de GourmetChef</title>
+    <meta name="description" content="Receta auténtica de Lasaña a la Boloñesa italiana, con capas de pasta, salsa boloñesa casera, bechamel cremosa y quesos gratinados. Aprende a preparar este clásico italiano perfecto para reuniones familiares.">
+    <meta name="keywords" content="lasaña a la boloñesa, lasaña boloñesa, receta italiana, salsa boloñesa casera, lasaña tradicional, pasta al horno, comida italiana">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Lasaña a la Boloñesa - GourmetChef">
+    <meta property="og:description" content="Receta auténtica de Lasaña a la Boloñesa italiana, con capas de pasta, salsa boloñesa casera y bechamel cremosa">
+    <meta property="og:image" content="https://tudominio.com/images/lasana-bolonesa.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/lasana-bolonesa.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lasaña a la Boloñesa - Recetas de GourmetChef">
+    <meta name="twitter:description" content="Receta auténtica de Lasaña a la Boloñesa italiana, con capas de pasta, salsa boloñesa casera y bechamel cremosa">
+    <meta name="twitter:image" content="https://tudominio.com/images/lasana-bolonesa.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Lasaña a la Boloñesa Tradicional</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 3 horas</span>
+                <span>🍽️ 8-10 personas</span>
+                <span>⭐ Media</span>
+            </div>
+            <img src="https://i.ibb.co/ks3tSx8n/unnamed-26.jpg" alt="Lasaña a la Boloñesa gratinada con capas perfectas" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>El secreto de una auténtica lasaña a la boloñesa está en la paciencia. La salsa boloñesa debe cocinarse lentamente (al menos 2 horas) para desarrollar sabores profundos. No uses láminas de lasaña precocidas - las tradicionales que necesitan cocción dan mejor textura. La lasaña siempre mejora al día siguiente, así que prepárala con anticipación si puedes.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para la salsa boloñesa:</h3>
+                <ul class="ingredients-list">
+                    <li>2 cucharadas de aceite de oliva extra virgen</li>
+                    <li>100g de panceta o tocino, picado fino</li>
+                    <li>1 cebolla grande, picada finamente</li>
+                    <li>2 zanahorias medianas, picadas finamente</li>
+                    <li>2 tallos de apio, picados finamente</li>
+                    <li>4 dientes de ajo, picados finamente</li>
+                    <li>500g de carne molida de ternera</li>
+                    <li>250g de carne molida de cerdo</li>
+                    <li>1 taza de vino tinto seco</li>
+                    <li>800g de tomates pelados enteros (en lata)</li>
+                    <li>2 cucharadas de pasta de tomate</li>
+                    <li>1 taza de caldo de carne</li>
+                    <li>1 hoja de laurel</li>
+                    <li>1 ramita de romero fresco</li>
+                    <li>1 cucharadita de orégano seco</li>
+                    <li>1/2 cucharadita de nuez moscada recién rallada</li>
+                    <li>Sal y pimienta negra al gusto</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para la salsa bechamel:</h3>
+                <ul class="ingredients-list">
+                    <li>100g de mantequilla sin sal</li>
+                    <li>100g de harina de trigo</li>
+                    <li>1 litro de leche entera</li>
+                    <li>1/2 cucharadita de nuez moscada recién rallada</li>
+                    <li>Sal y pimienta blanca al gusto</li>
+                    <li>1 taza de queso parmesano rallado</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el armado:</h3>
+                <ul class="ingredients-list">
+                    <li>12-16 láminas de lasaña seca (que necesitan precocción)</li>
+                    <li>300g de queso mozzarella fresco, cortado en láminas</li>
+                    <li>200g de queso ricotta (opcional)</li>
+                    <li>1 taza de queso parmesano rallado</li>
+                    <li>Hojas de albahaca fresca</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Variaciones auténticas:</h3>
+                <ul class="ingredients-list">
+                    <li><strong>Boloñesa original:</strong> Solo carne de ternera, sin cerdo</li>
+                    <li><strong>Emilia-Romagna:</strong> Agregar hígado de pollo picado</li>
+                    <li><strong>Moderna:</strong> Usar láminas de lasaña que no necesitan precocción</li>
+                    <li><strong>Vegetariana:</strong> Sustituir carne por lentejas y champiñones</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para servir:</h3>
+                <ul class="ingredients-list">
+                    <li>Ensalada de rúcula con parmesano y vinagreta balsámica</li>
+                    <li>Pan focaccia o ciabatta</li>
+                    <li>Vino tinto (Chianti Classico o Sangiovese)</li>
+                    <li>Tiramisú o panna cotta para postre</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Comienza con el sofrito (soffritto): En una olla grande o cacerola pesada, calienta el aceite de oliva a fuego medio. Añade la panceta picada y sofríe durante 3-4 minutos hasta que suelte su grasa y comience a dorarse.</li>
+                    <li>Añade la cebolla, zanahorias y apio picados finamente (el "soffritto"). Cocina a fuego medio-bajo durante 10-12 minutos, revolviendo ocasionalmente, hasta que las verduras estén muy tiernas y la cebolla transparente pero no dorada.</li>
+                    <li>Incorpora el ajo picado y cocina 1 minuto más hasta que esté fragante. Sube el fuego a medio-alto y añade las carnes molidas (ternera y cerdo). Rompe la carne con una cuchara de madera y cocina hasta que pierda el color rosado y comience a dorarse.</li>
+                    <li>Deglaza con vino tinto: Vierte el vino tinto en la olla, raspando el fondo para soltar los trozos dorados. Deja que hierva y reduzca a la mitad, aproximadamente 5-7 minutos. Esto intensificará los sabores.</li>
+                    <li>Añade los tomates: Incorpora los tomates pelados con su jugo, rompiéndolos con las manos o un aplastador. Añade la pasta de tomate, caldo de carne, hoja de laurel, ramita de romero, orégano y nuez moscada.</li>
+                    <li>Cocción lenta: Cuando la salsa comience a hervir, reduce el fuego al mínimo. Cubre parcialmente (deja un pequeño espacio para que escape el vapor) y cocina durante al menos 2 horas, revolviendo cada 20-30 minutos. Mientras más tiempo cocine (hasta 4 horas), más rica será.</li>
+                    <li>Finaliza la boloñesa: Retira la hoja de laurel y la ramita de romero. Sazona con sal y pimienta al gusto. La salsa debe estar espesa pero aún jugosa. Si queda muy líquida, cocina destapada los últimos 30 minutos.</li>
+                    <li>Mientras se cocina la boloñesa, prepara la bechamel: En una cacerola mediana, derrite la mantequilla a fuego medio. Añade la harina y cocina, revolviendo constantemente, durante 2-3 minutos hasta formar un roux pálido (no debe dorarse).</li>
+                    <li>Incorpora la leche: Poco a poco, añade la leche (preferiblemente tibia) mientras bates constantemente con un batidor para evitar grumos. Cocina a fuego medio, revolviendo, durante 8-10 minutos hasta que la salsa espese y hierva suavemente.</li>
+                    <li>Finaliza la bechamel: Retira del fuego y añade la nuez moscada, sal, pimienta blanca y 1/2 taza del queso parmesano. Revuelve hasta que el queso se derrita. Tapa con plástico en contacto para evitar que se forme piel.</li>
+                    <li>Prepara las láminas de lasaña: Llena una olla grande con agua, añade sal generosamente y lleva a ebullición. Cocina las láminas de lasaña según las instrucciones del paquete, pero al dente (1-2 minutos menos de lo indicado). Escurre y coloca sobre un paño de cocina limpio.</li>
+                    <li>Precalienta el horno a 180°C (350°F). Engrasa ligeramente una fuente para horno de aproximadamente 20x30 cm.</li>
+                    <li>Prepara la ricotta (si usas): En un bol, mezcla la ricotta con un huevo batido (opcional), sal, pimienta y un poco de perejil picado. Reserva.</li>
+                    <li>Comienza el armado: Extiende una fina capa de salsa boloñesa en el fondo de la fuente. Esto evitará que la lasaña se pegue.</li>
+                    <li>Primera capa: Coloca una capa de láminas de lasaña, cubriendo todo el fondo sin superponer demasiado (puedes romperlas para ajustar).</li>
+                    <li>Añade una capa generosa de salsa boloñesa (aproximadamente 1/3 de la cantidad). Extiende uniformemente con una espátula.</li>
+                    <li>Añade una capa de salsa bechamel (aproximadamente 1/4 de la cantidad). Si usas ricotta, añade cucharadas sobre esta capa.</li>
+                    <li>Coloca láminas de queso mozzarella y espolvorea con queso parmesano rallado.</li>
+                    <li>Repite las capas: láminas de lasaña, boloñesa, bechamel, quesos. Deberías obtener 3-4 capas de pasta, terminando con una capa de bechamel y queso.</li>
+                    <li>Capa final: La última capa debe ser generosa en bechamel y queso para crear una costra dorada perfecta. Espolvorea abundantemente con queso parmesano extra.</li>
+                    <li>Hornea: Cubre la fuente con papel de aluminio, asegurándote de que no toque el queso (puedes engrasar ligeramente el lado que toca la lasaña). Hornea durante 30 minutos cubierto.</li>
+                    <li>Retira el papel de aluminio y hornea 15-20 minutos más, hasta que la lasaña esté burbujeante y dorada por encima. Si quieres más dorado, puedes encender el grill los últimos 2-3 minutos.</li>
+                    <li>Reposo crucial: Retira la lasaña del horno y déjala reposar sobre una rejilla durante al menos 20-25 minutos antes de cortar. Esto permite que las capas se asienten y no se desarme al servir.</li>
+                    <li>Presentación: Corta la lasaña en porciones cuadradas con un cuchillo afilado. Sirve en platos calientes, decorando con hojas de albahaca fresca.</li>
+                    <li>Para servir al día siguiente: La lasaña a la boloñesa siempre sabe mejor al día siguiente. Si la preparas con anticipación, déjala enfriar completamente, cubre y refrigera. Calienta en horno precalentado a 160°C durante 25-30 minutos, o hasta que esté caliente en el centro.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #fff8e1; border-left: 4px solid #ffc107;">
+                    <h3 style="color: #e74c3c;">🍝 El Secreto de la Lasaña Boloñesa Perfecta</h3>
+                    <p style="color: #333;"><strong>Boloñesa lenta:</strong> Mínimo 2 horas de cocción para sabor profundo.<br>
+                    <strong>Soffritto:</strong> Cebolla, zanahoria, apio picados muy fino.<br>
+                    <strong>Láminas al dente:</strong> Cocinar 1-2 minutos menos de lo indicado.<br>
+                    <strong>Reposo:</strong> 20-25 minutos antes de cortar para capas firmes.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🧀 Variaciones Regionales Italianas</h3>
+                    <p style="color: #333;"><strong>Bolonia:</strong> Boloñesa auténtica + bechamel.<br>
+                    <strong>Nápoles:</strong> Salsa de tomate + albóndigas + ricotta.<br>
+                    <strong>Roma:</strong> Salsa más simple, menos capas.<br>
+                    <strong>Emilia-Romagna:</strong> Pasta verde (con espinacas).</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0;">⚠️ Problemas y Soluciones</h3>
+                    <p style="color: #333;"><strong>Pasta dura:</strong> Láminas secas o falta de salsa.<br>
+                    <strong>Muy líquida:</strong> Boloñesa poco reducida o exceso de bechamel.<br>
+                    <strong>Queso quemado:</strong> Hornear demasiado tiempo destapado.<br>
+                    <strong>Sin sabor:</strong> Boloñesa cocida poco tiempo o poca sal.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #f3e5f5; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #7b1fa2;">🔥 Errores Comunes a Evitar</h3>
+                    <p style="color: #333;"><strong>Boloñesa rápida:</strong> Necesita cocción lenta para sabor.<br>
+                    <strong>Láminas precocidas:</strong> Las tradicionales dan mejor textura.<br>
+                    <strong>Exceso de queso:</strong> Puede hacer la lasaña pesada.<br>
+                    <strong>Cortar inmediatamente:</strong> Debe reposar para no desarmarse.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #ffebee; border-left: 4px solid #f44336;">
+                    <h3 style="color: #c62828;">💪 Beneficios Nutricionales</h3>
+                    <p style="color: #333;"><strong>Proteína completa:</strong> Carnes y quesos de alta calidad.<br>
+                    <strong>Licopeno:</strong> Tomate cocido rico en antioxidantes.<br>
+                    <strong>Calcio:</strong> Quesos y leche para huesos fuertes.<br>
+                    <strong>Energía sostenida:</strong> Carbohidratos complejos de la pasta.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
