@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penne all'Arrabbiata - Recetas de GourmetChef</title>
+    <meta name="description" content="Receta auténtica de Penne all'Arrabbiata italiana, picante y sabrosa. Aprende a preparar esta clásica pasta romana con salsa de tomate, ajo, guindilla y perejil fresco, simple pero llena de carácter.">
+    <meta name="keywords" content="penne all'arrabbiata, arrabbiata, pasta picante, receta italiana, salsa arrabbiata, pasta romana, receta rápida, comida picante">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Penne all'Arrabbiata - GourmetChef">
+    <meta property="og:description" content="Receta auténtica de Penne all'Arrabbiata italiana, picante y sabrosa">
+    <meta property="og:image" content="https://tudominio.com/images/penne-arrabbiata.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/penne-arrabbiata.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Penne all'Arrabbiata - Recetas de GourmetChef">
+    <meta name="twitter:description" content="Receta auténtica de Penne all'Arrabbiata italiana, picante y sabrosa">
+    <meta name="twitter:image" content="https://tudominio.com/images/penne-arrabbiata.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Penne all'Arrabbiata</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 25 minutos</span>
+                <span>🍽️ 4 personas</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://i.ibb.co/HpXjkMSb/unnamed-28.jpg" alt="Penne all'Arrabbiata con salsa picante de tomate" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>El secreto de un buen "Arrabbiata" (que significa "enojado" en italiano) está en el control del picante. Para un sabor auténtico, infusiona el aceite con los chiles enteros y luego retíralos antes de que se quemen. Nunca uses chile en polvo - siempre chiles secos enteros o frescos. La salsa debe ser picante pero no abrumadora, permitiendo que el sabor del tomate y el ajo brillen.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para la pasta:</h3>
+                <ul class="ingredients-list">
+                    <li>400g de penne rigate (con estrías)</li>
+                    <li>Sal gruesa para el agua</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para la salsa Arrabbiata:</h3>
+                <ul class="ingredients-list">
+                    <li>4 cucharadas de aceite de oliva extra virgen</li>
+                    <li>4 dientes de ajo, laminados finamente</li>
+                    <li>2-4 guindillas rojas secas (peperoncino) o frescas</li>
+                    <li>800g de tomates pelados enteros de calidad</li>
+                    <li>1 cucharada de pasta de tomate (opcional, para intensidad)</li>
+                    <li>1/2 taza de vino blanco seco (opcional)</li>
+                    <li>1/2 cucharadita de azúcar (para balancear acidez)</li>
+                    <li>Sal al gusto</li>
+                    <li>Pimienta negra recién molida</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para terminar:</h3>
+                <ul class="ingredients-list">
+                    <li>1/2 taza de perejil fresco, picado grueso</li>
+                    <li>1/4 taza de hojas de albahaca fresca (opcional)</li>
+                    <li>Queso pecorino romano rallado (al gusto)</li>
+                    <li>Hojitas de albahaca o perejil para decorar</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Niveles de picante:</h3>
+                <ul class="ingredients-list">
+                    <li><strong>Suave:</strong> 1 guindilla seca sin semillas</li>
+                    <li><strong>Medio:</strong> 2 guindillas secas, semillas incluidas</li>
+                    <strong>Picante:</strong> 3-4 guindillas secas, semillas incluidas</li>
+                    <li><strong>Extra picante:</strong> Guindilla habanero o Carolina Reaper (¡cuidado!)</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Variaciones auténticas:</h3>
+                <ul class="ingredients-list">
+                    <li><strong>Roma:</strong> Con guanciale o panceta (Arrabbiata con carne)</li>
+                    <li><strong>Nápoles:</strong> Con alcaparras y aceitunas negras</li>
+                    <li><strong>Sicilia:</strong> Con anchoas y almendras tostadas</li>
+                    <li><strong>Moderno:</strong> Con chorizo o salchicha picante</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara los ingredientes: Laminar finamente los dientes de ajo. Si usas guindillas secas, puedes dejarlas enteras, partirlas por la mitad o picarlas finamente (dependiendo de qué tan picante la quieras). Picar el perejil fresco. Si usas tomates pelados enteros, tritúralos ligeramente con las manos o un aplastador.</li>
+                    <li>Pon a hervir el agua: En una olla grande, llena con abundante agua (al menos 4 litros para 400g de pasta). Añade sal generosamente (como agua de mar) cuando el agua hierva. Luego añade los penne.</li>
+                    <li>Cocina la pasta: Cocina los penne según el tiempo indicado en el paquete, pero al dente (generalmente 1-2 minutos menos de lo indicado). Es crucial que la pasta esté al dente para el Arrabbiata.</li>
+                    <li>Mientras se cocina la pasta, prepara la salsa: En una sartén grande o cacerola ancha, calienta el aceite de oliva a fuego medio-bajo. Añade las guindillas (enteras o partidas) y el ajo laminado.</li>
+                    <li>Infusiona el aceite: Cocina el ajo y las guindillas a fuego bajo, moviendo constantemente, durante 2-3 minutos. El ajo debe dorarse ligeramente pero no quemarse, y las guindillas deben soltar su sabor picante al aceite. Si no quieres demasiado picante, retira las guindillas ahora.</li>
+                    <li>Si usas vino blanco: Añádelo ahora y deja reducir a la mitad, raspando el fondo de la sartén para soltar los sabores. Esto tomará unos 2-3 minutos.</li>
+                    <li>Añade los tomates: Incorpora los tomates triturados con su jugo. Si usas pasta de tomate para intensidad, añádela ahora. Añade también el azúcar para balancear la acidez de los tomates.</li>
+                    <li>Cocina la salsa: Sube el fuego a medio-alto hasta que la salsa hierva, luego reduce a fuego medio-bajo. Cocina durante 10-15 minutos, removiendo ocasionalmente, hasta que la salsa se espese ligeramente pero aún esté jugosa.</li>
+                    <li>Sazona la salsa: Prueba y ajusta la sazón con sal y pimienta negra. Si la salsa está muy ácida, puedes añadir un poco más de azúcar. Si quieres más picante y dejaste las guindillas enteras, ahora es el momento de retirarlas.</li>
+                    <li>Reserva agua de cocción: Justo antes de escurrir la pasta, toma 1/2 taza del agua de cocción. Este agua con almidón ayudará a emulsionar la salsa.</li>
+                    <li>Escurre la pasta: Escurre los penne al dente, pero no los enjuagues. Reserva un poco del agua de cocción (al menos 1/2 taza).</li>
+                    <li>Combina pasta y salsa: Vierte la pasta escurrida directamente en la sartén con la salsa Arrabbiata. Añade 1/4 taza del agua de cocción.</li>
+                    <li>Termina la cocción: Sube el fuego a medio y cocina la pasta con la salsa por 1-2 minutos, revolviendo constantemente. La pasta absorberá el sabor de la salsa y el agua de cocción ayudará a que la salsa se adhiera a la pasta.</li>
+                    <li>Añade las hierbas frescas: Retira del fuego. Añade el perejil picado (y la albahaca si usas). Revuelve bien para incorporar.</li>
+                    <li>Prueba y ajusta: Prueba la pasta y ajusta la sazón si es necesario. Si la salsa está muy espesa, añade un poco más de agua de cocción. Si está muy líquida, cocina 1 minuto más.</li>
+                    <li>Sirve inmediatamente: El Arrabbiata debe servirse inmediatamente mientras está caliente. Divide en platos calientes.</li>
+                    <li>Presentación final: Espolvorea con queso pecorino rallado al gusto (tradicionalmente, el Arrabbiata se sirve con poco o sin queso para no apagar el picante). Decora con hojitas de perejil o albahaca fresca.</li>
+                    <li>¡Cuidado con el picante! Sirve con pan para aquellos que necesiten alivio del picante. Acompaña con un vino tinto ligero o agua con gas para limpiar el paladar.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #fff8e1; border-left: 4px solid #ffc107;">
+                    <h3 style="color: #e74c3c;">🍝 El Secreto del Arrabbiata Perfecto</h3>
+                    <p style="color: #333;"><strong>Infusión de aceite:</strong> Dorar ajo y chiles en aceite a fuego bajo.<br>
+                    <strong>Chiles enteros:</strong> Nunca usar chile en polvo para autenticidad.<br>
+                    <strong>Penne rigate:</strong> Los surcos atrapan mejor la salsa.<br>
+                    <strong>Poco queso:</strong> Para no neutralizar el picante.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🌶️ Tipos de Chile para Arrabbiata</h3>
+                    <p style="color: #333;"><strong>Peperoncino:</strong> Chile seco italiano tradicional.<br>
+                    <strong>Chile de árbol:</strong> Similar, disponible en América.<br>
+                    <strong>Guindilla:</strong> Chile rojo seco español.<br>
+                    <strong>Fresno:</strong> Chile fresco rojo para versión suave.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0;">⚠️ Problemas y Soluciones</h3>
+                    <p style="color: #333;"><strong>Demasiado picante:</strong> Retirar chiles antes, añadir yogur.<br>
+                    <strong>Salsa aguada:</strong> Cocinar más tiempo o añadir pasta de tomate.<br>
+                    <strong>Ajo amargo:</strong> Quemado - empezar con fuego más bajo.<br>
+                    <strong>Pasta seca:</strong> Añadir más agua de cocción al combinar.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #f3e5f5; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #7b1fa2;">🔥 Control del Picante</h3>
+                    <p style="color: #333;"><strong>Suave:</strong> Chiles enteros, retirar antes de quemar.<br>
+                    <strong>Medio:</strong> Chiles partidos, semillas incluidas.<br>
+                    <strong>Fuerte:</strong> Chiles picados, semillas incluidas.<br>
+                    <strong>Extremo:</strong> Chiles triturados, infusionar más tiempo.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #ffebee; border-left: 4px solid #f44336;">
+                    <h3 style="color: #c62828;">💪 Beneficios Nutricionales</h3>
+                    <p style="color: #333;"><strong>Capsaicina:</strong> En chiles, antiinflamatorio natural.<br>
+                    <strong>Licopeno:</strong> En tomates, antioxidante potente.<br>
+                    <strong>Allicina:</strong> En ajo, propiedades antibacterianas.<br>
+                    <strong>Fibra:</strong> Pasta integral opcional para más fibra.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
