@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnocchi con Pesto - Recetas de GourmetChef</title>
+    <meta name="description" content="Receta auténtica de Gnocchi con Pesto genovés casero. Aprende a preparar estos suaves ñoquis de patata con el verdadero pesto italiano de albahaca fresca, piñones, ajo y queso pecorino.">
+    <meta name="keywords" content="gnocchi con pesto, gnocchi caseros, pesto genovés, receta italiana, ñoquis de patata, pesto de albahaca, comida tradicional">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Gnocchi con Pesto - GourmetChef">
+    <meta property="og:description" content="Receta auténtica de Gnocchi con Pesto genovés casero">
+    <meta property="og:image" content="https://tudominio.com/images/gnocchi-pesto.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/gnocchi-pesto.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gnocchi con Pesto - Recetas de GourmetChef">
+    <meta name="twitter:description" content="Receta auténtica de Gnocchi con Pesto genovés casero">
+    <meta name="twitter:image" content="https://tudominio.com/images/gnocchi-pesto.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Gnocchi con Pesto Genovés</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 1 hora 15 minutos</span>
+                <span>🍽️ 4-6 personas</span>
+                <span>⭐ Media</span>
+            </div>
+            <img src="https://i.ibb.co/Ndnw8Ghw/unnamed-32.jpg" alt="Gnocchi con Pesto fresco de albahaca" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para gnocchi ligeros y esponjosos, usa patatas harinosas (como russet) y hornéalas en lugar de hervirlas para evitar exceso de humedad. Nunca uses procesador de alimentos para el pesto - el auténtico pesto genovés se hace a mano con mortero para preservar los aceites esenciales de la albahaca. La albahaca debe ser fresca y de calidad, nunca seca.</p>
+        </div>
+
+        <!-- ANUNCIO ADSTERRA -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO DE ADSTERRA -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <h3 style="margin-top: 15px; color: #e74c3c;">Para los gnocchi:</h3>
+                <ul class="ingredients-list">
+                    <li>1 kg de patatas harinosas (russet o similar)</li>
+                    <li>250-300g de harina 00 (o harina común)</li>
+                    <li>1 huevo grande (opcional, para más estructura)</li>
+                    <li>1 cucharadita de sal fina</li>
+                    <li>1/4 cucharadita de nuez moscada recién rallada (opcional)</li>
+                    <li>Harina extra para espolvorear</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el pesto genovés auténtico:</h3>
+                <ul class="ingredients-list">
+                    <li>100g de hojas de albahaca fresca (solo las hojas)</li>
+                    <li>50g de piñones (o nueces si no encuentras piñones)</li>
+                    <li>2 dientes de ajo, pelados</li>
+                    <li>100g de queso pecorino sardo rallado (o parmesano)</li>
+                    <li>50g de queso parmesano reggiano rallado</li>
+                    <li>150-200ml de aceite de oliva extra virgen ligero</li>
+                    <li>Sal gruesa (para el mortero)</li>
+                    <li>Pimienta negra recién molida (opcional)</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para cocinar y servir:</h3>
+                <ul class="ingredients-list">
+                    <li>Sal gruesa para el agua</li>
+                    <li>2 cucharadas de mantequilla (opcional)</li>
+                    <li>Queso parmesano rallado extra</li>
+                    <li>Hojas de albahaca fresca para decorar</li>
+                    <li>Piñones tostados (para decorar)</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Variaciones de gnocchi:</h3>
+                <ul class="ingredients-list">
+                    <li><strong>Tradicional:</strong> Solo patata + harina</li>
+                    <li><strong>Con huevo:</strong> Con huevo para más firmeza</li>
+                    <li><strong>De espinaca:</strong> Puré de espinacas + patata</li>
+                    <li><strong>De calabaza:</strong> Puré de calabaza + patata</li>
+                    <li><strong>De ricotta:</strong> Ricotta + harina (sin patata)</li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #e74c3c;">Para el pesto (alternativas):</h3>
+                <ul class="ingredients-list">
+                    <li><strong>Tradicional:</strong> Mortero de mármol</li>
+                    <li><strong>Moderno:</strong> Procesador de alimentos</li>
+                    <li><strong>Rápido:</strong> Licuadora (cuidado con sobrecalentar)</li>
+                    <li><strong>Variaciones:</strong> Pesto de rúcula, pesto de tomate seco</li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara las patatas: Precalienta el horno a 200°C (400°F). Lava bien las patatas y sécalas. Perfora cada patata varias veces con un tenedor. Hornea durante 45-60 minutos, o hasta que estén tiernas cuando las pinches con un cuchillo.</li>
+                    <li>Pela las patatas calientes: Retira las patatas del horno (¡cuidado, están calientes!). Con un paño de cocina, sostén cada patata y pela rápidamente mientras aún estén calientes. Pasar las patatas por un pasapurés o prensa de patatas mientras están calientes produce un puré más fino y sin grumos.</li>
+                    <li>Haz el puré: Pasa las patatas peladas por un pasapurés o prensa de patatas sobre una superficie de trabajo limpia. Extiende el puré en una capa delgada y déjalo enfriar completamente (al menos 15 minutos). Las patatas deben estar tibias, no calientes, cuando añadas la harina.</li>
+                    <li>Forma el volcán: Una vez el puré esté tibio, forma un volcán con el puré de patatas. Añade la sal, la nuez moscada si usas, y el huevo si lo usas (batido ligeramente) en el centro.</li>
+                    <li>Añade la harina: Espolvorea aproximadamente 200g de harina sobre el puré. Con las manos, comienza a incorporar la harina suavemente, trabajando desde el centro hacia afuera.</li>
+                    <li>Amasa ligeramente: Amasa muy suavemente y por poco tiempo (máximo 2-3 minutos) hasta obtener una masa homogénea pero aún blanda. La clave es añadir solo la harina necesaria para que la masa no se pegue a las manos, pero no demasiada para que los gnocchi queden pesados.</li>
+                    <li>Divide la masa: Divide la masa en 4 porciones iguales. Trabaja con una porción a la vez, manteniendo las otras cubiertas con un paño para que no se sequen.</li>
+                    <li>Forma los rollos: En una superficie ligeramente enharinada, enrolla cada porción de masa en un cilindro largo de aproximadamente 2 cm de diámetro.</li>
+                    <li>Corta los gnocchi: Con un cuchillo enharinado, corta el rollo en trozos de aproximadamente 2-3 cm de largo. Estos son tus gnocchi básicos.</li>
+                    <li>Dales forma (opcional): Para la forma tradicional, pasa cada gnocchi por un tenedor enharinado o una tabla gnocchi, presionando ligeramente con el dedo pulgar para crear las marcas características que atrapan la salsa.</li>
+                    <li>Colócalos en bandeja: Coloca los gnocchi formados en una bandeja enharinada, sin que se toquen. Puedes congelarlos en este punto si no los vas a usar inmediatamente.</li>
+                    <li>Mientras se enfrían las patatas, prepara el pesto: Lava y seca muy bien las hojas de albahaca. Es crucial que estén completamente secas. Retira solo las hojas, desechando los tallos.</li>
+                    <li>Pesto con mortero (método tradicional): En un mortero de mármol, coloca los dientes de ajo con una pizca de sal gruesa. Machaca hasta formar una pasta. Añade los piñones y continúa machacando hasta obtener una pasta.</li>
+                    <li>Añade la albahaca: Incorpora las hojas de albahaca poco a poco, machacando con movimiento circular para romper las hojas y liberar sus aceites, pero sin sobre-trabajar para evitar que se oxide.</li>
+                    <li>Añade los quesos: Incorpora los quesos rallados y mezcla bien.</li>
+                    <li>Emulsiona con aceite: Poco a poco, añade el aceite de oliva mientras continúas mezclando con el mortero, hasta obtener la consistencia deseada. El pesto debe ser cremoso pero no líquido.</li>
+                    <li>Pesto con procesador (alternativa): Si usas procesador, procesa primero ajo y piñones. Añade la albahaca y procesa en pulsos cortos. Transfiere a un bol y mezcla con los quesos y aceite a mano.</li>
+                    <li>Cocina los gnocchi: Lleva una olla grande con agua salada a ebullición suave (no hirviendo vigorosamente). Añade los gnocchi en lotes para no bajar demasiado la temperatura del agua.</li>
+                    <li>Cuando floten: Los gnocchi están listos cuando flotan a la superficie (aproximadamente 2-3 minutos). Con una espumadera, retíralos y transfiere a un bol grande.</li>
+                    <li>Combina con pesto: Añade el pesto generosamente a los gnocchi calientes (usa aproximadamente 2-3 cucharadas por persona). Si quieres, añade un poco de mantequilla derretida para más cremosidad.</li>
+                    <li>Mezcla suavemente: Revuelve muy suavemente para cubrir todos los gnocchi con el pesto, teniendo cuidado de no romperlos.</li>
+                    <li>Sirve inmediatamente: Divide en platos calientes. Decora con hojas de albahaca fresca, piñones tostados y queso parmesano rallado extra.</li>
+                </ol>
+                
+                <div class="tips" style="margin-top: 30px; background: #fff8e1; border-left: 4px solid #ffc107;">
+                    <h3 style="color: #e74c3c;">🍝 El Secreto de los Gnocchi Perfectos</h3>
+                    <p style="color: #333;"><strong>Patatas horneadas:</strong> Menos humedad que hervidas.<br>
+                    <strong>Puré caliente:</strong> Pasar por pasapurés mientras calientes.<br>
+                    <strong>Poca harina:</strong> Solo la necesaria para manejabilidad.<br>
+                    <strong>Amasar poco:</strong> Máximo 2-3 minutos para evitar gluten.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32;">🌿 El Verdadero Pesto Genovés</h3>
+                    <p style="color: #333;"><strong>Mortero:</strong> Tradicional de mármol para mejor emulsión.<br>
+                    <strong>Albahaca genovesa:</strong> Hojas pequeñas, muy aromáticas.<br>
+                    <strong>Piñones:</strong> De la región mediterránea, no chinos.<br>
+                    <strong>Pecorino sardo:</strong> Queso específico, no cualquier pecorino.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0;">⚠️ Problemas y Soluciones</h3>
+                    <p style="color: #333;"><strong>Gnocchi duros:</strong> Demasiada harina o amasado excesivo.<br>
+                    <strong>Se deshacen:</strong> Poca harina o patatas muy húmedas.<br>
+                    <strong>Pesto oscuro:</strong> Albahaca oxidada o procesador sobrecalentado.<br>
+                    <strong>Pesto amargo:</strong> Ajo machacado con cuchillo metálico.</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #f3e5f5; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #7b1fa2;">🔥 Métodos de Cocción</h3>
+                    <p style="color: #333;"><strong>Hervir:</strong> Agua con sal, flotan cuando listos.<br>
+                    <strong>Saltear:</strong> Dorar en mantequilla después de hervir.<br>
+                    <strong>Hornear:</strong> Con salsa y queso para gratinar.<br>
+                    <strong>Freír:</strong> Gnocchi fritos crujientes (no tradicional).</p>
+                </div>
+
+                <div class="tips" style="margin-top: 20px; background: #ffebee; border-left: 4px solid #f44336;">
+                    <h3 style="color: #c62828;">💪 Beneficios Nutricionales</h3>
+                    <p style="color: #333;"><strong>Potasio:</strong> Patatas ricas en potasio.<br>
+                    <strong>Grasas saludables:</strong> Aceite de oliva y piñones.<br>
+                    <strong>Calcio:</strong> Quesos pecorino y parmesano.<br>
+                    <strong>Antioxidantes:</strong> Albahaca rica en flavonoides.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
