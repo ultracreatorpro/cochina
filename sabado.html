@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta para el Sábado - NutriPlan | Planificación Semanal</title>
+    <meta name="description" content="Plan de dieta para el sábado: equilibrio y disfrute. Recetas sabrosas y satisfactorias que permiten indulgencias moderadas mientras mantienen los objetivos nutricionales del fin de semana.">
+    <meta name="keywords" content="dieta sábado, fin de semana saludable, comida sabrosa, indulgencias moderadas, equilibrio nutricional, plan sábado">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Dieta para el Sábado - NutriPlan">
+    <meta property="og:description" content="Plan de dieta para el sábado: equilibrio y disfrute con recetas sabrosas e indulgencias moderadas">
+    <meta property="og:image" content="https://i.ibb.co/8DHvyMDs/photo-4994613285680253802-x.jpg">
+    <meta property="og:url" content="https://www.nutriplan.shop/dieta_sabado.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dieta para el Sábado - NutriPlan">
+    <meta name="twitter:description" content="Plan de dieta para el sábado: equilibrio y disfrute con recetas sabrosas e indulgencias moderadas">
+    <meta name="twitter:image" content="https://i.ibb.co/8DHvyMDs/photo-4994613285680253802-x.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #c2e2ff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .nav a:hover {
+            color: #e74c3c;
+        }
+        
+        .diet-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .diet-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .diet-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .diet-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .diet-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .meal-plan, .benefits {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .meal-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .meal-time {
+            color: #e74c3c;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .meal-time:before {
+            margin-right: 8px;
+        }
+        
+        .meal-desc {
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .meal-nutrients {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .nutrient-badge {
+            background: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        
+        .weekend-badge {
+            background: linear-gradient(45deg, #e67e22, #d35400);
+            color: white;
+        }
+        
+        .benefits-list {
+            list-style: none;
+        }
+        
+        .benefits-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .info-box {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .info-box h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .tip-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .tip-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tip-card h4:before {
+            content: "💡";
+            margin-right: 8px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        .secondary-button {
+            background: #3498db;
+        }
+        
+        .secondary-button:hover {
+            background: #2980b9;
+        }
+        
+        .indulgence-section {
+            background: linear-gradient(135deg, #fff3e0, #fbe9e7);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #e67e22;
+        }
+        
+        .indulgence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .indulgence-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .indulgence-icon {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+        }
+        
+        .weekend-activity {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 2px solid #4caf50;
+        }
+        
+        .cheat-guide {
+            background: #f3e5f5;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #9c27b0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .diet-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .diet-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+            
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .meal-nutrients {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .indulgence-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="https://i.ibb.co/HD5cYn3T/20251128-071528-0000.png" alt="NutriPlan" class="logo-img">
+                NutriPlan
+            </a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html">Dietas</a>
+                <a href="../index.html">Plan Semanal</a>
+                <a href="../index.html">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="diet-header">
+            <h1 class="diet-title">Dieta para el Sábado</h1>
+            <div class="diet-meta">
+                <span>📅 Día: Sábado</span>
+                <span>🔥 1700-1900 calorías</span>
+                <span>🎉 Equilibrio y Disfrute</span>
+            </div>
+            <img src="https://i.ibb.co/HfNLHScQ/LUNES-20251207-055735-0000.png" alt="Dieta equilibrada para el sábado" class="diet-image">
+        </div>
+
+        <div class="info-box">
+            <h3>🎯 Objetivo del Plan del Sábado</h3>
+            <p>El sábado es el día del <strong>equilibrio inteligente</strong>. Ofrecemos un plan que <strong>combina nutrición y disfrute</strong>, permitiendo indulgencias moderadas mientras mantenemos los objetivos de la semana. Este enfoque <strong>previene la sensación de privación</strong>, hace la dieta sostenible y enseña a disfrutar de alimentos placenteros de manera consciente y controlada.</p>
+        </div>
+
+        <!-- ANUNCIO 1 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+            <div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="diet-content">
+            <div class="meal-plan">
+                <h2 class="section-title">📋 Plan de Comidas del Sábado</h2>
+                
+                <div class="meal-item">
+                    <div class="meal-time">☀️ Desayuno (8:00 - 9:00 AM)</div>
+                    <div class="meal-desc"><strong>Tortilla francesa especial:</strong> 2 huevos enteros + 1 clara, espinacas, champiñones, queso feta desmenuzado (30g). 1 rebanada de pan integral tostado con 1/4 aguacate.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge weekend-badge">🎉 Desayuno especial</span>
+                        <span class="nutrient-badge">⚡ 380 calorías</span>
+                        <span class="nutrient-badge">🥚 25g proteína</span>
+                        <span class="nutrient-badge">🥑 Grasas saludables</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🍓 Media Mañana (11:00 AM)</div>
+                    <div class="meal-desc"><strong>Bowl de frutas con topping:</strong> 1 taza de frutas variadas (fresas, mango, kiwi), 1 cucharada de granola, 1 cucharadita de miel cruda (opcional).</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge weekend-badge">🎉 Fruta premium</span>
+                        <span class="nutrient-badge">⚡ 150 calorías</span>
+                        <span class="nutrient-badge">🍓 Antioxidantes</span>
+                        <span class="nutrient-badge">🍯 Dulce natural</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🌞 Almuerzo (1:30 - 2:30 PM)</div>
+                    <div class="meal-desc"><strong>Hamburguesa saludable casera:</strong> Carne magra de res o pollo molido (150g), pan integral, lechuga, tomate, cebolla, pepinillos, mostaza. Ensalada de col kale.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge weekend-badge">🎉 Hamburguesa fit</span>
+                        <span class="nutrient-badge">⚡ 450 calorías</span>
+                        <span class="nutrient-badge">🥚 35g proteína</span>
+                        <span class="nutrient-badge">🌿 10g fibra</span>
+                        <span class="nutrient-badge">😊 Satisfacción</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🥤 Merienda (5:00 PM)</div>
+                    <div class="meal-desc"><strong>Batido de proteína y fruta:</strong> 1 scoop de proteína de vainilla, 1/2 plátano, 1/2 taza de fresas, 200ml de leche de almendras, hielo.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge weekend-badge">🎉 Batido cremoso</span>
+                        <span class="nutrient-badge">⚡ 200 calorías</span>
+                        <span class="nutrient-badge">🥚 25g proteína</span>
+                        <span class="nutrient-badge">🍌 Energía rápida</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🌙 Cena (8:00 - 9:00 PM)</div>
+                    <div class="meal-desc"><strong>Pizza casera saludable:</strong> Base de coliflor o masa integral delgada, salsa de tomate natural, mozzarella light (50g), pollo a la plancha, pimientos, champiñones, orégano.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge weekend-badge">🎉 Pizza fit</span>
+                        <span class="nutrient-badge">⚡ 350 calorías</span>
+                        <span class="nutrient-badge">🥚 20g proteína</span>
+                        <span class="nutrient-badge">🥦 Versión saludable</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🍫 Postre/Indulgencia (opcional)</div>
+                    <div class="meal-desc"><strong>Indulgencia controlada:</strong> 2 cuadrados de chocolate negro 70% O 1 bola de helado de frutas natural O 1 porción pequeña de postre casero (ver guía).</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge weekend-badge">🎉 Indulgencia</span>
+                        <span class="nutrient-badge">⚡ 100-150 calorías</span>
+                        <span class="nutrient-badge">😊 Placer consciente</span>
+                        <span class="nutrient-badge">🎯 Controlado</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANUNCIO 2 -->
+            <div class="ad-container">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '2c03e8eaa04debd24649f53717f34e21',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+            </div>
+
+            <div class="benefits">
+                <h2 class="section-title">✅ Beneficios de este Enfoque</h2>
+                <ul class="benefits-list">
+                    <li><strong>Adherencia a largo plazo:</strong> Elimina sensación de privación extrema</li>
+                    <li><strong>Salud psicológica:</strong> Relación sana con la comida</li>
+                    <li><strong>Aprendizaje de porciones:</strong> Enseña a disfrutar con moderación</li>
+                    <li><strong>Versiones saludables:</strong> Sustituye comidas calóricas por opciones nutritivas</li>
+                    <li><strong>Metabolismo activo:</strong> Calorías extra ocasionales pueden estimular metabolismo</li>
+                    <li><strong>Satisfacción emocional:</strong> Cumple antojos de manera controlada</li>
+                    <li><strong>Socialización incluida:</strong> Compatible con planes sociales</li>
+                    <li><strong>Prevención de atracones:</strong> Evita restricciones que llevan a excesos</li>
+                    <li><strong>Educación nutricional:</strong> Aprende a hacer versiones saludables de favoritos</li>
+                    <li><strong>Motivación renovada:</strong> Un día diferente mantiene el interés</li>
+                </ul>
+                
+                <div class="indulgence-section">
+                    <h3 style="color: #e67e22; margin-bottom: 15px;">🎯 Guía de Indulgencias Inteligentes</h3>
+                    <div class="indulgence-grid">
+                        <div class="indulgence-item">
+                            <div class="indulgence-icon">🍫</div>
+                            <strong>Chocolate Negro</strong>
+                            <div style="font-size: 0.8em; color: #666;">2-3 cuadrados 70%+</div>
+                        </div>
+                        <div class="indulgence-item">
+                            <div class="indulgence-icon">🍦</div>
+                            <strong>Helado Natural</strong>
+                            <div style="font-size: 0.8em; color: #666;">1 bola frutas reales</div>
+                        </div>
+                        <div class="indulgence-item">
+                            <div class="indulgence-icon">🍰</div>
+                            <strong>Postre Casero</strong>
+                            <div style="font-size: 0.8em; color: #666;">Porción pequeña</div>
+                        </div>
+                        <div class="indulgence-item">
+                            <div class="indulgence-icon">🍷</div>
+                            <strong>Vino Tinto</strong>
+                            <div style="font-size: 0.8em; color: #666;">1 copa 150ml</div>
+                        </div>
+                        <div class="indulgence-item">
+                            <div class="indulgence-icon">🍟</div>
+                            <strong>Papas Caseras</strong>
+                            <div style="font-size: 0.8em; color: #666;">Horneadas no fritas</div>
+                        </div>
+                        <div class="indulgence-item">
+                            <div class="indulgence-icon">🧀</div>
+                            <strong>Queso Premium</strong>
+                            <div style="font-size: 0.8em; color: #666;">Pequeña porción</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANUNCIO 3 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'f9e4fa575cafda7be8b6cf9e51ba6f6e',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/f9e4fa575cafda7be8b6cf9e51ba6f6e/invoke.js"></script>
+        </div>
+
+        <div class="weekend-activity">
+            <h3 style="color: #4caf50; margin-bottom: 15px;">🏃‍♂️ Actividad del Sábado</h3>
+            <p><strong>✓ Mañana:</strong> Entrenamiento completo 60 minutos (cardio + fuerza)<br>
+            <strong>✓ Tarde:</strong> Actividad familiar o paseo al aire libre<br>
+            <strong>✓ Noche:</strong> Si sales, bailar cuenta como cardio<br>
+            <strong>✓ Hidratación:</strong> Beber agua extra si consumes alcohol<br>
+            <strong>✓ Sueño:</strong> Dormir bien para recuperación<br>
+            <strong>✓ Mentalidad:</strong> Disfrutar sin culpa, retomar hábitos mañana</p>
+        </div>
+
+        <div class="cheat-guide">
+            <h3 style="color: #9c27b0; margin-bottom: 15px;">🍽️ Cómo Hacer un "Cheat Meal" Inteligente</h3>
+            <p><strong>✓ Planificar:</strong> Elegir UNA indulgencia, no todo el día<br>
+            <strong>✓ Calidad:</strong> Mejor comida casera que procesada<br>
+            <strong>✓ Porción:</strong> Porción normal, no tamaño gigante<br>
+            <strong>✓ Consciencia:</strong> Comer despacio, saborear cada bocado<br>
+            <strong>✓ Compensación:</strong> Comidas previas y posteriores más ligeras<br>
+            <strong>✓ Sin culpa:</strong> Disfrutar, aprender, continuar<br>
+            <strong>✓ Actividad:</strong> Hacer ejercicio ese día para utilizar calorías extra</p>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 40px;">💡 Consejos para el Sábado Equilibrado</h2>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <h4>Preparación Casera</h4>
+                <p>Haz versiones saludables en casa: pizza con base de coliflor, helado de plátano congelado.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Compensación Inteligente</h4>
+                <p>Si comes más en el almuerzo, haz cena más ligera. Equilibrio diario, no por comida.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Hidratación Doble</h4>
+                <p>Bebe 2 vasos de agua antes de cada comida y 1 vaso entre cada indulgencia.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Proteína Primero</h4>
+                <p>Empieza cada comida con proteína para saciedad antes de carbohidratos.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Plato Consciente</h4>
+                <p>Sirve en plato pequeño, come sin distracciones, mastica lentamente.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Actividad Divertida</h4>
+                <p>Combina indulgencias con actividad: paseo después de comer, juego activo.</p>
+            </div>
+        </div>
+
+        <!-- ANUNCIO 4 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+            <div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="plan-de-dieta-semanal-para-una-alimentación-saludable.html" class="back-button">← Volver al Plan Semanal</a>
+            <a href="domingo.html" class="back-button secondary-button" style="margin-left: 10px;">Próximo: Dieta Domingo →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 NutriPlan. Todos los derechos reservados.</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">El equilibrio entre nutrición y disfrute es la clave del éxito a largo plazo en cualquier plan alimenticio.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
