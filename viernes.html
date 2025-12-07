@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta para el Viernes - NutriPlan | Planificación Semanal</title>
+    <meta name="description" content="Plan de dieta para el viernes: preparación para el fin de semana. Recetas equilibradas y satisfactorias que permiten flexibilidad mientras mantienen los objetivos nutricionales.">
+    <meta name="keywords" content="dieta viernes, preparación fin de semana, comida equilibrada, flexibilidad dietética, cena ligera, plan viernes">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Dieta para el Viernes - NutriPlan">
+    <meta property="og:description" content="Plan de dieta para el viernes: preparación para el fin de semana con recetas equilibradas y flexibles">
+    <meta property="og:image" content="https://i.ibb.co/1YFY56Sb/photo-4965500927901109074-x.jpg">
+    <meta property="og:url" content="https://www.nutriplan.shop/dieta_viernes.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dieta para el Viernes - NutriPlan">
+    <meta name="twitter:description" content="Plan de dieta para el viernes: preparación para el fin de semana con recetas equilibradas y flexibles">
+    <meta name="twitter:image" content="https://i.ibb.co/1YFY56Sb/photo-4965500927901109074-x.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #c2e2ff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .nav a:hover {
+            color: #e74c3c;
+        }
+        
+        .diet-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .diet-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .diet-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .diet-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .diet-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .meal-plan, .benefits {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .meal-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .meal-time {
+            color: #e74c3c;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .meal-time:before {
+            margin-right: 8px;
+        }
+        
+        .meal-desc {
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .meal-nutrients {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .nutrient-badge {
+            background: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        
+        .flexibility-badge {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+        }
+        
+        .benefits-list {
+            list-style: none;
+        }
+        
+        .benefits-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .info-box {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .info-box h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .tip-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .tip-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tip-card h4:before {
+            content: "💡";
+            margin-right: 8px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        .secondary-button {
+            background: #3498db;
+        }
+        
+        .secondary-button:hover {
+            background: #2980b9;
+        }
+        
+        .flexibility-section {
+            background: linear-gradient(135deg, #e3f2fd, #e8f5e9);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .flexibility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .flexibility-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .flexibility-icon {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+        }
+        
+        .weekend-prep {
+            background: #fff3e0;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 2px dashed #ff9800;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .diet-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .diet-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+            
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .meal-nutrients {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .flexibility-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">
+                <img src="https://i.ibb.co/HD5cYn3T/20251128-071528-0000.png" alt="NutriPlan" class="logo-img">
+                NutriPlan
+            </a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html">Dietas</a>
+                <a href="../index.html">Plan Semanal</a>
+                <a href="../index.html">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="diet-header">
+            <h1 class="diet-title">Dieta para el Viernes</h1>
+            <div class="diet-meta">
+                <span>📅 Día: Viernes</span>
+                <span>🔥 1600-1750 calorías</span>
+                <span>🔄 Flexibilidad Inteligente</span>
+            </div>
+            <img src="https://i.ibb.co/ymCF3YPY/LUNES-20251207-055707-0000.png" alt="Dieta flexible para el viernes" class="diet-image">
+        </div>
+
+        <div class="info-box">
+            <h3>🎯 Objetivo del Plan del Viernes</h3>
+            <p>El viernes está diseñado para <strong>transicionar suavemente hacia el fin de semana</strong>. Ofrecemos <strong>flexibilidad inteligente</strong>: comidas satisfactorias pero ligeras, con opciones para cenar fuera o socializar. El enfoque es <strong>mantener el progreso</strong> mientras se permite cierta libertad, preparando el cuerpo para posibles variaciones del fin de semana sin perder los beneficios de la semana.</p>
+        </div>
+
+        <!-- ANUNCIO 1 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+            <div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="diet-content">
+            <div class="meal-plan">
+                <h2 class="section-title">📋 Plan de Comidas del Viernes</h2>
+                
+                <div class="meal-item">
+                    <div class="meal-time">☀️ Desayuno (7:30 - 8:30 AM)</div>
+                    <div class="meal-desc"><strong>Tostadas integrales con toppings variados:</strong> 2 rebanadas de pan integral tostado, 1/2 aguacate triturado, 1 huevo escalfado, tomate en rodajas, espinacas.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge flexibility-badge">🔄 Variedad</span>
+                        <span class="nutrient-badge">⚡ 350 calorías</span>
+                        <span class="nutrient-badge">🥚 18g proteína</span>
+                        <span class="nutrient-badge">🥑 Grasas saludables</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🍓 Media Mañana (10:30 AM)</div>
+                    <div class="meal-desc"><strong>Smoothie verde ligero:</strong> 1 taza de espinacas, 1/2 pera, 1/2 pepino, jugo de 1/2 limón, 200ml de agua de coco.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge flexibility-badge">🔄 Desintoxicante</span>
+                        <span class="nutrient-badge">⚡ 120 calorías</span>
+                        <span class="nutrient-badge">🍃 Alcalinizante</span>
+                        <span class="nutrient-badge">💧 Hidratación</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🌞 Almuerzo (1:00 - 2:00 PM)</div>
+                    <div class="meal-desc"><strong>Ensalada de garbanzos con atún:</strong> 1 lata de atún al natural, 1/2 taza de garbanzos cocidos, pimiento rojo, pepino, cebolla morada, aceitunas, aderezo de yogur y limón.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge flexibility-badge">🔄 Preparación rápida</span>
+                        <span class="nutrient-badge">⚡ 420 calorías</span>
+                        <span class="nutrient-badge">🥚 30g proteína</span>
+                        <span class="nutrient-badge">🌿 15g fibra</span>
+                        <span class="nutrient-badge">⚡ Energía estable</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🥕 Merienda (4:30 PM)</div>
+                    <div class="meal-desc"><strong>Crudités con dip de garbanzo:</strong> Zanahorias, apio, pepino y pimiento con dip de hummus ligero (3 cucharadas).</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge flexibility-badge">🔄 Snack saludable</span>
+                        <span class="nutrient-badge">⚡ 150 calorías</span>
+                        <span class="nutrient-badge">🥕 Vitaminas</span>
+                        <span class="nutrient-badge">🌿 Fibra adicional</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🌙 Cena - Opción A (Casa)</div>
+                    <div class="meal-desc"><strong>Pescado al papillote con verduras:</strong> Filete de merluza o lubina, pimiento, calabacín, cebolla, limón y hierbas, cocinado al papillote. Ensalada verde simple.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge flexibility-badge">🔄 Cena ligera</span>
+                        <span class="nutrient-badge">⚡ 320 calorías</span>
+                        <span class="nutrient-badge">🥚 25g proteína</span>
+                        <span class="nutrient-badge">🥦 Nutrientes densos</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item">
+                    <div class="meal-time">🍽️ Cena - Opción B (Restaurante/Social)</div>
+                    <div class="meal-desc"><strong>Elecciones inteligentes fuera:</strong> Ensalada con proteína a la plancha, vegetales asados, pescado al horno o pollo a la plancha. Evitar fritos, salsas cremosas y pan.</div>
+                    <div class="meal-nutrients">
+                        <span class="nutrient-badge flexibility-badge">🔄 Flexibilidad social</span>
+                        <span class="nutrient-badge">⚡ 350-450 calorías</span>
+                        <span class="nutrient-badge">🥚 25-30g proteína</span>
+                        <span class="nutrient-badge">🍽️ Social sin culpa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANUNCIO 2 -->
+            <div class="ad-container">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '2c03e8eaa04debd24649f53717f34e21',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+            </div>
+
+            <div class="benefits">
+                <h2 class="section-title">✅ Beneficios de esta Dieta</h2>
+                <ul class="benefits-list">
+                    <li><strong>Flexibilidad controlada:</strong> Permite adaptaciones sin perder el rumbo</li>
+                    <li><strong>Preparación para el fin de semana:</strong> Establece hábitos sostenibles</li>
+                    <li><strong>Saciedad prolongada:</strong> Alto contenido en fibra y proteínas</li>
+                    <li><strong>Energía para actividades sociales:</strong> Nutrientes que sostienen actividad</li>
+                    <li><strong>Desintoxicación suave:</strong> Alimentos que limpian naturalmente</li>
+                    <li><strong>Mantenimiento de pérdida de peso:</strong> Calorías controladas pero satisfactorias</li>
+                    <li><strong>Opción social incluida:</strong> Planifica para cenar fuera sin excesos</li>
+                    <li><strong>Digestiones ligeras:</strong> Ideal para noches de descanso o salida</li>
+                    <li><strong>Nutrientes de calidad:</strong> Máximo valor nutricional</li>
+                    <li><strong>Mentalidad saludable:</strong> Evita restricciones extremas que generan ansiedad</li>
+                </ul>
+                
+                <div class="flexibility-section">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔄 Estrategias de Flexibilidad Inteligente</h3>
+                    <div class="flexibility-grid">
+                        <div class="flexibility-item">
+                            <div class="flexibility-icon">🍽️</div>
+                            <strong>Opción Restaurant</strong>
+                            <div style="font-size: 0.8em; color: #666;">Ensalada + proteína plancha</div>
+                        </div>
+                        <div class="flexibility-item">
+                            <div class="flexibility-icon">🥗</div>
+                            <strong>Control de Porciones</strong>
+                            <div style="font-size: 0.8em; color: #666;">Mitad para llevar</div>
+                        </div>
+                        <div class="flexibility-item">
+                            <div class="flexibility-icon">💧</div>
+                            <strong>Hidratación</strong>
+                            <div style="font-size: 0.8em; color: #666;">Agua antes de comer</div>
+                        </div>
+                        <div class="flexibility-item">
+                            <div class="flexibility-icon">🧘‍♀️</div>
+                            <strong>Conciencia</strong>
+                            <div style="font-size: 0.8em; color: #666;">Comer despacio</div>
+                        </div>
+                        <div class="flexibility-item">
+                            <div class="flexibility-icon">⚖️</div>
+                            <strong>Balance</strong>
+                            <div style="font-size: 0.8em; color: #666;">Compensar al día siguiente</div>
+                        </div>
+                        <div class="flexibility-item">
+                            <div class="flexibility-icon">😊</div>
+                            <strong>Sin Culpa</strong>
+                            <div style="font-size: 0.8em; color: #666;">Disfrutar conscientemente</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANUNCIO 3 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'f9e4fa575cafda7be8b6cf9e51ba6f6e',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/f9e4fa575cafda7be8b6cf9e51ba6f6e/invoke.js"></script>
+        </div>
+
+        <div class="weekend-prep">
+            <h3 style="color: #e67e22; margin-bottom: 15px;">📋 Preparación para el Fin de Semana</h3>
+            <p><strong>✓ Viernes noche:</strong> Opción cena ligera si sales, o pescado al papillote en casa<br>
+            <strong>✓ Sábado:</strong> Permite una comida más flexible (ej: almuerzo familiar)<br>
+            <strong>✓ Domingo:</strong> Retoma planificación saludable<br>
+            <strong>✓ Hidratación:</strong> Beber agua extra si consumes alcohol<br>
+            <strong>✓ Actividad:</strong> Paseo o actividad ligera el sábado por la mañana<br>
+            <strong>✓ Mentalidad:</strong> Un desliz no arruina una semana de esfuerzo</p>
+        </div>
+
+        <div class="info-box" style="background: #e3f2fd; border-left: 4px solid #2196f3;">
+            <h3>⚠️ Consejos para Cenar Fuera</h3>
+            <p><strong>✓ Antes de salir:</strong> Come el snack de la tarde para no llegar con hambre<br>
+            <strong>✓ Elegir restaurante:</strong> Lugares con opciones a la plancha, horno o vapor<br>
+            <strong>✓ Pedir modificaciones:</strong> "Sin salsas cremosas", "vegetales extra"<br>
+            <strong>✓ Control de alcohol:</strong> 1-2 copas máximo, alternar con agua<br>
+            <strong>✓ Postre inteligente:</strong> Fruta fresca o compartir un postre pequeño<br>
+            <strong>✓ Atención al pan:</strong> Evitar o limitar a 1-2 piezas pequeñas</p>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 40px;">💡 Consejos para el Viernes Flexible</h2>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <h4>Planificación Anticipada</h4>
+                <p>Si sales a cenar, revisa el menú online antes y decide qué pedirás.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Comidas Ligeras Previas</h4>
+                <p>Desayuno y almuerzo más ligeros si planeas cena más calórica.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Ejercicio Matutino</h4>
+                <p>Haz ejercicio por la mañana para aumentar metabolismo todo el día.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Hidratación Extra</h4>
+                <p>Bebe 2 vasos de agua antes de cada comida fuera de casa.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Escucha Corporal</h4>
+                <p>Para cuando estés 80% lleno, no hasta sentirse pesado.</p>
+            </div>
+            
+            <div class="tip-card">
+                <h4>Sin Culpa</h4>
+                <p>Disfruta conscientemente y retoma hábitos al día siguiente.</p>
+            </div>
+        </div>
+
+        <!-- ANUNCIO 4 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+            <div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="plan-de-dieta-semanal-para-una-alimentación-saludable.html" class="back-button">← Volver al Plan Semanal</a>
+            <a href="sabado.html" class="back-button secondary-button" style="margin-left: 10px;">Próximo: Dieta Sábado →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 NutriPlan. Todos los derechos reservados.</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">La flexibilidad en la dieta es clave para la adherencia a largo plazo. Aprende a balancear sin extremos.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
