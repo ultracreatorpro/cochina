@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermelada de Naranja Casera - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Mermelada de Naranja Casera, con el intenso sabor cítrico y perfecta textura. Aprende a prepararla paso a paso.">
+    <meta name="keywords" content="mermelada de naranja, mermelada casera, conservas cítricas, receta fácil, naranja">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Mermelada de Naranja Casera - GourmetChef">
+    <meta property="og:description" content="Receta de Mermelada de Naranja Casera, dulce y con el auténtico sabor a cítricos.">
+    <meta property="og:image" content="https://i.ibb.co/6YxLq2G/mermelada-naranja.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/mermelada-de-naranja.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mermelada de Naranja Casera - GourmetChef">
+    <meta name="twitter:description" content="Receta de Mermelada de Naranja Casera, dulce y con el auténtico sabor a cítricos.">
+    <meta name="twitter:image" content="https://i.ibb.co/6YxLq2G/mermelada-naranja.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hairstyle-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hairstyle-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Mermelada de Naranja Casera</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 1 hora 45 min</span>
+                <span>🍽️ 4 frascos</span>
+                <span>⭐ Media</span>
+            </div>
+            <img src="https://i.ibb.co/6YxLq2G/mermelada-naranja.jpg" alt="Mermelada de Naranja Casera en frasco" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Si puedes, usa naranjas orgánicas para aprovechar también parte de la piel (solo la parte naranja, no la blanca) rallada, lo que dará un sabor más intenso y auténtico a tu mermelada.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>1 kg de naranjas (preferiblemente orgánicas)</li>
+                    <li>700 g de azúcar blanca</li>
+                    <li>2 limones (solo el jugo)</li>
+                    <li>Agua (si es necesario durante la cocción)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara las naranjas: lávalas bien bajo agua corriente. Pélalas y trata de remover la mayor cantidad posible de la parte blanca de la piel (el albedo), ya que puede amargar la mermelada.</li>
+                    <li>Corta las naranjas peladas en trozos pequeños, retirando cuidadosamente las semillas si las encuentras.</li>
+                    <li>En una olla grande de fondo grueso, coloca los trozos de naranja y añade el jugo de los limones.</li>
+                    <li>Cocina a fuego medio-alto durante aproximadamente 30 minutos, hasta que la fruta esté completamente blanda y se haya deshecho parcialmente.</li>
+                    <li>Incorpora el azúcar a la mezcla caliente y remueve bien hasta que se disuelva completamente.</li>
+                    <li>Reduce el fuego a bajo y deja que la mezlla hierva a fuego lento durante aproximadamente 1 hora. Revuelve ocasionalmente para evitar que se pegue.</li>
+                    <li>Observa cómo la mermelada se va espesando y adquiriendo un color naranja más oscuro y brillante.</li>
+                    <li>Haz la prueba de consistencia: coloca una pequeña cantidad de mermelada en un plato frío y refrigérala 2 minutos. Si se gelifica y no se escurre al inclinar el plato, está lista.</li>
+                    <li>Retira del fuego y deja enfriar la mermelada unos 10-15 minutos (remueve ocasionalmente para que se forme una costra).</li>
+                    <li>Vierte en frascos de vidrio esterilizados y calientes, llenando hasta 1 cm del borde. Cierra herméticamente mientras aún está caliente para crear vacío.</li>
+                </ol>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+       
+        <div class="marinade-info">
+            <h3>📊 Claves para el Éxito</h3>
+            <p><strong>Eliminar el amargor:</strong> Quitar bien la parte blanca de la piel (albedo) es fundamental para un sabor equilibrado.</p>
+            <p><strong>Punto de gelificación:</strong> La pectina natural de la naranja y el limón harán que gelifique. Paciencia durante la cocción lenta.</p>
+            <p><strong>Textura:</strong> Si prefieres una mermelada más lisa, puedes triturar ligeramente con una batidora de mano ANTES de añadir el azúcar.</p>
+            <p>La esterilización correcta de frascos y tapas es esencial para una conservación prolongada.</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>🔥 Control de la Cocción</h3>
+            <p><strong>Fuego medio-alto:</strong> Para ablandar la fruta (30 min)</p>
+            <p><strong>Fuego bajo:</strong> Reducción lenta y gelificación (60 min)</p>
+            <p><strong>Sin fuego:</strong> Enfriamiento parcial antes de envasar (10-15 min)</p>
+            <p>Remueve cada 10-15 minutos durante la cocción a fuego lento, con más frecuencia hacia el final.</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Mermelada de Naranja con Jengibre:</strong> Añade 2-3 cucharadas de jengibre fresco rallado al inicio de la cocción.</p>
+            <p><strong>Mermelada de Naranja y Canela:</strong> Agrega 1-2 ramas de canela durante la cocción a fuego lento.</p>
+            <p><strong>Mermelada de Naranja Amarga (Marmalade):</strong> Usa naranjas amargas (Seville oranges) y incluye tiras finas de la corteza.</p>
+            <p><strong>Mermelada de Naranja y Cardamomo:</strong> Añade 4-5 vainas de cardamomo machacadas para un toque exótico.</p>
+            <p><strong>Mermelada de Naranja y Ron:</strong> Incorpora 2 cucharadas de ron oscuro al final de la cocción.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
