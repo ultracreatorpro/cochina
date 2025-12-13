@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Mermeladas - GourmetChef</title>
+    <meta name="description" content="Variedad de recetas de mermeladas caseras y saludables. Encuentra tus mermeladas favoritas con y sin azúcar.">
+    <meta name="keywords" content="recetas de mermeladas, mermeladas caseras, mermelada de fresa, mermelada sin azúcar, conservas caseras, recetas saludables">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Recetas de Mermeladas - GourmetChef">
+    <meta property="og:description" content="Variedad de recetas de mermeladas caseras y saludables">
+    <meta property="og:image" content="https://tudominio.com/images/recetas-mermeladas.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/mermeladas.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recetas de Mermeladas - GourmetChef">
+    <meta name="twitter:description" content="Variedad de recetas de mermeladas caseras y saludables">
+    <meta name="twitter:image" content="https://tudominio.com/images/recetas-mermeladas.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .category-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .category-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .category-description {
+            max-width: 700px;
+            margin: 0 auto 20px;
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .category-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .subcategories {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: #8e44ad;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            text-align: center;
+        }
+        
+        .subcategory-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .subcategory-button {
+            background-color: #8e44ad;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .subcategory-button:hover {
+            background-color: #7d3c98;
+            transform: translateY(-2px);
+        }
+        
+        .tips {
+            background: #f4ecf7;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #8e44ad;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .category-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+            
+            .subcategory-button {
+                padding: 12px 15px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="category-header">
+            <h1 class="category-title">Recetas de Mermeladas</h1>
+            <p class="category-description">Descubre nuestras deliciosas recetas de mermeladas caseras, desde clásicas frutales hasta opciones saludables sin azúcar. Perfectas para desayunos y meriendas.</p>
+            <img src="https://i.ibb.co/zhydzf9R/ai-generated-8043363-1280.jpg" alt="Recetas de Mermeladas" class="category-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para una mermelada perfecta, utiliza fruta madura pero no pasada. El punto exacto se alcanza cuando cae una gota de la cuchara lentamente. Recuerda esterilizar los frascos antes de envasar para una mejor conservación.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="subcategories">
+            <h2 class="section-title">Elige tu Receta de Mermelada</h2>
+            <div class="subcategory-buttons">
+                <a href="mermelada-de-fresa.html" class="subcategory-button">Mermelada de Fresa</a>
+                <a href="mermelada-de-naranja.html" class="subcategory-button">Mermelada de Naranja</a>
+                <a href="mermelada-de-mango-sin-azucar.html" class="subcategory-button">Mermelada de Mango sin Azúcar</a>
+                <a href="mermelada-de-manzana-canela-sin-azucar.html" class="subcategory-button">Mermelada de Manzana y Canela sin Azúcar</a>
+                <a href="mermelada-de-tomate.html" class="subcategory-button">Mermelada de Tomate</a>
+                <a href="mermelada-de-durazno.html" class="subcategory-button">Mermelada de Durazno</a>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
