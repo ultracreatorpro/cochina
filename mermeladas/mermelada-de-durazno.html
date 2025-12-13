@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermelada de Durazno - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Mermelada de Durazno casera, dulce y aromática. Aprende a prepararla paso a paso.">
+    <meta name="keywords" content="mermelada de durazno, mermelada de melocotón, conservas de fruta, receta fácil, durazno">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Mermelada de Durazno - GourmetChef">
+    <meta property="og:description" content="Receta de Mermelada de Durazno, con el dulce sabor del melocotón y un toque de canela.">
+    <meta property="og:image" content="https://i.ibb.co/6vqQh9s/mermelada-durazno.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/mermelada-de-durazno.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mermelada de Durazno - GourmetChef">
+    <meta name="twitter:description" content="Receta de Mermelada de Durazno, con el dulce sabor del melocotón y un toque de canela.">
+    <meta name="twitter:image" content="https://i.ibb.co/6vqQh9s/mermelada-durazno.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hairstyle-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hairstyle-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Mermelada de Durazno</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 1 hora 30 min</span>
+                <span>🍽️ 4-5 frascos</span>
+                <span>⭐ Media</span>
+            </div>
+            <img src="https://i.ibb.co/6vqQh9s/mermelada-durazno.jpg" alt="Mermelada de Durazno en frascos" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para pelar los duraznos fácilmente, haz un corte superficial en forma de cruz en la base, sumérgelos en agua hirviendo por 30 segundos y luego en agua con hielo. La piel se desprenderá casi por sí sola.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>1 y 1/2 kg de duraznos (melocotones) maduros</li>
+                    <li>1 kg de azúcar blanca</li>
+                    <li>1 taza de agua</li>
+                    <li>1 raja de canela (aproximadamente 5 cm)</li>
+                    <li>Jugo de 1/2 limón (opcional, para realzar el sabor)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Pela los duraznos usando el método de escaldado (agua hirviendo + agua helada) o con un pelador si prefieres.</li>
+                    <li>Córtalos por la mitad, quita el hueso y luego corta cada mitad en cuartos o trozos más pequeños.</li>
+                    <li>En un recipiente grande, coloca los trozos de durazno en capas, alternando con el azúcar: una capa de duraznos, una de azúcar, otra de duraznos, etc. Termina con una capa de azúcar.</li>
+                    <li>Cubre y deja macerar a temperatura ambiente durante 1 hora. Los duraznos soltarán su jugo y se mezclarán con el azúcar.</li>
+                    <li>Transfiere la mezcla de duraznos y azúcar (con todo el jugo que hayan soltado) a una olla grande de fondo grueso.</li>
+                    <li>Cocina a fuego alto durante 10 minutos, removiendo suavemente para que el azúcar se disuelva completamente.</li>
+                    <li>Agrega el agua y la raja de canela. Si usas jugo de limón, añádelo también en este momento.</li>
+                    <li>Reduce el fuego a medio-bajo y continúa la cocción a fuego suave durante 45-60 minutos.</li>
+                    <li>Cuando la mermelada comience a espesar (después de unos 30 minutos), remueve con más frecuencia usando una cuchara de madera para evitar que se pegue al fondo.</li>
+                    <li>La mermelada estará lista cuando tenga una consistencia espesa y los trozos de durazno estén transparentes. Haz la prueba del plato frío para asegurarte.</li>
+                    <li>Retira la raja de canela. Deja enfriar ligeramente (unos 10 minutos) antes de verter en frascos esterilizados. Cierra bien y deja enfriar completamente antes de almacenar.</li>
+                </ol>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+       
+        <div class="marinade-info">
+            <h3>📊 Claves para el Éxito</h3>
+            <p><strong>Maceración:</strong> Esencial para extraer los jugos naturales y crear un jarabe que ayudará en la cocción. No la omitas.</p>
+            <p><strong>Textura:</strong> Decide si quieres mermelada con trozos (remueve suavemente) o más homogénea (tritura ligeramente con batidora de mano a la mitad de la cocción).</p>
+            <p><strong>Punto de gelificación:</strong> Los duraznos tienen pectina natural, pero menos que otras frutas. La canela ayuda a espesar ligeramente.</p>
+            <p><strong>Prueba del plato frío:</strong> El mejor método para saber si está en su punto. La mermelada lista forma una capa que no se escurre al inclinar el plato.</p>
+            <p>Recuerda que al enfriar espesará más, así que sácala un poco antes de alcanzar la consistencia final deseada.</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>🔥 Control de la Cocción</h3>
+            <p><strong>Fuego alto:</strong> Solo al inicio para disolver el azúcar (10 min)</p>
+            <p><strong>Fuego medio-bajo:</strong> Cocción principal a fuego suave (45-60 min)</p>
+            <p><strong>Remover:</strong> Al principio cada 10-15 min, luego cada 5-7 min cuando empiece a espesar</p>
+            <p>Mantén un hervor suave constante. Si hierve demasiado fuerte, puede quemarse en el fondo o evaporarse demasiado rápido.</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Mermelada de Durazno y Vainilla:</strong> Sustituye la canela por 1 vaina de vainilla abierta o 1 cucharadita de extracto puro de vainilla.</p>
+            <p><strong>Mermelada de Durazno y Jengibre:</strong> Añade 2 cucharadas de jengibre fresco rallado para un toque picante y aromático.</p>
+            <p><strong>Mermelada de Durazno y Almendra:</strong> Agrega 1/2 cucharadita de extracto de almendra al final o unas almendras fileteadas tostadas.</p>
+            <p><strong>Mermelada de Durazno y Frambuesa:</strong> Incorpora 1 taza de frambuesas frescas o congeladas a la mitad de la cocción.</p>
+            <p><strong>Mermelada de Durazno y Ron:</strong> Añade 2-3 cucharadas de ron oscuro al final de la cocción para un sabor más adulto.</p>
+            <p><strong>Mermelada de Durazno y Lavanda:</strong> Agrega 1 cucharadita de lavanda seca (comestible) durante los últimos 5 minutos de cocción.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
