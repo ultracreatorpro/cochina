@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermelada de Tomate - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Mermelada de Tomate, una conserva dulce y ligeramente ácida perfecta para acompañar quesos y carnes. Aprende a prepararla paso a paso.">
+    <meta name="keywords" content="mermelada de tomate, conservas de tomate, mermelada salada, receta fácil, tomate">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Mermelada de Tomate - GourmetChef">
+    <meta property="og:description" content="Receta de Mermelada de Tomate, una exquisitez dulce-salada para los paladares más exigentes.">
+    <meta property="og:image" content="https://i.ibb.co/HCQz64q/mermelada-tomate.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/mermelada-de-tomate.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mermelada de Tomate - GourmetChef">
+    <meta name="twitter:description" content="Receta de Mermelada de Tomate, una exquisitez dulce-salada para los paladares más exigentes.">
+    <meta name="twitter:image" content="https://i.ibb.co/HCQz64q/mermelada-tomate.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hairstyle-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hairstyle-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Mermelada de Tomate</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 1 hora 15 min</span>
+                <span>🍽️ 3-4 frascos</span>
+                <span>⭐ Media</span>
+            </div>
+            <img src="https://i.ibb.co/HCQz64q/mermelada-tomate.jpg" alt="Mermelada de Tomate en frascos" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para una mermelada de tomate de calidad gourmet, usa tomates de variedad "pera" o "raf". Son carnosos, con menos semillas y agua, lo que dará una mermelada más densa y con sabor más concentrado.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>1 kg de tomates maduros (preferentemente duros y carnosos)</li>
+                    <li>600 gramos de azúcar blanca</li>
+                    <li>El jugo de 1 limón grande</li>
+                    <li>1 rama de canela (opcional)</li>
+                    <li>1 vaina de vainilla (opcional)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Prepara los tomates: lava y retira el tallo. Haz una pequeña incisión en forma de cruz en la base de cada tomate.</li>
+                    <li>Escalda los tomates: sumérgelos en agua hirviendo durante 30-45 segundos, luego transfiere inmediatamente a un recipiente con agua y hielo.</li>
+                    <li>Pela los tomates: la piel se desprenderá fácilmente gracias al escaldado. Retira la mayor parte de las semillas y el líquido gelatinoso del interior.</li>
+                    <li>Corta los tomates pelados en trozos pequeños y colócalos en un bol grande.</li>
+                    <li>Cubre los tomates con el azúcar, mezcla bien y deja macerar durante 30 minutos. Esto ayudará a que suelten su jugo.</li>
+                    <li>Transfiere la mezcla de tomate y azúcar a una cacerola de fondo grueso. Añade el jugo de limón y las especias opcionales (canela y/o vainilla).</li>
+                    <li>Lleva a ebullición a fuego medio-alto. Durante los primeros 10-15 minutos, mantén un hervor suave y retira cuidadosamente la espuma que se forme en la superficie.</li>
+                    <li>Reduce el fuego a medio-bajo y continúa la cocción por 25-30 minutos más, removiendo cada 5-7 minutos para evitar que se pegue.</li>
+                    <li>La mermelada estará lista cuando adquiera una consistencia espesa pero aún líquida (recordando que al enfriar espesará más). Para comprobar, haz la prueba del plato frío.</li>
+                    <li>Retira las especias si las usaste. Vierte la mermelada caliente en frascos esterilizados, cierra herméticamente y procede al baño María para conservación a largo plazo.</li>
+                </ol>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+       
+        <div class="marinade-info">
+            <h3>📊 El Punto Perfecto</h3>
+            <p><strong>Maceración:</strong> Fundamental para extraer los jugos y que el azúcar se integre mejor. No la saltes.</p>
+            <p><strong>Retirar semillas y agua:</strong> Crucial para que la mermelada no quede acuosa y se espese correctamente.</p>
+            <p><strong>Desespumado:</strong> Da una mermelada más transparente y atractiva. Usa una espumadera de malla fina.</p>
+            <p><strong>Prueba del plato:</strong> Coloca una cucharadita en un plato frío, enfría 2 minutos en el congelador. Si al pasar el dedo deja un surco limpio, está en su punto.</p>
+            <p>Recuerda: la mermelada se espesa significativamente al enfriar. Es mejor sacarla un poco antes del punto deseado.</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>🔥 Control de la Cocción</h3>
+            <p><strong>Fuego medio-alto:</strong> Para llevar a ebullición y desespumar (10-15 min)</p>
+            <p><strong>Fuego medio-bajo:</strong> Cocción principal y reducción (25-30 min)</p>
+            <p><strong>Remover:</strong> Cada 5-7 minutos, con más frecuencia hacia el final</p>
+            <p>El tomate tiende a pegarse y salpicar. Usa una olla alta y remueve con cuidado, especialmente al principio cuando tiene más líquido.</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Mermelada de Tomate y Albahaca:</strong> Añade un puñado de hojas de albahaca fresca picadas al final de la cocción.</p>
+            <p><strong>Mermelada de Tomate Picante:</strong> Incorpora 1-2 chiles secos o una cucharadita de hojuelas de chile durante la cocción.</p>
+            <p><strong>Mermelada de Tomate y Naranja:</strong> Añade la ralladura de 1 naranja y sustituye parte del jugo de limón por jugo de naranja.</p>
+            <p><strong>Mermelada de Tomate y Jengibre:</strong> Agrega 2 cucharadas de jengibre fresco rallado para un toque cálido y picante.</p>
+            <p><strong>Mermelada de Tomate y Vainilla:</strong> La vainilla realza la dulzura natural del tomate de manera sorprendente.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
