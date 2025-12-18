@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado de Menta con Chips de Chocolate - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Helado de Menta con Chips de Chocolate Casero, refrescante y delicioso. Aprende a prepararlo paso a paso sin máquina de helados.">
+    <meta name="keywords" content="helado de menta, helado menta chocolate, helado casero, postres refrescantes, receta fácil">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Helado de Menta con Chips de Chocolate - GourmetChef">
+    <meta property="og:description" content="Receta de Helado de Menta con Chips de Chocolate Casero, el clásico refrescante con trozos de chocolate.">
+    <meta property="og:image" content="https://i.ibb.co/0C6nZ3T/helado-menta.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/helado-menta-chocolate.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Helado de Menta con Chips de Chocolate - GourmetChef">
+    <meta name="twitter:description" content="Receta de Helado de Menta con Chips de Chocolate Casero, el clásico refrescante con trozos de chocolate.">
+    <meta name="twitter:image" content="https://i.ibb.co/0C6nZ3T/helado-menta.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hairstyle-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hairstyle-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html">Categorías</a>
+                <a href="../index.html">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Helado de Menta con Chips de Chocolate</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 20 min + 6h congelar</span>
+                <span>🍽️ 8 porciones</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://i.ibb.co/0C6nZ3T/helado-menta.jpg" alt="Helado de Menta con Chips de Chocolate refrescante" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un auténtico sabor a menta natural, puedes usar un puñado de hojas de menta fresca. Machácalas ligeramente y déjalas infusionar en la nata durante 30 minutos antes de colar y continuar con la receta. Esto da un sabor más fresco y menos artificial que el extracto.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>500 ml de nata para montar (crema de leche, 35% grasa)</li>
+                    <li>1 lata de leche condensada (397g)</li>
+                    <li>1 1/2 - 2 cucharaditas de extracto puro de menta (ajustar al gusto)</li>
+                    <li>1 cucharadita de extracto puro de vainilla</li>
+                    <li>Unas gotas de colorante verde alimentario (opcional)</li>
+                    <li>1 pizca de sal</li>
+                    <li>150g de chips de chocolate negro o chocolate picado en trocitos</li>
+                    <li>1 cucharada de aceite de coco o manteca de cacao (para chocolate más crujiente, opcional)</li>
+                    <li>Hojas de menta fresca para decorar</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>En un bol grande frío (preferiblemente enfriado 15 min en congelador), batir la nata con batidora eléctrica a velocidad media-alta hasta formar picos suaves. No batir en exceso para evitar que se corte.</li>
+                    <li>En otro bol, mezclar la leche condensada con el extracto de menta (comenzar con 1½ cucharadita), extracto de vainilla, colorante verde si usas, y la pizca de sal. Integrar bien.</li>
+                    <li>Probar la mezcla y ajustar el sabor a menta si es necesario (añadir más extracto de menta poco a poco). Recuerda que el sabor se intensificará ligeramente al congelarse.</li>
+                    <li>Agregar aproximadamente un tercio de la nata montada a la mezcla de leche condensada y menta. Incorporar suavemente con movimientos envolventes.</li>
+                    <li>Verter esta mezcla sobre el resto de la nata montada en el bol grande. Con una espátula, integrar todo con movimientos suaves de abajo hacia arriba hasta obtener una preparación homogénea de color verde claro.</li>
+                    <li>Preparar los chips de chocolate: si quieres que sean más crujientes y no se ablanden en el helado, derretir 1 cucharada de aceite de coco o manteca de cacao, mezclar con los chips de chocolate y esparcir en una bandeja para horno con papel encerado. Congelar 10 minutos antes de añadir al helado.</li>
+                    <li>Añadir aproximadamente 3/4 de los chips de chocolate a la mezcla de helado. Mezclar suavemente para distribuir los chips por toda la preparación.</li>
+                    <li>Transferir la mezcla a un recipiente hermético apto para congelador. Espolvorear el resto de los chips de chocolate sobre la superficie y presionar ligeramente con la espátula.</li>
+                    <li>Tapar bien y congelar durante al menos 6 horas, idealmente toda la noche. Para una textura más cremosa, sacar cada 45 minutos durante las primeras 3 horas y batir suavemente con un tenedor.</li>
+                    <li>Antes de servir, sacar del congelador 10-15 minutos para que se ablande ligeramente. Servir en copas decorado con chips de chocolate adicionales y hojitas de menta fresca.</li>
+                </ol>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+       
+        <div class="marinade-info">
+            <h3>📊 El Balance Perfecto Menta-Chocolate</h3>
+            <p><strong>Extracto vs. fresco:</strong> El extracto da sabor más intenso y consistente; la menta fresca da sabor más natural pero menos potente.</p>
+            <p><strong>Cantidad de menta:</strong> Comienza con menos y prueba. El sabor se intensifica al congelar. Mejor poco a poco que demasiado.</p>
+            <p><strong>Color:</strong> El colorante es opcional. El helado de menta natural es blanco o beige claro, no verde brillante.</p>
+            <p><strong>Vainilla como puente:</strong> La vainilla suaviza la menta y ayuda a equilibrar el sabor, creando armonía con el chocolate.</p>
+            <p>La sal es crucial: realza todos los sabores y equilibra la dulzura de la leche condensada.</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>❄️ Técnicas para Ingredientes Crujientes</h3>
+            <p><strong>Chocolate tratado:</strong> Chocolate mezclado con aceite de coco/manteca de cacao y pre-congelado = más crujiente por más tiempo</p>
+            <p><strong>Tamaño de los chips:</strong> Trozos pequeños a medianos se distribuyen mejor que los muy grandes</p>
+            <p><strong>Momento de adición:</strong> Añadir al final, después de batir, para no triturarlos accidentalmente</p>
+            <p><strong>Capas:</strong> Reservar algunos chips para espolvorear en capas mientras se vierte en el recipiente</p>
+            <p>El chocolate se endurece en el congelador, pero con el tratamiento adecuado mantiene un agradable crujido al morder.</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Helado de Menta y Chocolate Blanco:</strong> Sustituye los chips de chocolate negro por chips de chocolate blanco.</p>
+            <p><strong>Helado de Menta y Galleta Oreo:</strong> Añade galletas Oreo trituradas junto con los chips de chocolate.</p>
+            <p><strong>Helado de Menta y Brownie:</strong> Incorpora trozos de brownie de chocolate para un contraste de texturas.</p>
+            <p><strong>Helado de Menta sin Colorante:</strong> Omite el colorante para un helado de apariencia natural (blanco con puntos marrones).</p>
+            <p><strong>Helado de Menta y Frambuesa:</strong> Añade un coulis de frambuesa en capas para un contraste ácido.</p>
+            <p><strong>Helado de Menta con Trozos de Chocolate con Leche:</strong> Usa chocolate con leche en lugar de chocolate negro para un sabor más suave.</p>
+            <p><strong>Helado de Menta y Limón:</strong> Agrega ralladura de limón para un sabor cítrico-refrescante adicional.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>

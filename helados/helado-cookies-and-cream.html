@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado Cookies and Cream Casero - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Helado Cookies and Cream Casero, con trozos de galleta Oreo. Aprende a prepararlo paso a paso sin máquina de helados.">
+    <meta name="keywords" content="helado cookies and cream, helado oreo, helado casero, postres con galletas, receta fácil">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Helado Cookies and Cream Casero - GourmetChef">
+    <meta property="og:description" content="Receta de Helado Cookies and Cream Casero, el favorito de niños y adultos con trozos de galleta Oreo.">
+    <meta property="og:image" content="https://i.ibb.co/kBZ1Np3/helado-cookies.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/helado-cookies-and-cream.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Helado Cookies and Cream Casero - GourmetChef">
+    <meta name="twitter:description" content="Receta de Helado Cookies and Cream Casero, el favorito de niños y adultos con trozos de galleta Oreo.">
+    <meta name="twitter:image" content="https://i.ibb.co/kBZ1Np3/helado-cookies.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hairstyle-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hairstyle-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html">Categorías</a>
+                <a href="../index.html">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Helado Cookies and Cream</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 20 min + 6h congelar</span>
+                <span>🍽️ 8 porciones</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://i.ibb.co/kBZ1Np3/helado-cookies.jpg" alt="Helado Cookies and Cream con trozos de galleta Oreo" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para los mejores resultados, congela las galletas Oreo durante 15-20 minutos antes de picarlas. Esto evitará que se deshagan demasiado cuando las mezcles con el helado y mantendrán una textura crujiente perfecta.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>20-24 galletas Oreo (un paquete estándar)</li>
+                    <li>500 ml de nata para montar (crema de leche, 35% grasa)</li>
+                    <li>1 lata de leche condensada (397g)</li>
+                    <li>2 cucharaditas de extracto puro de vainilla</li>
+                    <li>1 pizca de sal</li>
+                    <li>1/4 taza de cacao en polvo sin azúcar (opcional, para un sabor más intenso a chocolate)</li>
+                    <li>1 cucharada de leche entera (si usas cacao en polvo)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Separar aproximadamente 8 galletas Oreo para decorar al final. Colocar las galletas restantes en una bolsa zip-lock o entre dos hojas de papel pergamino.</li>
+                    <li>Triturar las galletas con un rodillo o botella hasta obtener una mezcla de trozos grandes, medianos y pequeños (algunos casi polvo). Reservar.</li>
+                    <li>En un bol grande frío, batir la nata con batidora eléctrica a velocidad media-alta hasta formar picos suaves. No batir en exceso.</li>
+                    <li>En otro bol, mezclar la leche condensada con el extracto de vainilla y la pizca de sal. Si usas cacao en polvo, disuélvelo primero en la cucharada de leche hasta formar una pasta y luego añádelo a la leche condensada.</li>
+                    <li>Agregar aproximadamente un tercio de la nata montada a la mezcla de leche condensada. Incorporar suavemente con movimientos envolventes.</li>
+                    <li>Verter esta mezcla sobre el resto de la nata montada en el bol grande. Con una espátula, integrar todo con movimientos suaves de abajo hacia arriba.</li>
+                    <li>Añadir aproximadamente 3/4 de las galletas trituradas a la mezcla de helado. Mezclar suavemente para distribuir las galletas por toda la preparación.</li>
+                    <li>Transferir la mezcla a un recipiente hermético apto para congelador. Espolvorear el resto de las galletas trituradas sobre la superficie y presionar ligeramente con la espátula para que se integren parcialmente.</li>
+                    <li>Tapar bien y congelar durante al menos 6 horas, idealmente toda la noche. Para una textura más cremosa, sacar cada 45 minutos durante las primeras 3 horas y batir suavemente (sin mezclar demasiado las galletas).</li>
+                    <li>Antes de servir, sacar del congelador 10-15 minutos para que se ablande ligeramente. Servir en copas decorado con las galletas Oreo reservadas enteras o partidas por la mitad.</li>
+                </ol>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+       
+        <div class="marinade-info">
+            <h3>📊 El Arte de las Galletas en el Helado</h3>
+            <p><strong>Tamaño de los trozos:</strong> Mezcla diferentes tamaños - algunos trozos grandes para morder, otros medianos y un poco de polvo para distribuir el sabor.</p>
+            <p><strong>Congelar antes:</strong> Las galletas congeladas se rompen limpiamente y no se ablandan tan rápido al mezclarlas.</p>
+            <p><strong>Momentos de incorporación:</strong> Añade la mayoría al mezclar, pero reserva un poco para espolvorear en capas para una distribución más uniforme.</p>
+            <p><strong>Cacao opcional:</strong> Si quieres un sabor más intenso a chocolate, el cacao en polvo disuelto en leche añade profundidad sin cambiar la textura.</p>
+            <p>Las Oreo clásicas funcionan mejor, pero puedes experimentar con sabores como Oreo de vainilla, menta o fresa.</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>❄️ Manejo de Ingredientes Sólidos en Helado</h3>
+            <p><strong>Textura de las galletas:</strong> En el congelador, las galletas se endurecen. El tiempo fuera (10-15 min) las suaviza al punto perfecto.</p>
+            <p><strong>Batido con ingredientes sólidos:</strong> Batir con cuidado para no triturar demasiado las galletas. Usa un tenedor en lugar de batidora eléctrica.</p>
+            <p><strong>Distribución:</strong> Mezclar bien pero suavemente para que las galletas no se hundan todas al fondo.</p>
+            <p><strong>Almacenamiento:</strong> Este helado se conserva bien hasta 2 semanas en congelador, aunque las galletas pueden perder un poco de textura después de 7 días.</p>
+            <p>Las galletas absorben humedad del helado con el tiempo, planifica consumirlo en la primera semana para la mejor experiencia.</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Helado Cookies and Cream con Brownie:</strong> Añade trozos de brownie junto con las galletas Oreo.</p>
+            <p><strong>Helado Cookies and Cream de Menta:</strong> Usa galletas Oreo de menta y añade 1/2 cucharadita de extracto de menta.</p>
+            <p><strong>Helado Cookies and Cream con Caramelo:</strong> Incorpora salsa de caramelo en capas al colocar en el recipiente final.</p>
+            <p><strong>Helado Cookies and Cream con M&M's:</strong> Mezcla 1/2 taza de M&M's mini con las galletas trituradas.</p>
+            <p><strong>Helado Cookies and Cream con Crema de Cacahuete:</strong> Añade 1/4 taza de crema de cacahuete suave a la mezcla de leche condensada.</p>
+            <p><strong>Helado Cookies and Cream Vegano:</strong> Usa nata vegetal, leche condensada de coco y galletas Oreo veganas (la mayoría lo son).</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
