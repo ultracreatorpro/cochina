@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado de Chocolate Casero - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Helado de Chocolate Casero intenso y cremoso. Aprende a prepararlo paso a paso sin máquina de helados.">
+    <meta name="keywords" content="helado de chocolate, helado casero, postres de chocolate, receta fácil, chocolate">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Helado de Chocolate Casero - GourmetChef">
+    <meta property="og:description" content="Receta de Helado de Chocolate Casero, intenso, cremoso e irresistible.">
+    <meta property="og:image" content="https://i.ibb.co/ZmYf1Xy/helado-chocolate.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/helado-de-chocolate.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Helado de Chocolate Casero - GourmetChef">
+    <meta name="twitter:description" content="Receta de Helado de Chocolate Casero, intenso, cremoso e irresistible.">
+    <meta name="twitter:image" content="https://i.ibb.co/ZmYf1Xy/helado-chocolate.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hairstyle-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hairstyle-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html">Categorías</a>
+                <a href="../index.html">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Helado de Chocolate Intenso</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 35 min + 6h congelar</span>
+                <span>🍽️ 8 porciones</span>
+                <span>⭐ Media</span>
+            </div>
+            <img src="https://i.ibb.co/VpMKPfyN/unnamed-39.jpg" alt="Helado de Chocolate Casero cremoso" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Usa chocolate de buena calidad (mínimo 60% cacao) para un sabor profundo y auténtico. El chocolate con leche dará un resultado más dulce y suave, mientras que el chocolate amargo ofrecerá un sabor más intenso y adulto.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>200g de chocolate negro (60-70% cacao)</li>
+                    <li>500 ml de nata para montar (crema de leche, 35% grasa)</li>
+                    <li>1 lata de leche condensada (397g)</li>
+                    <li>1/4 taza de cacao en polvo sin azúcar</li>
+                    <li>1 cucharadita de extracto puro de vainilla</li>
+                    <li>1 pizca de sal</li>
+                    <li>2 cucharadas de café instantáneo (opcional, realza el sabor a chocolate)</li>
+                    <li>1/4 taza de leche entera (para disolver el cacao)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Picar el chocolate en trozos pequeños. Derretir a baño María o en el microondas en intervalos de 30 segundos, removiendo entre cada intervalo, hasta que esté completamente derretido y suave. Reservar y dejar enfriar a temperatura ambiente.</li>
+                    <li>En un bol pequeño, mezclar el cacao en polvo con la leche entera hasta formar una pasta suave sin grumos. Si usas café instantáneo, añádelo también a esta mezcla.</li>
+                    <li>En un bol grande, batir la nata fría con batidora eléctrica hasta formar picos suaves. No batir demasiado para que no se corte.</li>
+                    <li>En otro bol, mezclar la leche condensada con la pasta de cacao, el extracto de vainilla, la pizca de sal y el chocolate derretido ya enfriado. Mezclar hasta obtener una preparación homogénea.</li>
+                    <li>Agregar aproximadamente un tercio de la nata montada a la mezcla de chocolate. Incorporar con movimientos envolventes suaves para no perder el aire.</li>
+                    <li>Verter esta mezcla sobre el resto de la nata montada en el bol grande. Con una espátula, integrar todo con movimientos suaves de abajo hacia arriba hasta tener una mezcla uniforme de color marrón.</li>
+                    <li>Probar y ajustar el dulzor si es necesario (puedes añadir un poco más de leche condensada o azúcar glass).</li>
+                    <li>Transferir la mezcla a un recipiente hermético apto para congelador. Alisar la superficie con la espátula.</li>
+                    <li>Tapar bien y congelar durante al menos 6 horas, idealmente toda la noche. Para una textura más cremosa, sacar cada 45 minutos durante las primeras 3 horas y batir vigorosamente con un tenedor.</li>
+                    <li>Antes de servir, sacar del congelador 10-15 minutos para que se ablande ligeramente. Servir en copas adornado con salsa de chocolate, nueces o frutos rojos.</li>
+                </ol>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+       
+        <div class="marinade-info">
+            <h3>📊 La Ciencia del Chocolate</h3>
+            <p><strong>Tipo de chocolate:</strong> Chocolate negro (60-70%) da sabor intenso sin ser amargo. Chocolate con leche resulta más dulce y suave.</p>
+            <p><strong>Derretir correctamente:</strong> Siempre a baja temperatura (baño María) para evitar que el chocolate se queme y se vuelva granuloso.</p>
+            <p><strong>Temperatura de incorporación:</strong> El chocolate derretido DEBE estar a temperatura ambiente antes de mezclar con la nata, de lo contrario se solidificará en grumos.</p>
+            <p><strong>Cacao en polvo:</strong> Aporta intensidad de sabor y color profundo. Disolverlo primero evita grumos en el helado final.</p>
+            <p>El café instantáneo (opcional) es un truco de chefs: realza el sabor a chocolate sin aportar sabor a café.</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>❄️ Técnicas para el Helado Perfecto</h3>
+            <p><strong>Enfriamiento previo:</strong> Enfría los boles y utensilios 15 min en el congelador antes de usarlos</p>
+            <p><strong>Batido intermedio:</strong> Sacar y batir cada 45 min las primeras 3 horas = textura ultra cremosa</p>
+            <p><strong>Temperatura de congelación:</strong> -18°C o menos para una solidificación uniforme</p>
+            <p><strong>Descongelación para servir:</strong> 10-15 min a temperatura ambiente para la consistencia perfecta al servir</p>
+            <p>El chocolate solidifica más que otros sabores, por lo que necesita un poco más de tiempo fuera del congelador antes de servir.</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Helado de Chocolate con Avellanas:</strong> Añade 1/2 taza de avellanas tostadas y picadas al final antes de congelar.</p>
+            <p><strong>Helado de Chocolate Blanco:</strong> Sustituye el chocolate negro por chocolate blanco y omite el cacao en polvo.</p>
+            <p><strong>Helado de Chocolate y Menta:</strong> Agrega 1 cucharadita de extracto de menta o unas gotas de aceite esencial de menta apto para consumo.</p>
+            <p><strong>Helado de Chocolate y Naranja:</strong> Incorpora la ralladura de 1 naranja y 1 cucharada de licor de naranja (opcional).</p>
+            <p><strong>Helado de Chocolate y Churros:</strong> Añade trocitos de churros al final o sirve con salsa de chocolate caliente y canela.</p>
+            <p><strong>Helado de Chocolate y Sal Marina:</strong> Espolvorea escamas de sal marina al servir para un contraste dulce-salado.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
