@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Gelatinas - GourmetChef</title>
+    <meta name="description" content="6 recetas de gelatinas caseras fáciles y deliciosas. Desde gelatinas frutales hasta postres creativos con gelatina.">
+    <meta name="keywords" content="recetas de gelatinas, gelatina casera, postres con gelatina, gelatina de frutas, gelatina mosaico, gelatina de yogurt">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Recetas de Gelatinas - GourmetChef">
+    <meta property="og:description" content="6 recetas de gelatinas caseras fáciles y deliciosas">
+    <meta property="og:image" content="https://tudominio.com/images/recetas-gelatinas.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/gelatinas.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recetas de Gelatinas - GourmetChef">
+    <meta name="twitter:description" content="6 recetas de gelatinas caseras fáciles y deliciosas">
+    <meta name="twitter:image" content="https://tudominio.com/images/recetas-gelatinas.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .category-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .category-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .category-description {
+            max-width: 700px;
+            margin: 0 auto 20px;
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .category-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .subcategories {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            color: #3498db;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            text-align: center;
+        }
+        
+        .subcategory-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 0 auto;
+        }
+        
+        .subcategory-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .subcategory-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .subcategory-button.active {
+            background-color: #e74c3c;
+        }
+        
+        .tips {
+            background: #e8f4fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        /* Estilos para las recetas */
+        .recipe-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            scroll-margin-top: 100px;
+        }
+        
+        .recipe-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .recipe-ingredients {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .recipe-ingredients h3, .recipe-preparation h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .recipe-ingredients ul, .recipe-preparation ol {
+            padding-left: 20px;
+        }
+        
+        .recipe-ingredients li, .recipe-preparation li {
+            margin-bottom: 8px;
+        }
+        
+        .recipe-preparation {
+            margin-top: 25px;
+        }
+        
+        .recipe-tips {
+            background: #fff8e1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        @media (max-width: 768px) {
+            .category-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+            
+            .subcategory-button {
+                padding: 12px 15px;
+                font-size: 1em;
+                flex: 1 0 calc(50% - 15px);
+                min-width: 150px;
+            }
+            
+            .recipe-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html">Categorías</a>
+                <a href="../index.html">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="category-header">
+            <h1 class="category-title">Recetas de Gelatinas</h1>
+            <p class="category-description">Descubre nuestras deliciosas recetas de gelatinas caseras, desde las clásicas frutales hasta postres creativos. Perfectas para cualquier ocasión y muy fáciles de preparar.</p>
+            <img src="https://images.unsplash.com/photo-1543363136-3fdb62e11be5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Variedad de gelatinas coloridas" class="category-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para que tu gelatina quede perfecta, disuelve bien la grenetina en agua fría antes de calentar, y nunca hiervas la mezcla. Refrigera al menos 4 horas para que cuaje completamente. Puedes agregar frutas frescas pero evita la piña, kiwi y papaya frescos ya que contienen enzimas que evitan la gelificación.</p>
+        </div>
+
+        <!-- ANUNCIO 1 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+            <div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+
+        <div class="subcategories">
+            <h2 class="section-title">Elige tu Receta de Gelatina</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #7f8c8d;">Haz clic en cualquier botón para ver la receta correspondiente</p>
+            <div class="subcategory-buttons">
+                <button class="subcategory-button active" onclick="showRecipe(1)">Gelatina de Fresa</button>
+                <button class="subcategory-button" onclick="showRecipe(2)">Gelatina Mosaico</button>
+                <button class="subcategory-button" onclick="showRecipe(3)">Gelatina de Yogurt</button>
+                <button class="subcategory-button" onclick="showRecipe(4)">Gelatina de Café</button>
+                <button class="subcategory-button" onclick="showRecipe(5)">Gelatina de Naranja</button>
+                <button class="subcategory-button" onclick="showRecipe(6)">Gelatina Rainbow</button>
+            </div>
+        </div>
+
+        <!-- ANUNCIO 2 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '2c03e8eaa04debd24649f53717f34e21',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+        </div>
+
+        <!-- RECETA 1: Gelatina de Fresa -->
+        <section id="recipe-1" class="recipe-section">
+            <h2 class="recipe-title">Gelatina de Fresa</h2>
+            <img src="https://images.unsplash.com/photo-1578204474346-5d7e7b4af4f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gelatina de fresa fresca" class="recipe-image">
+            
+            <div class="recipe-ingredients">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>1 sobre de gelatina de fresa (85 g)</li>
+                    <li>2 tazas de agua caliente</li>
+                    <li>1 taza de agua fría</li>
+                    <li>1 taza de fresas frescas, lavadas y cortadas en trozos</li>
+                    <li>3 cucharadas de azúcar (opcional)</li>
+                    <li>Crema batida para decorar (opcional)</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-preparation">
+                <h3>Preparación</h3>
+                <ol>
+                    <li>En un recipiente grande, disuelve la gelatina de fresa en 2 tazas de agua caliente. Revuelve durante 2 minutos hasta que esté completamente disuelta.</li>
+                    <li>Agrega 1 taza de agua fría y mezcla bien. Si deseas un toque más dulce, añade las 3 cucharadas de azúcar en este punto.</li>
+                    <li>Vierte la mezcla en un molde para gelatina o en recipientes individuales.</li>
+                    <li>Agrega los trozos de fresa fresca distribuidos uniformemente por la mezcla.</li>
+                    <li>Refrigera durante al menos 4 horas o hasta que la gelatina esté firme.</li>
+                    <li>Para servir, sumerge el molde en agua caliente durante 10 segundos para desmoldar más fácilmente.</li>
+                    <li>Decora con crema batida y una fresa fresca si lo deseas.</li>
+                </ol>
+            </div>
+            
+            <div class="recipe-tips">
+                <h3>💡 Consejo Extra</h3>
+                <p>Para una versión más cremosa, sustituye ½ taza de agua fría por ½ taza de leche evaporada. Esto le dará una textura más suave y cremosa a tu gelatina.</p>
+            </div>
+        </section>
+
+        <!-- ANUNCIO 3 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <div style="width: 320px; height: 250px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                <p style="color: #888;">Espacio publicitario</p>
+            </div>
+        </div>
+
+        <!-- RECETA 2: Gelatina Mosaico -->
+        <section id="recipe-2" class="recipe-section" style="display: none;">
+            <h2 class="recipe-title">Gelatina Mosaico</h2>
+            <img src="https://images.unsplash.com/photo-1547414972-65e5f6d8c8a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gelatina mosaico colorida" class="recipe-image">
+            
+            <div class="recipe-ingredients">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>3 sobres de gelatina de diferentes sabores (85 g cada uno)</li>
+                    <li>6 tazas de agua caliente (2 por cada sabor)</li>
+                    <li>3 tazas de agua fría (1 por cada sabor)</li>
+                    <li>1 lata de leche condensada (397 g)</li>
+                    <li>1 lata de leche evaporada (360 ml)</li>
+                    <li>2 sobres de grenetina sin sabor (14 g cada uno)</li>
+                    <li>1 taza de agua para la grenetina</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-preparation">
+                <h3>Preparación</h3>
+                <ol>
+                    <li>Prepara cada sabor de gelatina por separado siguiendo las instrucciones del paquete (disolver en 2 tazas de agua caliente y agregar 1 taza de agua fría).</li>
+                    <li>Vierte cada gelatina en un molde rectangular diferente y refrigera durante 4 horas o hasta que estén firmes.</li>
+                    <li>Una vez firmes, corta las gelatinas en cubos pequeños de aproximadamente 1 cm.</li>
+                    <li>Mezcla todos los cubos de gelatina en un molde grande para gelatina.</li>
+                    <li>En un recipiente aparte, hidrata la grenetina sin sabor en 1 taza de agua fría durante 5 minutos.</li>
+                    <li>Calienta la mezcla de grenetina a baño María hasta que se disuelva completamente.</li>
+                    <li>En una licuadora, mezcla la leche condensada, leche evaporada y la grenetina disuelta. Licúa hasta obtener una mezcla homogénea.</li>
+                    <li>Vierte esta mezcla sobre los cubos de gelatina en el molde, asegurándote de que se distribuyan uniformemente.</li>
+                    <li>Refrigera durante al menos 6 horas o hasta que la gelatina base esté firme.</li>
+                    <li>Desmolda y corta en porciones para servir.</li>
+                </ol>
+            </div>
+            
+            <div class="recipe-tips">
+                <h3>💡 Consejo Extra</h3>
+                <p>Para obtener cortes perfectos al desmoldar, pasa un cuchillo delgado por los bordes del molde y sumérgelo brevemente en agua caliente antes de voltearlo sobre un plato.</p>
+            </div>
+        </section>
+
+        <!-- RECETA 3: Gelatina de Yogurt -->
+        <section id="recipe-3" class="recipe-section" style="display: none;">
+            <h2 class="recipe-title">Gelatina de Yogurt</h2>
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gelatina de yogurt con frutas" class="recipe-image">
+            
+            <div class="recipe-ingredients">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>1 sobre de gelatina de sabores claros (limón, piña o naranja - 85 g)</li>
+                    <li>1 taza de agua caliente</li>
+                    <li>2 tazas de yogurt natural (preferiblemente griego)</li>
+                    <li>1 taza de crema para batir</li>
+                    <li>1/4 taza de azúcar (ajustar al gusto)</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                    <li>Fruta fresca para decorar (fresas, kiwi, durazno)</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-preparation">
+                <h3>Preparación</h3>
+                <ol>
+                    <li>Disuelve la gelatina en 1 taza de agua caliente hasta que esté completamente líquida.</li>
+                    <li>Deja que la gelatina se enfríe a temperatura ambiente, pero no permitas que comience a cuajar.</li>
+                    <li>En un recipiente grande, mezcla el yogurt, la crema para batir, el azúcar y la esencia de vainilla. Bate hasta que esté bien combinado.</li>
+                    <li>Agrega lentamente la gelatina enfriada a la mezcla de yogurt, batiendo constantemente para integrar bien.</li>
+                    <li>Vierte la mezcla en un molde para gelatina o en copas individuales.</li>
+                    <li>Refrigera durante al menos 4 horas o hasta que esté firme.</li>
+                    <li>Antes de servir, decora con fruta fresca cortada en trozos pequeños.</li>
+                </ol>
+            </div>
+            
+            <div class="recipe-tips">
+                <h3>💡 Consejo Extra</h3>
+                <p>Para una presentación elegante, prepara esta gelatina en copas transparentes y crea capas alternando con frutas frescas entre cada capa de gelatina de yogurt.</p>
+            </div>
+        </section>
+
+        <!-- ANUNCIO 4 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <div style="width: 320px; height: 100px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                <p style="color: #888;">Espacio publicitario</p>
+            </div>
+        </div>
+
+        <!-- RECETA 4: Gelatina de Café -->
+        <section id="recipe-4" class="recipe-section" style="display: none;">
+            <h2 class="recipe-title">Gelatina de Café</h2>
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gelatina de café con crema" class="recipe-image">
+            
+            <div class="recipe-ingredients">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>2 tazas de café fuerte recién hecho</li>
+                    <li>2 sobres de grenetina sin sabor (14 g cada uno)</li>
+                    <li>1/2 taza de azúcar (ajustar al gusto)</li>
+                    <li>1 cucharadita de esencia de vainilla</li>
+                    <li>1 taza de crema para batir</li>
+                    <li>2 cucharadas de azúcar glass</li>
+                    <li>Chocolate rallado o cacao en polvo para decorar</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-preparation">
+                <h3>Preparación</h3>
+                <ol>
+                    <li>Hidrata la grenetina en 1/2 taza de café frío durante 5 minutos.</li>
+                    <li>Calienta el resto del café con el azúcar hasta que esté caliente pero no hirviendo.</li>
+                    <li>Agrega la grenetina hidratada al café caliente y revuelve hasta que se disuelva completamente.</li>
+                    <li>Añade la esencia de vainilla y mezcla bien.</li>
+                    <li>Vierte la mezcla en moldes individuales o en un molde grande.</li>
+                    <li>Refrigera durante al menos 4 horas o hasta que esté firme.</li>
+                    <li>Antes de servir, bate la crema con el azúcar glass hasta obtener picos suaves.</li>
+                    <li>Decora cada porción con una cucharada de crema batida y un poco de chocolate rallado o cacao en polvo.</li>
+                </ol>
+            </div>
+            
+            <div class="recipe-tips">
+                <h3>💡 Consejo Extra</h3>
+                <p>Para un toque especial, agrega una cucharada de licor de café o amaretto a la mezcla antes de refrigerar. Si es para niños, omite el alcohol y añade una pizca de canela en polvo.</p>
+            </div>
+        </section>
+
+        <!-- RECETA 5: Gelatina de Naranja -->
+        <section id="recipe-5" class="recipe-section" style="display: none;">
+            <h2 class="recipe-title">Gelatina de Naranja con Trozos de Fruta</h2>
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gelatina de naranja con frutas cítricas" class="recipe-image">
+            
+            <div class="recipe-ingredients">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>1 sobre de gelatina de naranja (85 g)</li>
+                    <li>1 taza de agua caliente</li>
+                    <li>1 taza de jugo de naranja natural frío</li>
+                    <li>2 naranjas peladas y cortadas en gajos pequeños</li>
+                    <li>1 mandarina pelada y separada en gajos</li>
+                    <li>Hojas de menta fresca para decorar</li>
+                    <li>1 cucharada de ralladura de naranja (opcional)</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-preparation">
+                <h3>Preparación</h3>
+                <ol>
+                    <li>Disuelve la gelatina de naranja en 1 taza de agua caliente, revolviendo constantemente durante 2 minutos.</li>
+                    <li>Agrega el jugo de naranja natural frío y mezcla bien.</li>
+                    <li>Si usas ralladura de naranja, incorpórala en este momento.</li>
+                    <li>Vierte una capa delgada de la mezcla en el fondo de un molde y refrigera durante 15 minutos para que cuaje ligeramente.</li>
+                    <li>Saca del refrigerador y coloca los gajos de naranja y mandarina sobre la primera capa.</li>
+                    <li>Vierte el resto de la mezcla de gelatina sobre las frutas.</li>
+                    <li>Refrigera durante al menos 4 horas o hasta que esté firme.</li>
+                    <li>Desmolda y decora con hojas de menta fresca antes de servir.</li>
+                </ol>
+            </div>
+            
+            <div class="recipe-tips">
+                <h3>💡 Consejo Extra</h3>
+                <p>Para realzar el sabor cítrico, añade una cucharadita de jugo de limón fresco a la mezcla. También puedes sustituir parte del agua por jugo de naranja concentrado para un sabor más intenso.</p>
+            </div>
+        </section>
+
+        <!-- ANUNCIO 5 -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <div style="width: 300px; height: 250px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                <p style="color: #888;">Espacio publicitario</p>
+            </div>
+        </div>
+
+        <!-- RECETA 6: Gelatina Rainbow -->
+        <section id="recipe-6" class="recipe-section" style="display: none;">
+            <h2 class="recipe-title">Gelatina Rainbow (Arcoíris)</h2>
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gelatina rainbow de colores" class="recipe-image">
+            
+            <div class="recipe-ingredients">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>6 sobres de gelatina de diferentes colores (85 g cada uno)</li>
+                    <li>12 tazas de agua caliente (2 por cada color)</li>
+                    <li>6 tazas de agua fría (1 por cada color)</li>
+                    <li>1 lata de leche condensada (397 g)</li>
+                    <li>1 lata de leche evaporada (360 ml)</li>
+                    <li>2 sobres de grenetina sin sabor (14 g cada uno)</li>
+                    <li>1 taza de agua para la grenetina</li>
+                </ul>
+            </div>
+            
+            <div class="recipe-preparation">
+                <h3>Preparación</h3>
+                <ol>
+                    <li>Prepara cada color de gelatina por separado siguiendo las instrucciones del paquete.</li>
+                    <li>Vierte la primera capa (rojo) en un molde rectangular grande y refrigera durante 30-40 minutos o hasta que esté firme al tacto.</li>
+                    <li>Mientras tanto, prepara la capa blanca: hidrata la grenetina sin sabor en 1 taza de agua fría por 5 minutos, luego disuélvela a baño María.</li>
+                    <li>Mezcla la grenetina disuelta con la leche condensada y evaporada. Licúa hasta que esté homogéneo.</li>
+                    <li>Cuando la primera capa de gelatina esté firme, vierte una capa delgada de la mezcla blanca (aproximadamente 1/2 cm) y refrigera 20 minutos.</li>
+                    <li>Repite el proceso alternando capas de gelatina de colores y capas blancas, refrigerando entre cada una.</li>
+                    <li>Sigue el orden del arcoíris: rojo, naranja, amarillo, verde, azul y morado.</li>
+                    <li>Después de la última capa, refrigera al menos 6 horas o preferiblemente toda la noche.</li>
+                    <li>Para servir, corta en rebanadas rectangulares para mostrar todas las capas de colores.</li>
+                </ol>
+            </div>
+            
+            <div class="recipe-tips">
+                <h3>💡 Consejo Extra</h3>
+                <p>Para un efecto visual espectacular, usa un molde de silicona que te permitirá desmoldar fácilmente sin romper las capas. También puedes hacer versiones mini en moldes individuales para porciones controladas.</p>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">Recetas de gelatinas caseras fáciles y deliciosas</p>
+    </footer>
+
+    <script>
+        // Función para mostrar la receta seleccionada y ocultar las demás
+        function showRecipe(recipeNumber) {
+            // Ocultar todas las recetas
+            for (let i = 1; i <= 6; i++) {
+                const recipeElement = document.getElementById(`recipe-${i}`);
+                recipeElement.style.display = 'none';
+            }
+            
+            // Mostrar la receta seleccionada
+            const selectedRecipe = document.getElementById(`recipe-${recipeNumber}`);
+            selectedRecipe.style.display = 'block';
+            
+            // Actualizar botones activos
+            const buttons = document.querySelectorAll('.subcategory-button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Marcar el botón correspondiente como activo
+            buttons[recipeNumber - 1].classList.add('active');
+            
+            // Desplazar suavemente a la receta seleccionada
+            selectedRecipe.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        // Mostrar la primera receta al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            showRecipe(1);
+        });
+    </script>
+    
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+    <div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+  </html>
