@@ -611,14 +611,6 @@
             
             // Marcar el botón correspondiente como activo
             buttons[recipeNumber - 1].classList.add('active');
-            
-            // Desplazar suavemente a la receta seleccionada
-            selectedRecipe.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-        
-        // Mostrar la primera receta al cargar la página
-        document.addEventListener('DOMContentLoaded', function() {
-            showRecipe(1);
         });
     </script>
     
