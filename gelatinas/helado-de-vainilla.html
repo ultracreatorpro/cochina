@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado de Vainilla Casero - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Helado de Vainilla Casero clásico, cremoso y delicioso. Aprende a prepararlo paso a paso sin máquina de helados.">
+    <meta name="keywords" content="helado de vainilla, helado casero, postres fríos, receta fácil, vainilla">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Helado de Vainilla Casero - GourmetChef">
+    <meta property="og:description" content="Receta de Helado de Vainilla Casero, el clásico perfectamente cremoso.">
+    <meta property="og:image" content="https://i.ibb.co/0jZ1X5L/helado-vainilla.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/helado-de-vainilla.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Helado de Vainilla Casero - GourmetChef">
+    <meta name="twitter:description" content="Receta de Helado de Vainilla Casero, el clásico perfectamente cremoso.">
+    <meta name="twitter:image" content="https://i.ibb.co/0jZ1X5L/helado-vainilla.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hairstyle-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hairstyle-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#categorias">Categorías</a>
+                <a href="../index.html#recetas">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Helado de Vainilla Casero</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 30 min + 6h congelar</span>
+                <span>🍽️ 8 porciones</span>
+                <span>⭐ Media</span>
+            </div>
+            <img src="https://i.ibb.co/0jZ1X5L/helado-vainilla.jpg" alt="Helado de Vainilla Casero cremoso" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Para un helado más cremoso y sin cristales de hielo, bate la mezcla cada 30-45 minutos durante las primeras 3 horas de congelación. Esto rompe los cristales de hielo que se forman.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>500 ml de nata para montar (crema de leche, mínimo 35% grasa)</li>
+                    <li>1 lata de leche condensada (397g)</li>
+                    <li>2 cucharaditas de extracto puro de vainilla</li>
+                    <li>1 pizca de sal</li>
+                    <li>Las semillas de 1 vaina de vainilla (opcional, para intensificar el sabor)</li>
+                    <li>2 cucharadas de azúcar glass (opcional, si prefieres más dulce)</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>En un bol grande y frío (preferiblemente enfriado en el congelador 15 min antes), vierte la nata fría. Monta la nata con batidora eléctrica a velocidad media-alta hasta que forme picos suaves (no demasiado firmes).</li>
+                    <li>En otro bol, mezcla la leche condensada con el extracto de vainilla, la pizca de sal y las semillas de vainilla si las usas. Revuelve bien hasta integrar completamente.</li>
+                    <li>Agrega aproximadamente 1/3 de la nata montada a la mezcla de leche condensada y vainilla. Incorpora suavemente con movimientos envolventes para no perder aire.</li>
+                    <li>Vierte esta mezcla sobre el resto de la nata montada en el bol grande. Con una espátula, integra todo con movimientos suaves de abajo hacia arriba hasta tener una mezcla homogénea.</li>
+                    <li>Prueba y ajusta el dulzor si es necesario (añade azúcar glass si lo deseas).</li>
+                    <li>Vierte la mezcla en un recipiente hermético apto para congelador. Alisa la superficie con la espátula.</li>
+                    <li>Tapa bien el recipiente y congela durante al menos 6 horas, preferiblemente toda la noche.</li>
+                    <li>Para una textura más cremosa: saca el helado del congelador cada 30-45 minutos durante las primeras 3 horas y bátelo vigorosamente con un tenedor o batidora de mano. Esto evita la formación de cristales grandes de hielo.</li>
+                    <li>Antes de servir, saca el helado del congelador 10-15 minutos para que se ablande ligeramente y sea más fácil de servir.</li>
+                    <li>Sirve en copas o conos y decora con salsa de chocolate, frutos rojos o nueces tostadas.</li>
+                </ol>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+       
+        <div class="marinade-info">
+            <h3>📊 Claves para la Cremosidad</h3>
+            <p><strong>Grasa es amiga:</strong> La nata con mínimo 35% grasa es esencial para una textura cremosa y sin cristales.</p>
+            <p><strong>Temperatura fría:</strong> Todos los ingredientes y utensilios deben estar fríos antes de empezar.</p>
+            <p><strong>Leche condensada:</strong> Actúa como endulzante, espesante y evita la formación excesiva de cristales.</p>
+            <p><strong>Vainilla de calidad:</strong> Usa extracto puro de vainilla, no esencia artificial, para un sauténtico.</p>
+            <p>El proceso de batido intermedio es opcional pero marca la diferencia entre un helado cremoso y uno lleno de hielo.</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>❄️ Técnicas de Congelación</h3>
+            <p><strong>Sin máquina:</strong> Batir manualmente cada 30-45 min las primeras 3 horas = textura más cremosa</p>
+            <p><strong>Con máquina de helados:</strong> Sigue las instrucciones del fabricante para tiempos de congelación</p>
+            <p><strong>Temperatura ideal:</strong> Congelador a -18°C o menos</p>
+            <p><strong>Tiempo mínimo:</strong> 6 horas, idealmente 8-12 horas para una consistencia perfecta</p>
+            <p>Para servir: sacar 10-15 min antes para que se ablande ligeramente y sea fácil de scoopear.</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Helado de Vainilla Francesa:</strong> Sustituye la leche condensada por una crema pastelera hecha con yemas de huevo, leche y azúcar.</p>
+            <p><strong>Helado de Vainilla y Chocolate:</strong> Añade chispas de chocolate o rizos de chocolate al final antes de congelar.</p>
+            <p><strong>Helado de Vainilla y Galleta:</strong> Incorpora trozos de galletas tipo cookies and cream después del primer batido.</p>
+            <p><strong>Helado de Vainilla y Caramelo:</strong> Vierte salsa de caramelo en capas al colocar en el recipiente final.</p>
+            <p><strong>Helado de Vainilla y Frutos Rojos:</strong> Añade un coulis de frutos rojos o trozos de fresas congeladas.</p>
+            <p><strong>Helado de Vainilla y Café:</strong> Agrega 1-2 cucharadas de café instantáneo disuelto en 1 cucharada de agua caliente.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
