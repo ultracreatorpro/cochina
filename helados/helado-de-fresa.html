@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado de Fresa Casero - Recetas de Cocina Fáciles y Gratis</title>
+    <meta name="description" content="Receta de Helado de Fresa Casero natural y refrescante. Aprende a prepararlo paso a paso sin máquina de helados.">
+    <meta name="keywords" content="helado de fresa, helado casero, postres de fruta, receta fácil, fresa">
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Helado de Fresa Casero - GourmetChef">
+    <meta property="og:description" content="Receta de Helado de Fresa Casero, con el auténtico sabor de la fruta fresca.">
+    <meta property="og:image" content="https://i.ibb.co/5KTz0bw/helado-fresa.jpg">
+    <meta property="og:url" content="https://tudominio.com/recetas/helado-de-fresa.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Helado de Fresa Casero - GourmetChef">
+    <meta name="twitter:description" content="Receta de Helado de Fresa Casero, con el auténtico sabor de la fruta fresca.">
+    <meta name="twitter:image" content="https://i.ibb.co/5KTz0bw/helado-fresa.jpg">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95DFL8ZFNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95DFL8ZFNP');
+</script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .ingredients, .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+        }
+        
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .instructions-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .instructions-list li:before {
+            content: counter(step-counter);
+            background: #e74c3c;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 30px;
+        }
+        
+        .variations {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+            margin-bottom: 30px;
+        }
+        
+        .marinade-info {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        
+        .temperature-guide {
+            background: #fce4ec;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #e91e63;
+            margin-bottom: 30px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #c0392b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            /* Estilos para el anuncio */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .hairstyle-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hairstyle-title {
+                font-size: 2em;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav a {
+                margin: 0 10px;
+            }
+            
+            .ad-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">GourmetChef</a>
+            <div class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html">Categorías</a>
+                <a href="../index.html">Recetas</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="recipe-header">
+            <h1 class="recipe-title">Helado de Fresa Natural</h1>
+            <div class="recipe-meta">
+                <span>⏱️ 25 min + 6h congelar</span>
+                <span>🍽️ 6-8 porciones</span>
+                <span>⭐ Fácil</span>
+            </div>
+            <img src="https://i.ibb.co/gbS8HBh4/Gemini-Generated-Image-an1e6an1e6an1e6a.png" alt="Helado de Fresa Casero con fresas frescas" class="recipe-image">
+        </div>
+
+        <div class="tips">
+            <h3>💡 Consejo del Chef</h3>
+            <p>Usa fresas muy maduras y en temporada para obtener el máximo sabor y dulzor natural. Si las fresas no están muy dulces, puedes añadir 1-2 cucharadas más de azúcar o miel al puré.</p>
+        </div>
+
+        <!-- ANUNCIO -->
+        <div class="ad-label">Publicidad</div>
+        <div class="ad-container">
+            <!-- PEGA AQUÍ EL CÓDIGO -->
+            <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+        </div>
+        
+        <div class="recipe-content">
+            <div class="ingredients">
+                <h2 class="section-title">Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>500g de fresas frescas (o 400g de fresas congeladas)</li>
+                    <li>500 ml de nata para montar (crema de leche, 35% grasa)</li>
+                    <li>1 lata de leche condensada (397g)</li>
+                    <li>1/4 taza de azúcar glass (ajustar según dulzor de las fresas)</li>
+                    <li>Jugo de 1/2 limón (aproximadamente 2 cucharadas)</li>
+                    <li>1 cucharadita de extracto puro de vainilla</li>
+                    <li>1 pizca de sal</li>
+                    <li>Fresas frescas adicionales para decorar</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2 class="section-title">Preparación</h2>
+                <ol class="instructions-list">
+                    <li>Lavar las fresas, quitarles el tallo y cortarlas en cuartos. Si usas fresas congeladas, déjalas descongelar parcialmente.</li>
+                    <li>En una licuadora o procesador de alimentos, triturar las fresas con el jugo de limón y el azúcar glass hasta obtener un puré suave. El limón realza el sabor de la fresa y evita la oxidación.</li>
+                    <li>Pasar el puré por un colador fino para eliminar las semillas si prefieres una textura más suave (opcional). Reservar el puré.</li>
+                    <li>En un bol grande frío, batir la nata con batidora eléctrica a velocidad media-alta hasta formar picos suaves. No batir demasiado para que no se corte.</li>
+                    <li>En otro bol, mezclar la leche condensada con el puré de fresas, el extracto de vainilla y la pizca de sal. Integrar bien hasta obtener una mezcla homogénea de color rosa.</li>
+                    <li>Agregar aproximadamente un tercio de la nata montada a la mezcla de fresa. Mezclar suavemente con movimientos envolventes.</li>
+                    <li>Verter esta mezcla sobre el resto de la nata montada en el bol grande. Con una espátula, integrar todo con movimientos suaves de abajo hacia arriba hasta tener una preparación uniforme.</li>
+                    <li>Probar y ajustar el dulzor si es necesario (añadir más azúcar glass o leche condensada).</li>
+                    <li>Transferir a un recipiente hermético apto para congelador. Alisar la superficie y tapar bien.</li>
+                    <li>Congelar durante al menos 6 horas, idealmente toda la noche. Para una textura más cremosa, sacar cada 45 minutos durante las primeras 3 horas y batir vigorosamente con un tenedor.</li>
+                    <li>Antes de servir, sacar del congelador 10 minutos para que se ablande ligeramente. Servir en copas adornado con fresas frescas en rodajas o salsa de fresa.</li>
+                </ol>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '2c03e8eaa04debd24649f53717f34e21',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/2c03e8eaa04debd24649f53717f34e21/invoke.js"></script>
+       
+        <div class="marinade-info">
+            <h3>📊 Secretos del Sabor a Fresa</h3>
+            <p><strong>Calidad de las fresas:</strong> Fresas de temporada y muy maduras dan el mejor sabor. Las de invierno o invernadero suelen ser más insípidas.</p>
+            <p><strong>Fresas congeladas:</strong> Una excelente alternativa fuera de temporada. A menudo se congelan en su punto óptimo de madurez.</p>
+            <p><strong>El toque cítrico:</strong> El jugo de limón es esencial: realza el sabor de la fresa, añade frescura y evita que el puré se oxide (se ponga marrón).</p>
+            <p><strong>Colar el puré:</strong> Opcional pero recomendado para quienes prefieren textura suave sin semillas. Las semillas pueden dar un sabor ligeramente amargo.</p>
+            <p>La vainilla complementa perfectamente el sabor de la fresa sin dominarlo.</p>
+        </div>
+
+        <div class="temperature-guide">
+            <h3>❄️ Técnicas de Congelación para Frutas</h3>
+            <p><strong>Helados con fruta:</strong> Tienden a formar más cristales de hielo debido al alto contenido de agua de la fruta.</p>
+            <p><strong>Batido frecuente:</strong> Especialmente importante en helados de fruta - batir cada 45 min las primeras 3-4 horas</p>
+            <p><strong>Azúcar como anticongelante:</strong> El azúcar en la leche condensada y el azúcar glass ayuda a reducir la formación de cristales</p>
+            <p><strong>Grasa como aliada:</strong> La nata con 35% grasa crea una emulsión que atrapa aire y suaviza la textura</p>
+            <p>Los helados de fruta suelen necesitar 1-2 minutos más fuera del congelador antes de servir que los helados de crema.</p>
+        </div>
+
+        <div class="variations">
+            <h3>🔄 Variaciones Sugeridas</h3>
+            <p><strong>Helado de Fresa y Plátano:</strong> Sustituye 200g de fresas por 2 plátanos maduros congelados.</p>
+            <p><strong>Helado de Fresa y Yogur Griego:</strong> Reemplaza la mitad de la nata por yogur griego natural para un sabor más tánico y menos calórico.</p>
+            <p><strong>Helado de Fresa y Albahaca:</strong> Añade un puñado de hojas de albahaca fresca al hacer el puré de fresas para un toque herbal.</p>
+            <p><strong>Helado de Fresa y Pimienta Rosa:</strong> Agrega 1/2 cucharadita de pimienta rosa molida al puré para un contraste sorprendente.</p>
+            <p><strong>Helado de Fresa y Chocolate Blanco:</strong> Incorpora 100g de chocolate blanco picado al final antes de congelar.</p>
+            <p><strong>Helado de Frutos Rojos:</strong> Mezcla fresas, frambuesas y moras para un sabor más complejo.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GourmetChef. Todos los derechos reservados.</p>
+    </footer>
+
+    <script async="async" data-cfasync="false" src="//pl28102581.effectivegatecpm.com/8a61b964e562f295b83c21ee0b50d20e/invoke.js"></script>
+<div id="container-8a61b964e562f295b83c21ee0b50d20e"></div>
+    
+</body>
+</html>
